@@ -178,6 +178,9 @@ function buildSectionHTML(section) {
     // Use core builder for basic content
     html += contentBuilders.core.buildBasicContent(content);
     
+    // Use core builder for rules (CRITICAL - was missing!)
+    html += contentBuilders.core.buildRules(content);
+    
     // Use box builder for special boxes
     html += contentBuilders.box.buildBoxes(content);
     
