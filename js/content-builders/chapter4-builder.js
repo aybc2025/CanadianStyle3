@@ -305,6 +305,63 @@ export function buildChapter4Content(content) {
         html += `</div>`;
     }
     
+    // NEW HANDLERS FROM OLD CODE:
+    
+    // Short titles (4.29d)
+    if (content.shortTitles && typeof content.shortTitles === 'object') {
+        html += `
+            <div class="short-titles-section">
+                <h4>${content.shortTitles.title || 'Short titles'}</h4>
+                ${content.shortTitles.text ? `<p>${content.shortTitles.text}</p>` : ''}
+                ${content.shortTitles.examples && Array.isArray(content.shortTitles.examples) ? `
+                    <ul>
+                        ${content.shortTitles.examples.map(ex => `<li>${ex}</li>`).join('')}
+                    </ul>
+                ` : ''}
+            </div>
+        `;
+    }
+    
+    // Original typography (4.29e)
+    if (content.originalTypography && typeof content.originalTypography === 'string') {
+        html += `<p>${content.originalTypography}</p>`;
+    }
+    
+    // Ancient manuscripts (4.29f)
+    if (content.ancientManuscripts && typeof content.ancientManuscripts === 'object') {
+        html += `
+            <div class="ancient-manuscripts-section">
+                <h4>${content.ancientManuscripts.title || 'Ancient manuscripts'}</h4>
+                ${content.ancientManuscripts.text ? `<p>${content.ancientManuscripts.text}</p>` : ''}
+                ${content.ancientManuscripts.examples && Array.isArray(content.ancientManuscripts.examples) ? `
+                    <ul>
+                        ${content.ancientManuscripts.examples.map(ex => `<li>${ex}</li>`).join('')}
+                    </ul>
+                ` : ''}
+            </div>
+        `;
+    }
+    
+    // French titles (4.29f)
+    if (content.frenchTitles && typeof content.frenchTitles === 'string') {
+        html += `<p>${content.frenchTitles}</p>`;
+    }
+    
+    // Hyphenated compounds (4.29g)
+    if (content.hyphenatedCompounds && typeof content.hyphenatedCompounds === 'object') {
+        html += `
+            <div class="hyphenated-compounds-section">
+                <h4>${content.hyphenatedCompounds.title || 'Hyphenated compounds'}</h4>
+                ${content.hyphenatedCompounds.text ? `<p>${content.hyphenatedCompounds.text}</p>` : ''}
+                ${content.hyphenatedCompounds.examples && Array.isArray(content.hyphenatedCompounds.examples) ? `
+                    <ul>
+                        ${content.hyphenatedCompounds.examples.map(ex => `<li>${ex}</li>`).join('')}
+                    </ul>
+                ` : ''}
+            </div>
+        `;
+    }
+    
     return html;
 }
 
