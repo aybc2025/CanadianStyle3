@@ -1,0 +1,1533 @@
+{
+  "id": 4,
+  "number": "4",
+  "title": "Capitalization",
+  "description": "Rules for proper capitalization in Canadian English",
+  "category": "basics",
+  "sections": [
+    {
+      "id": "4.01",
+      "title": "Introduction",
+      "content": {
+        "mainText": "Capital letters have three basic uses, of which nearly all others may be regarded as particular cases: (1) to give emphasis, as in official titles and initial words; (2) to distinguish proper nouns and adjectives from common ones; and (3) to highlight words in headings and captions.",
+        "explanation": "In English the first letter of certain words is capitalized to give emphasis and to clarify sentence structure and meaning for the reader. This chapter gives rules to define which words require capitals, but editorial practice varies considerably on this subject, depending on the desired degree of formality, the intended readership and the organization's house style.",
+        "keyPrinciple": {
+          "title": "Consistency and Reference",
+          "content": "In order to ensure consistency in your own style, follow the rules below, which apply to most general types of writing, and consult the Gage Canadian Dictionary, which gives the upper-case use of many words. Capitalization in specialized documents should be based on professional style guides."
+        }
+      }
+    },
+    {
+      "id": "4.02",
+      "title": "Initial words",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "First word of sentence",
+            "text": "Capitalize the first word of a sentence or sentence equivalent:",
+            "examples": [
+              "There are no other constraints.",
+              "Come.",
+              "What a pity!",
+              "Where?",
+              "Exit",
+              "All rights reserved"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Direct quotations",
+            "text": "Capitalize the first word of a direct quotation that is itself a complete sentence:",
+            "examples": [
+              "The candidates said, \"We are in favour of a free vote on the death penalty.\""
+            ],
+            "note": "Do not use the upper case if the quotation is merely a sentence fragment or is worked into the structure of the sentence:",
+            "counterExamples": [
+              "The candidates said that they were \"in favour of a free vote on the death penalty.\""
+            ],
+            "additionalNote": "In quotations where historical, legal, documentary or scientific accuracy is crucial, reproduce upper-case letters as faithfully as possible. For more detailed information on quotations, see Chapter 8."
+          },
+          {
+            "letter": "c",
+            "title": "Sentences in parentheses",
+            "text": "Capitalize the first word of a complete sentence enclosed in parentheses when it stands alone, but not when it is enclosed within another sentence:",
+            "examples": [
+              "The speaker concluded by citing facts and figures to support her contention. (Details may be found on p. 37.)"
+            ],
+            "but": [
+              "The increasing scarcity of the species is attributable to overfishing (statistics will be found in the appendix), to acid rain and to other factors outlined in the report."
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Direct questions within sentences",
+            "text": "Capitalize the first word of a direct question within a sentence:",
+            "examples": [
+              "The question to be asked in every case is this: Does the writer express himself or herself clearly?"
+            ],
+            "note": "Consistently capitalize (or lower-case) parallel sentence fragments used as questions:",
+            "parallelExamples": [
+              "Will farmers be taxed under this plan? Lumberjacks? Trappers?",
+              "Will farmers be taxed under this plan? lumberjacks? trappers?"
+            ],
+            "warningText": "Do not capitalize words that normally introduce questions (who, why, when, how) when they stand alone as a verb complement:",
+            "warningExample": "He knew he had to meet the deadline. The question was how."
+          },
+          {
+            "letter": "e",
+            "title": "After a colon",
+            "text": "Capitalize the first word after a colon if it begins a direct question (see 4.02(d) above) or a formal statement, introduces a distinct idea, or is followed by more than one sentence:",
+            "examples": [
+              "There are several possibilities: For example, the Director General might resign.",
+              "The jury finds as follows: The defendant is guilty as charged on all counts.",
+              "Our position is clear: We will not permit new landfill sites in our region.",
+              "In conclusion, I answer the question asked at the outset: Revenues will be greater this year than in the past three years. However, they will not match expenditures."
+            ],
+            "note": "See Chapter 7 for further information on use of the colon."
+          },
+          {
+            "letter": "f",
+            "title": "After question mark or exclamation mark",
+            "text": "The word following a question mark or exclamation mark may or may not be capitalized, depending on how closely the material it introduces is considered to be related to what precedes:",
+            "examples": [
+              "What a piece of work is man! how noble in reason! how infinite in faculty!",
+              "Progress where? or, even more fundamentally, progress for whom?",
+              "What factors contributed to the decline of Rome? Did the barbarian invasions play a significant part?"
+            ]
+          },
+          {
+            "letter": "g",
+            "title": "Truisms and mottoes",
+            "text": "Capitalize the first words of truisms and mottoes run into text:",
+            "examples": [
+              "His watchword was Learn to write well, or not to write at all.",
+              "Her motto in life is Do unto others ... before they do unto you."
+            ]
+          },
+          {
+            "letter": "h",
+            "title": "I and O",
+            "text": "The personal pronoun I and the vocative O are always capitalized in English; oh is capitalized only when it begins a sentence or stands alone."
+          },
+          {
+            "letter": "i",
+            "title": "Poetry",
+            "text": "The first word of a line of poetry is traditionally capitalized, but some modern poets do not follow this practice. It is therefore best to check the original and respect the poet's preference."
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.03",
+      "title": "Personal names",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Proper nouns and epithets",
+            "text": "Capitalize proper nouns and epithets that accompany or replace them:",
+            "examples": [
+              "John Diefenbaker",
+              "Margaret Thatcher",
+              "Peter the Great",
+              "the Sun King"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "O' names",
+            "text": "When O' forms part of a proper noun, it and the first letter after the apostrophe are capitalized:",
+            "examples": [
+              "O'Brien",
+              "O'Malley"
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Mc and Mac names",
+            "text": "When the particle Mc or Mac forms part of a name, the letter M is capitalized. Capitalization and spacing of the letters that follow may differ and individual preferences should be respected:",
+            "examples": [
+              "McDonald or MacDonald or Mac Donald or Macdonald"
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Articles and particles in names",
+            "text": "Individual preferences regarding the capitalization and spacing of articles and particles in French or foreign names should also be respected when they can be ascertained. The following are correct forms:",
+            "examples": [
+              "Walter de la Mare",
+              "John Dos Passos",
+              "Pierre de Savoye",
+              "Ethel Vandenberg",
+              "Cornelius Van Horne",
+              "Paul DeVillers"
+            ]
+          },
+          {
+            "letter": "e",
+            "title": "Historical figures",
+            "text": "In the case of historical figures, treatment in English may differ from that in the original language, and no real standard appears to exist. Consistency in treating a particular name (such as Leonardo da Vinci, Luca della Robbia or Vincent van Gogh) is all that can be aimed for. In some cases, the most familiar form of the name omits the particle entirely:",
+            "examples": [
+              "Beethoven (Ludwig van Beethoven)",
+              "Torquemada (Tomás de Torquemada)"
+            ],
+            "note": "The Anglo-American Cataloguing Rules is an excellent source of such information."
+          },
+          {
+            "letter": "f",
+            "title": "Nicknames and personifications",
+            "text": "Capitalize a nickname (a word or phrase used as part of, or instead of, a personal name). Similarly, capitalize names of fictitious or anonymous persons, and names used as personifications:",
+            "examples": [
+              "the Chief",
+              "the Rocket",
+              "the Iron Lady",
+              "Johnny Canuck",
+              "Paul Bunyan",
+              "the Caped Crusader",
+              "John Bull"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.04",
+      "title": "Words derived from proper nouns",
+      "content": {
+        "mainRule": {
+          "text": "As a general rule, capitalize an adjective derived from a proper noun or a name used adjectivally:",
+          "examples": [
+            "Canadian whisky",
+            "Franciscan friar",
+            "Digby chicken",
+            "Newtonian physics"
+          ],
+          "explanation": "Proper adjectives are associated with the person or place from whose name they are derived."
+        },
+        "remoteAssociation": {
+          "title": "When association is remote",
+          "text": "When this association is remote, the adjective becomes common and in most cases no longer takes a capital, as illustrated below:",
+          "examples": [
+            "bohemian lifestyle",
+            "manila envelope",
+            "chinaware",
+            "platonic relationship"
+          ]
+        },
+        "verbs": {
+          "title": "Verbs derived from proper nouns",
+          "text": "Verbs derived from proper nouns are also capitalized unless their association with the proper noun is remote:",
+          "capitalized": [
+            "Anglicize",
+            "Russianize"
+          ],
+          "lowercase": [
+            "italicize",
+            "vulcanize"
+          ]
+        },
+        "warning": {
+          "type": "important",
+          "text": "Check proper noun derivatives carefully, however. Usage in this regard is not standardized."
+        }
+      }
+    },
+    {
+      "id": "4.05",
+      "title": "Governments and government bodies",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Official titles to capitalize",
+            "text": "Capitalize the titles of international, national, provincial, state, regional and local governments; the titles of government departments and agencies and their organizational subdivisions; the names of boards, committees and royal commissions; and the Crown when it means the supreme governing authority:",
+            "examples": [
+              "the United Nations",
+              "the Government of Canada",
+              "the Parliament of Canada",
+              "the House of Commons",
+              "the Senate of Canada",
+              "the Public Service Commission",
+              "the Department of Citizenship and Immigration",
+              "the Public Affairs Section",
+              "the Federal Cultural Policy Review Committee",
+              "the Royal Commission on National Development in the Arts, Letters and Sciences"
+            ],
+            "note": "Note that both the legal title and the applied title of a federal department are capitalized:",
+            "titleExamples": [
+              "Department of the Environment = Environment Canada"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Short forms - when to use lowercase",
+            "text": "It is in the use of short forms that the greatest uncertainty arises. Short forms are normally written in lower case when used in a non-specific sense, when preceded by a possessive, demonstrative or other type of adjective, and when used adjectivally or in an adjectival form:",
+            "lowercaseExamples": [
+              "We have formed a committee to study the matter.",
+              "Our section held its monthly meeting yesterday.",
+              "This division has 60 employees.",
+              "The Canadian (federal, provincial, present) government has issued a policy statement.",
+              "An interpretation of the departmental rules and regulations is required.",
+              "The question of parliamentary procedure was raised.",
+              "Unfortunately division practice proscribes such an approach.",
+              "The decision was based on government (governmental) policy."
+            ],
+            "capitalizedExamples": {
+              "text": "However, when short forms of government bodies stand for the full title and are intended to carry its full force, they are usually capitalized. This style is almost always used in in-house documents:",
+              "examples": [
+                "The Government has adjourned for the summer.",
+                "The Minister's message was circulated throughout the Department"
+              ]
+            },
+            "adjectivalUse": {
+              "text": "If the short title is a specific term which the organization shares with no other body within the government concerned, that title retains the upper case when used adjectivally:",
+              "examples": [
+                "the question of Senate reform",
+                "some House committees"
+              ]
+            }
+          },
+          {
+            "letter": "c",
+            "title": "The word 'Government'",
+            "text": "The word Government is capitalized when it refers to the political apparatus of a party in power. It is lower-cased when it refers in a general way to the offices and agencies that carry out the functions of governing:",
+            "capitalized": "The Liberal Government introduced this measure.",
+            "lowercase": "It is government policy not to discuss matters before the courts."
+          },
+          {
+            "letter": "d",
+            "title": "Plural forms",
+            "text": "Do not capitalize the plural forms of government, department, division, etc., even when the full titles of the bodies concerned are given:",
+            "examples": [
+              "Representatives from the departments of Finance, National Defence and Natural Resources were present."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.06",
+      "title": "Institutions",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Official names",
+            "text": "Capitalize the official names of organized churches (religious denominations, sects, orders) and their adherents, universities, school boards, schools, courts of law, clubs, corporations, unions, alliances, associations, political parties, etc.:",
+            "examples": [
+              "the Carleton School Board",
+              "Lisgar Collegiate Institute",
+              "the Supreme Court of Canada",
+              "the Quebec Superior Court",
+              "the International Court of Justice",
+              "the Opposition (official)",
+              "the Rotary Club",
+              "Canadian Airlines International",
+              "the Canadian Medical Association",
+              "the New Democratic Party",
+              "the University of Manitoba",
+              "the First Baptist Church"
+            ],
+            "note": "The official capitalization is that used by the institution itself."
+          },
+          {
+            "letter": "b",
+            "title": "Administrative subdivisions",
+            "text": "The names of administrative subdivisions of these institutions are also capitalized:",
+            "examples": [
+              "the Department of Political Science",
+              "the Toronto Synod"
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Generic short forms in corporate writing",
+            "text": "A generic noun used as a short form of a title is often capitalized, especially in corporate writing:",
+            "examples": [
+              "the Institute",
+              "the Board",
+              "the Party"
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Specifying element only",
+            "text": "Capitalize short forms that use only the specifying element:",
+            "examples": [
+              "This afternoon, Concordia and Western will play in the final."
+            ]
+          },
+          {
+            "letter": "e",
+            "title": "When NOT to capitalize generic short forms",
+            "text": "Do not capitalize generic short forms used in a non-specific sense, preceded by a possessive, demonstrative or other type of adjective, or used adjectivally or in an adjectival form:",
+            "examples": [
+              "The university is our town's major employer.",
+              "Our family attended a Baptist church regularly.",
+              "She tries to attend all board meetings.",
+              "Only strict adherence to the party line was tolerated.",
+              "Every board of education in the province has adjourned for the season."
+            ]
+          },
+          {
+            "letter": "f",
+            "title": "Specific, unique institutions",
+            "text": "But, if the short form refers to a specific, unique institution, it retains the upper case when used as a noun or adjectivally:",
+            "examples": [
+              "The Scouts held a rally over the weekend.",
+              "A city-wide Red Cross blood drive replenished the hospital's supply."
+            ]
+          },
+          {
+            "letter": "g",
+            "title": "Internal documents",
+            "text": "Documents intended for an internal readership often capitalize terms that would be lower-cased in writings of a general nature:",
+            "examples": [
+              "He worked for the Company for almost forty years.",
+              "The document was forwarded to the Regional Office."
+            ]
+          },
+          {
+            "letter": "h",
+            "title": "Subsequent references",
+            "text": "In second and subsequent references, short forms may be treated generically and lower-cased:",
+            "examples": [
+              "He was invited to address the Second Annual Conference on Biotechnology but declined because the conference was not sufficiently broad in scope.",
+              "She applied for a grant under the External Scholars Program, but only graduate students were eligible under the program."
+            ]
+          },
+          {
+            "letter": "i",
+            "title": "Plural forms",
+            "text": "Do not capitalize the plural of common nouns, even when the full titles of the bodies concerned are given:",
+            "examples": [
+              "He held degrees from the universities of Saskatchewan and Toronto.",
+              "Candidates for the Liberal and Progressive Conservative parties attended the rally."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.07",
+      "title": "Political parties and movements",
+      "content": {
+        "mainRules": [
+          {
+            "title": "Specific parties and movements",
+            "text": "Adjectives and nouns referring to the ideas, actions, documents and members of specific political parties, movements and groups are capitalized. Capitalization often helps distinguish these terms from the same words used descriptively:",
+            "capitalized": [
+              "a Liberal policy paper (of the Liberal government or party)",
+              "New Democrats",
+              "a Progressive Conservative government (refers to the Progressive Conservative Party)"
+            ],
+            "lowercase": [
+              "the liberal arts",
+              "a conservative on moral issues"
+            ]
+          },
+          {
+            "title": "The word 'party'",
+            "text": "Capitalize the word party when it is preceded by the official name of a political party, unless it is used as a generic term:",
+            "capitalized": "He was a member of the Social Democratic Party.",
+            "lowercase": "A new agrarian party was founded at the rally."
+          },
+          {
+            "title": "General terms for movements",
+            "text": "General terms describing political movements and their adherents are lower-cased unless they are derived from proper nouns:",
+            "lowercase": [
+              "fascism",
+              "democracy"
+            ],
+            "capitalized": [
+              "Marxist",
+              "Thatcherite"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.08",
+      "title": "Titles of office or rank",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Titles preceding names",
+            "text": "Capitalize civil, military, religious and professional titles and titles of nobility when they precede and form part of a personal name:",
+            "examples": [
+              "Queen Elizabeth II",
+              "Pope John Paul II",
+              "Lord Carrington",
+              "Prime Minister Chrétien",
+              "Finance Minister Paul Martin",
+              "Professor Layton",
+              "General de Chastelain",
+              "President Clinton",
+              "Archbishop Gervais"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Titles in apposition",
+            "text": "Capitalize all titles following and placed in apposition to a personal name, except those denoting professions:",
+            "capitalized": [
+              "Clara Smith, Director of Public Affairs",
+              "Ron Irwin, Minister of Indian Affairs and Northern Development"
+            ],
+            "lowercase": [
+              "Jane Tanaka, professor of physics"
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Titles as substitute for names",
+            "text": "Capitalize a title referring to a specific person and used as a substitute for that person's name, even if it is a short form:",
+            "examples": [
+              "the President of the Treasury Board",
+              "the Chief, Public Affairs Section",
+              "the Leader of the Opposition",
+              "According to the Assistant Deputy Minister, this is a unique agreement.",
+              "They discussed the matter with the Colonel.",
+              "The Archbishop made no further comment."
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Titles in plural or with indefinite article",
+            "text": "Do not capitalize spelled-out titles in the plural or titles preceded by an indefinite article:",
+            "lowercase": [
+              "the lieutenant-governors of Quebec and Ontario",
+              "a member of Parliament"
+            ],
+            "exception": "the Member for Winnipeg North Centre"
+          },
+          {
+            "letter": "e",
+            "title": "Abbreviated titles in plural",
+            "text": "Capitalize abbreviated titles in the plural:",
+            "examples": [
+              "We met Profs. Sami and Nicolet."
+            ]
+          },
+          {
+            "letter": "f",
+            "title": "Modified titles",
+            "text": "Do not capitalize titles modified by a possessive or other type of adjective, or by an indefinite article:",
+            "examples": [
+              "They discussed it with their colonel.",
+              "They discussed it with the former ambassador.",
+              "They discussed it with the Canadian prime minister.",
+              "They discussed it with a member of Parliament."
+            ]
+          },
+          {
+            "letter": "g",
+            "title": "Title vs. role",
+            "text": "Capitalize titles only when they refer to a specific person; do not capitalize a term that refers to a role rather than a person:",
+            "examples": [
+              "As prime minister [that is, while occupying a certain position], Lester Pearson introduced the new Canadian flag.",
+              "The production manager [any person who occupies that position] assigns schedules."
+            ]
+          },
+          {
+            "letter": "h",
+            "title": "Occupational titles",
+            "text": "Occupational titles used descriptively are normally followed by a complete personal name. They should not be capitalized in writing for general readers, although corporate requirements and the expectations of a specialized readership often result in a more liberal use of capital letters:",
+            "examples": [
+              "manager Cito Gaston",
+              "production superintendent Anna Chang",
+              "technical writer John Upton"
+            ]
+          },
+          {
+            "letter": "i",
+            "title": "Adjectives from titles",
+            "text": "Do not capitalize adjectives derived from titles unless they are part of a title:",
+            "lowercase": [
+              "episcopal",
+              "papal",
+              "ministerial correspondence",
+              "presidential prerogative"
+            ],
+            "capitalized": [
+              "Rabbinical College of Telshe"
+            ]
+          },
+          {
+            "letter": "j",
+            "title": "Titles of respect",
+            "text": "Capitalize titles of respect and forms of address, even when used in the plural:",
+            "examples": [
+              "Your Honour",
+              "Mr. Chairman",
+              "Your Grace",
+              "Their Royal Highnesses",
+              "Your Excellencies",
+              "Her Worship"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.09",
+      "title": "Personifications and abstractions",
+      "content": {
+        "personifications": {
+          "title": "Vivid personifications",
+          "text": "Capitalize vivid personifications and metonymic nouns:",
+          "examples": [
+            "the march of Time",
+            "Fate's fool",
+            "the Chair (the person in charge of a meeting or assembly)",
+            "the Crown (the person or agency representing a king or queen)"
+          ]
+        },
+        "abstractions": {
+          "title": "Abstractions in ideal sense",
+          "text": "Abstractions are sometimes capitalized when used in an ideal sense. As general concepts, however, they are lower-cased:",
+          "capitalized": [
+            "We know that Justice is blind.",
+            "Beauty is truth, truth beauty—that is all / Ye know on earth, and all ye need to know. —John Keats"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.10",
+      "title": "Family appellations",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize family appellations only when the name of a person follows, when they are unmodified, or when they are used in direct address:",
+          "capitalized": [
+            "Grandmother Smith",
+            "Aunt Sarah",
+            "I met Mother at the theatre.",
+            "Tell me, Son, where you have been."
+          ],
+          "lowercase": [
+            "John's grandmother",
+            "This is my aunt, Sarah Vick."
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.11",
+      "title": "Races, languages and peoples",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize nouns and adjectives referring to race, tribe, nationality and language:",
+          "examples": [
+            "Caucasian",
+            "Indian",
+            "Inuk (plural: Inuit)",
+            "Francophone",
+            "Métis",
+            "Anglophone",
+            "Amerindian",
+            "Arabic",
+            "Cree",
+            "French"
+          ]
+        },
+        "allophoneRule": {
+          "text": "Do not capitalize the word allophone, which refers to a person whose first language is neither English nor French and which is used with specific reference to Quebec."
+        },
+        "wordVariations": {
+          "title": "Variable forms depending on meaning",
+          "text": "The form of some words may vary depending on the meaning:",
+          "examples": [
+            {
+              "capitalized": "Highlander (inhabitant of the Scottish Highlands)",
+              "lowercase": "highlander (inhabitant of any highland area)"
+            },
+            {
+              "capitalized": "Aborigine (one of the indigenous peoples of Australia)",
+              "lowercase": "aborigine (indigenous inhabitant of a region)"
+            },
+            {
+              "capitalized": "Pygmy (member of a group of African peoples)",
+              "lowercase": "pygmy (small in stature; insignificant)"
+            }
+          ]
+        },
+        "indigenousPeoples": {
+          "title": "Aboriginal peoples terminology",
+          "text": "Capitalize the singular and plural forms of the nouns Status Indian, Registered Indian, Non-Status Indian and Treaty Indian, as well as the terms Aboriginal, Native and Indigenous when they refer to Aboriginal people in Canada.",
+          "note": "The terms Aboriginals and Natives are not used as proper nouns. When Aboriginal, Indigenous and Native are used as adjectives, note the following noun forms:",
+          "examples": [
+            "Aboriginal person (one individual)",
+            "Aboriginal persons, Aboriginal people (more than one person)",
+            "Aboriginal peoples (two or more Aboriginal groups)",
+            "Representatives from three Aboriginal peoples were present.",
+            "Any Native person in Alberta is eligible under this program.",
+            "The conference could not have succeeded without the help of almost a thousand Indigenous people from all over Saskatchewan."
+          ],
+          "referenceNote": "For further information on the representation of Aboriginal (Native) peoples in written communications, see Chapter 14."
+        }
+      }
+    },
+    {
+      "id": "4.12",
+      "title": "School subjects, courses and degrees",
+      "content": {
+        "languagesRule": {
+          "text": "In keeping with 4.11 above, capitalize the names of languages. Do not capitalize the names of other disciplines when used in a general sense. Capitalize them when used to refer to school subjects or the names of particular courses:",
+          "examples": [
+            "This university requires French as a prerequisite.",
+            "She is interested in history.",
+            "He reads articles on economics and biology in his spare time."
+          ],
+          "but": [
+            "He passed with a 'B' in History this term.",
+            "She is taking Chemistry 101 and Economics 406."
+          ]
+        },
+        "degreesRule": {
+          "text": "Do not capitalize the name of a degree in general references, but do capitalize it when it follows a person's name and is written in full:",
+          "examples": [
+            "Janet is earning her master's degree",
+            "Ellen Compton, Doctor of Philosophy",
+            "He holds a Master of Arts degree from McGill University."
+          ]
+        },
+        "academicYears": {
+          "text": "Do not capitalize terms designating academic years:",
+          "examples": [
+            "She held two jobs during her senior year."
+          ]
+        },
+        "gradeRule": {
+          "text": "Capitalize grade when followed by a number or letter:",
+          "examples": [
+            "My daughter has completed Grade 6."
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.13",
+      "title": "Military terms",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the names and nicknames of military bases, forces and units of all sizes and of exercises:",
+          "examples": [
+            "the Canadian Forces",
+            "Mobile Command",
+            "Canadian Forces Base Trenton",
+            "450 Helicopter Squadron",
+            "Exercise Rapier Thrust",
+            "the Blue Berets"
+          ]
+        },
+        "dndNote": {
+          "title": "Note",
+          "text": "In Department of National Defence documents, the specific part of an exercise name is written entirely in upper case, e.g. Exercise SILENT DEFENDER."
+        },
+        "generalReferences": {
+          "text": "Use the lower case for general and informal references:",
+          "examples": [
+            "the Fifth Army"
+          ],
+          "but": [
+            "the army"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.14",
+      "title": "Modes of transportation",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the names of types of aircraft, the names of makes of cars and other modes of transportation, and the names of individual ships, locomotives, spacecraft, etc.:",
+          "examples": [
+            "the Cessna-7",
+            "a Boeing 747",
+            "HMCS Donnacona (italics for the name; roman type for the abbreviation)",
+            "the Bricklin",
+            "Mariner IV"
+          ]
+        },
+        "italicsReference": {
+          "text": "See 6.07 for further information about the italicization of such names."
+        }
+      }
+    },
+    {
+      "id": "4.15",
+      "title": "Medals, awards, honours and decorations",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the official names of professional, academic and military medals, awards, honours and decorations:",
+          "examples": [
+            "Distinguished Flying Cross",
+            "Order of Canada",
+            "Nobel Peace Prize",
+            "a Nobel Prize winner",
+            "Governor General's Award",
+            "Victoria Cross"
+          ]
+        },
+        "shortForms": {
+          "text": "Most common-noun short forms are lower-cased:",
+          "examples": [
+            "No award was given this year."
+          ],
+          "exception": "However, they may be capitalized if the reference is clear:",
+          "exceptionExample": "The Prize [Nobel Peace Prize, mentioned in a previous sentence] was her reward for a lifetime of effort."
+        }
+      }
+    },
+    {
+      "id": "4.16",
+      "title": "Sporting events and trophies",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the official and familiar names of major sporting events and trophies:",
+          "examples": [
+            "the Queen's Plate",
+            "the XXVI Olympiad; the Olympic Games",
+            "the Stanley Cup"
+          ]
+        },
+        "shortForms": {
+          "text": "Capitalize the short form in subsequent references:",
+          "examples": [
+            "The second Series game will be played today.",
+            "Her team won the Cup last year as well."
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.17",
+      "title": "Time references and historical periods and events",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the names of months and days, of holidays and holy days, of historical and geological periods and events, and of parliamentary sessions:",
+          "examples": [
+            "Wednesday",
+            "the Ice Age",
+            "October",
+            "the Second World War",
+            "Thanksgiving Day",
+            "World War II",
+            "Passover",
+            "the Middle Ages",
+            "Christmas",
+            "the Gulf War",
+            "April Fools' Day",
+            "the Pleistocene Epoch",
+            "The First Session of the Thirty-second Parliament"
+          ]
+        },
+        "seasonsAndCenturies": {
+          "text": "Do not capitalize the names of the seasons, centuries or decades unless they are personified or are part of special names:",
+          "lowercase": [
+            "spring",
+            "winter",
+            "the twentieth century",
+            "the fifties"
+          ],
+          "capitalized": [
+            "the Roaring Twenties (name of an era)",
+            "the Winter Palace"
+          ]
+        },
+        "religiousEvents": {
+          "text": "Capitalize the names of events recorded in sacred writings and of historical events with a strong religious dimension:",
+          "examples": [
+            "the Flood",
+            "the Reformation",
+            "the Exodus",
+            "the Great Schism",
+            "the Immaculate Conception",
+            "the Hegira",
+            "the Crucifixion",
+            "the Diet of Worms",
+            "the Crusades",
+            "the Second Vatican Council"
+          ]
+        },
+        "specificVsGeneral": {
+          "text": "Terms that refer to events and periods are often capitalized when they refer to specific events or periods and lower-cased when used in a general sense:",
+          "examples": [
+            {
+              "specific": "the Ice Age",
+              "general": "the most recent ice age"
+            },
+            {
+              "specific": "the First World War",
+              "general": "the two world wars"
+            },
+            {
+              "specific": "the Quiet Revolution",
+              "general": "She started a revolution."
+            },
+            {
+              "specific": "the Crusades",
+              "general": "a crusade against poverty"
+            },
+            {
+              "specific": "Stone Age hunting implements",
+              "general": "He uses stone-age management techniques."
+            }
+          ]
+        },
+        "timeZonesReference": {
+          "text": "For the use of capitals with time zones, see 1.22."
+        }
+      }
+    },
+    {
+      "id": "4.18",
+      "title": "Cultural periods, movements and styles",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize nouns and adjectives designating literary, philosophical, musical, religious and artistic periods, movements and styles when they are derived from proper nouns:",
+          "examples": [
+            "Aristotelian logic",
+            "Romanesque architecture",
+            "Cartesian dualism",
+            "Arianism",
+            "the Bauhaus",
+            "Methodism",
+            "Gregorian chant",
+            "Hasidism"
+          ]
+        },
+        "lowercaseRule": {
+          "text": "Otherwise, such terms are lower-cased except when it is necessary to distinguish a style or movement from the same word used in its general sense:",
+          "lowercase": [
+            "cubism",
+            "existentialism",
+            "humanism",
+            "rococo"
+          ],
+          "capitalized": [
+            "the New Criticism",
+            "the Group of Seven",
+            "the Enlightenment",
+            "Scholasticism"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.19",
+      "title": "Terms related to religion",
+      "content": {
+        "generalPrinciple": {
+          "text": "The same principles apply to religious terms as to general vocabulary. Writers should resist the temptation to overcapitalize."
+        },
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Religious adjectives and verbs",
+            "text": "Capitalize most adjectives and verbs derived from the names of organized religions:",
+            "capitalized": [
+              "Anglican",
+              "Roman Catholic",
+              "Shiite",
+              "Greek Orthodox",
+              "Christianize",
+              "Free Methodist"
+            ],
+            "lowercase": [
+              "baptize",
+              "baptism",
+              "christen"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Holy and revered persons",
+            "text": "Capitalize the names and titles of holy and revered persons:",
+            "examples": [
+              "The Blessed Virgin",
+              "Saint Jerome",
+              "Our Lady of Sorrows",
+              "Maimonides",
+              "Mother Superior",
+              "Buddha"
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Theological concepts",
+            "text": "Capitalize unique theological concepts:",
+            "examples": [
+              "the Fall",
+              "the Flood",
+              "Original Sin",
+              "the Second Coming",
+              "the Nativity",
+              "the Chosen People",
+              "the Holy Grail",
+              "the Holy of Holies"
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Non-religious sense",
+            "text": "Do not capitalize derived terms that are not used in a religious sense:",
+            "examples": [
+              "She is very catholic in her literary tastes.",
+              "His ideas are quite orthodox."
+            ]
+          },
+          {
+            "letter": "e",
+            "title": "Religious writings and documents",
+            "text": "Capitalize the titles of religious writings and documents, special prayers and devotional canticles, creeds and confessions:",
+            "examples": [
+              "the Bible",
+              "Deuteronomy",
+              "the Torah",
+              "the Apocrypha",
+              "the Koran",
+              "the Ten Commandments",
+              "the Vulgate",
+              "the Talmud"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.20",
+      "title": "Deities",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Names of deities",
+            "text": "Capitalize names, synonyms and personifications of deities and other supernatural beings:",
+            "examples": [
+              "God",
+              "Siva",
+              "the Creator",
+              "Minerva",
+              "the Almighty",
+              "Moloch",
+              "Mother Nature",
+              "Allah",
+              "Jehovah",
+              "Manitou"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Common noun usage",
+            "text": "Do not capitalize such words used as common nouns:",
+            "examples": [
+              "The child was an angel.",
+              "The adoring public regarded the film star as a god."
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Derivatives",
+            "text": "Derivatives of these terms are normally lower-cased, as are similar terms used metaphorically:",
+            "examples": [
+              "christen",
+              "messianic",
+              "a saviour"
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Pronouns referring to deities",
+            "text": "Capitalize personal pronouns that refer to deities when they are used as proper nouns, but do not capitalize relative pronouns:",
+            "examples": [
+              "Trust in Him whose strength will uphold you."
+            ]
+          },
+          {
+            "letter": "e",
+            "title": "Pagan deities",
+            "text": "Do not capitalize the words god and goddess when they refer to pagan deities, but capitalize the names of the deities themselves (Baal, Woden, Zeus)."
+          },
+          {
+            "letter": "f",
+            "title": "Heaven, hell, etc.",
+            "text": "Do not capitalize words such as heaven, paradise, purgatory, nirvana, happy hunting ground, devil and angel when used in a non-religious sense:",
+            "lowercase": [
+              "After his wife died he went through purgatory.",
+              "War is hell."
+            ],
+            "capitalized": [
+              "God is in Heaven.",
+              "Many Buddhists seek to attain Nirvana."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.21",
+      "title": "Geographical terms",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Official geographical names",
+            "text": "Capitalize the names of countries, regions, counties, cities and other official and specified political, administrative and geographical divisions and topographical features:",
+            "examples": [
+              "El Salvador",
+              "the Grassy Narrows Reserve",
+              "the Northern Hemisphere",
+              "the Pacific",
+              "the International Boundary",
+              "Lanark County",
+              "the Prairies",
+              "Sherbrooke",
+              "the Canadian Shield",
+              "Pickle Lake",
+              "the Maritimes",
+              "Elm Street West",
+              "the Atlantic provinces",
+              "the Okanagan Valley",
+              "the Ontario Region (sector of the government department)",
+              "the South Saskatchewan River",
+              "the Crow's Nest Pass",
+              "the Northwest Territories"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Generic terms as short forms",
+            "text": "Capitalize a generic term when it is an accepted short form of the proper noun:",
+            "examples": [
+              "the Continent",
+              "the States"
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Generic terms in general sense",
+            "text": "Do not capitalize a generic term such as city, county, state or province when it precedes the proper noun or stands alone, unless it is used in a corporate sense:",
+            "lowercase": [
+              "She lives in the city of Regina. (place)",
+              "I have travelled all over the province of Ontario. (place)",
+              "The states of Switzerland are called cantons.",
+              "the newly created state of Palestine"
+            ],
+            "capitalized": [
+              "Buy Province of Ontario bonds. (provincial government)",
+              "The City of Regina took him to court. (municipal government)",
+              "The State of New York has revamped its social assistance programs. (state government)"
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "Plural generic terms",
+            "text": "Do not capitalize a generic term used in the plural unless it is part of a geographical name:",
+            "lowercase": [
+              "lakes Huron and Ontario",
+              "the Thompson and Fraser rivers"
+            ],
+            "capitalized": [
+              "the Rocky Mountains",
+              "the South Seas"
+            ]
+          },
+          {
+            "letter": "e",
+            "title": "Compass points",
+            "text": "In general, do not capitalize the names of compass points or similar descriptive terms unless they have taken on political or other connotations or form the titles of administrative regions:",
+            "lowercase": [
+              "northern New Brunswick",
+              "the west of Saskatchewan"
+            ],
+            "capitalized": [
+              "the West",
+              "Western values",
+              "the Far North",
+              "the Eastern Townships",
+              "Northern Ireland"
+            ]
+          },
+          {
+            "letter": "f",
+            "title": "Variable terms",
+            "text": "Some terms are capitalized when they refer to specific regions and lower-cased when used descriptively:",
+            "examples": [
+              "the East Coast but the east coast of Nova Scotia",
+              "Arctic Ocean but arctic conditions"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.22",
+      "title": "Buildings, monuments and public places",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the official names of specific buildings, monuments, squares, parks, etc.:",
+          "examples": [
+            "the National Gallery",
+            "Robson Square",
+            "the Peace Bridge",
+            "the O'Keefe Centre",
+            "the Plains of Abraham",
+            "the Brock Monument",
+            "the Toronto Public Library",
+            "St. Andrew's Church",
+            "the Vancouver International Airport",
+            "the Temple of Cheops"
+          ]
+        },
+        "genericUse": {
+          "text": "Do not capitalize words describing these features when they are used generically, in names that are not official, or in plural forms:",
+          "examples": [
+            "the city's war memorial",
+            "the international bridge",
+            "an Anglican church",
+            "an Egyptian temple",
+            "Yonge and Bay streets",
+            "the Vancouver airport"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.23",
+      "title": "Astronomical terms",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the names of planets and other astronomical bodies and configurations. Capitalize earth, sun and moon only when they are mentioned in relation to other planets or heavenly bodies:",
+          "examples": [
+            "Venus",
+            "the Great Bear",
+            "The sun shines brightly.",
+            "Mercury is closer than the Earth to the Sun."
+          ]
+        },
+        "genericParts": {
+          "text": "Do not capitalize generic words forming part of the name of a celestial object:",
+          "examples": [
+            "Halley's comet",
+            "the rings of Saturn"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.24",
+      "title": "Biological terms",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize the scientific name of a phylum, order, class, family or genus, but not common names or the epithets referring to a species or subspecies, even if they are derived from proper names:",
+          "examples": [
+            "the phylum Arthropoda",
+            "the order Rosales",
+            "the genus Sporotrichum",
+            "the species Sporotrichum schenkii (second word denotes species)",
+            "The jaguar and the lion are members of the family Felidae."
+          ]
+        },
+        "properNounsInCommonNames": {
+          "text": "Capitalize proper nouns modifying a common name, except where usage has established the lower case:",
+          "capitalized": [
+            "Grayson lily",
+            "Cupid's-delight",
+            "Queen Anne's lace",
+            "Judas tree",
+            "Canada goose",
+            "Dutch elm"
+          ],
+          "lowercase": [
+            "malpeque oyster",
+            "timothy grass"
+          ]
+        },
+        "reference": {
+          "text": "See 6.11 for rules governing the italicization of biological classifications."
+        }
+      }
+    },
+    {
+      "id": "4.25",
+      "title": "Chemical, medical and pharmacological terms",
+      "content": {
+        "chemicalElements": {
+          "title": "Chemical elements and compounds",
+          "text": "In text, do not capitalize the names of chemical elements and compounds:",
+          "examples": [
+            "krypton",
+            "sodium bicarbonate",
+            "hydrogen peroxide"
+          ]
+        },
+        "chemicalSymbols": {
+          "title": "Chemical symbols",
+          "text": "The capitalization of chemical symbols should follow standard practice:",
+          "examples": [
+            "H2O",
+            "NaHCO3"
+          ]
+        },
+        "medicalConditions": {
+          "title": "Medical conditions and syndromes",
+          "text": "Do not capitalize the names of conditions, syndromes and the like, but capitalize a personal name that forms part of such a term:",
+          "lowercase": [
+            "diabetes insipidus"
+          ],
+          "capitalized": [
+            "Down syndrome",
+            "Huntington's chorea"
+          ]
+        },
+        "infectiousOrganisms": {
+          "title": "Infectious organisms",
+          "text": "Capitalize the names of infectious organisms but not the names of conditions based upon such names:",
+          "examples": [
+            "People attacked by Salmonella are likely to suffer from salmonellosis."
+          ]
+        },
+        "drugNames": {
+          "title": "Generic drug names",
+          "text": "Do not capitalize the generic names of drugs:",
+          "examples": [
+            "phenobarbital",
+            "sulfasalazine"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.26",
+      "title": "Scientific names with eponyms",
+      "content": {
+        "mainRule": {
+          "text": "In scientific terms composed of a common noun preceded by a proper noun, an adjective derived from a proper noun, or a proper noun with an apostrophe s, capitalize the adjective or proper noun but not the common noun. Do not capitalize the names of laws or theories or the names of minerals, particles or elements derived from personal names:",
+          "capitalized": [
+            "Hodgkin's disease",
+            "Reiter's syndrome",
+            "Bohr radius",
+            "Becquerel rays",
+            "Gaussian curve",
+            "Ohm's law"
+          ],
+          "lowercase": [
+            "the general theory of relativity",
+            "the second law of thermodynamics",
+            "forsterite",
+            "boson",
+            "germanium"
+          ]
+        },
+        "specialCase": {
+          "text": "Note that certain personal names begin with a small letter:",
+          "examples": [
+            "van't Hoff equation",
+            "van Willebrand disease"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.27",
+      "title": "Copyrighted names",
+      "content": {
+        "tradeNames": {
+          "title": "Trade names",
+          "text": "Capitalize trade names of drugs and any other manufactured products unless they have become established as common nouns:",
+          "capitalized": [
+            "Plexiglas",
+            "Tylenol",
+            "Valium",
+            "Prozac"
+          ],
+          "lowercase": [
+            "styrofoam",
+            "nylon"
+          ]
+        },
+        "referenceNote": {
+          "text": "To determine proper usage, check the Canadian Drug Index or your dictionary."
+        },
+        "highTechProducts": {
+          "title": "High-technology products",
+          "text": "Some industries, especially in the high-technology field, use capital letters within the name of a product. The names of all such terms and products, including those of computer languages, should be capitalized according to the manufacturer's preference:",
+          "examples": [
+            "WordPerfect",
+            "VisiCalc",
+            "Pascal",
+            "COBOL",
+            "BASIC"
+          ]
+        },
+        "genericUsage": {
+          "title": "Generic usage of trade names",
+          "text": "Wherever possible, do not use trade names as generic nouns or adjectives. For example, write adhesive tape, not Scotch tape. Some words, such as frisbee and realtor, are commonly used as generic terms, but they are in fact copyrighted. The word Aspirin is trademarked (and capitalized) in Canada, but not in the United States."
+        }
+      }
+    },
+    {
+      "id": "4.28",
+      "title": "SI/metric units",
+      "content": {
+        "mainRule": {
+          "text": "Capitalize only the word Celsius when writing the names of SI/metric units in full. When using symbols, capitalize all those based on personal names and the letter L for litre:",
+          "examples": [
+            "30 m (metres)",
+            "475 g (grams)",
+            "12 V (volts)",
+            "30 L (litres)",
+            "mg (milligram)",
+            "pm (picometre)",
+            "Mg (megagram)",
+            "Pm (petametre)"
+          ]
+        },
+        "prefixes": {
+          "text": "Capitalize the symbols for the prefixes from mega to exa. The symbols for the others remain in lower case. Consistency is important here because the letters m and p are both used in symbols for two different prefixes."
+        },
+        "reference": {
+          "text": "See also 1.23."
+        }
+      }
+    },
+    {
+      "id": "4.29",
+      "title": "Publications and works of art",
+      "content": {
+        "mainRule": {
+          "title": "Capitalization in titles",
+          "text": "In English titles of books, articles, periodicals, newspapers, plays, operas and long musical compositions and recordings, poems, paintings, sculptures and motion pictures, capitalize all words except articles, conjunctions of fewer than four letters, and prepositions of fewer than four letters. These exceptions are also capitalized when they immediately follow a period, colon or dash within a title and when they are the first or last word in a title:",
+          "examples": [
+            "Virginia Woolf: A Biography (book)",
+            "Under the Volcano (book)",
+            "To Kill a Mockingbird (book)",
+            "How to Succeed in Business Without Really Trying (book)",
+            "Rain in the North Country (painting)",
+            "Goin' Down the Road (film)",
+            "The Magic Flute (opera)"
+          ]
+        },
+        "prepositionsAsOtherParts": {
+          "text": "Words that are normally prepositions are capitalized when they help form another part of speech:",
+          "examples": [
+            "Getting By While Getting On",
+            "Guide to On-Reserve Housing"
+          ]
+        },
+        "shortTitles": {
+          "title": "Short titles",
+          "text": "In short titles, capitalize words that would be capitalized in full titles:",
+          "examples": [
+            "Appleton's General Guide to the United States and Canada, Illustrated With Railway Maps, Plans of Cities, and Table of Railway and Steamboat Fares, for the Year 1891 (full title)",
+            "Appleton's Guide for 1891 (short form)",
+            "I read about it in the News."
+          ]
+        },
+        "originalTypography": {
+          "text": "Even if some words appear in all capital letters on the title page, capitalize only initial letters, except in specialized bibliographies that must reflect the original typography."
+        },
+        "ancientManuscripts": {
+          "title": "Ancient manuscripts",
+          "text": "Titles of ancient manuscripts are capitalized, even if the titles were assigned in modern times:",
+          "examples": [
+            "the Dead Sea Scrolls",
+            "Codex Alexandrinus"
+          ]
+        },
+        "frenchTitles": {
+          "text": "See the Appendix for capitalization of titles in French."
+        },
+        "hyphenatedCompounds": {
+          "title": "Hyphenated compounds in titles",
+          "text": "In titles containing hyphenated compounds, always capitalize the first element. Capitalize the second element if it is a proper noun or proper adjective or if it is as important as the first element:",
+          "examples": [
+            "A History of Eighteenth-Century Literature",
+            "Anti-Americanism in Latin America"
+          ]
+        }
+      }
+    },
+    {
+      "id": "4.30",
+      "title": "Parts of a book or document",
+      "content": {
+        "rules": [
+          {
+            "letter": "a",
+            "title": "Major divisions",
+            "text": "Capitalize references to specific parts of a document. These include certain common nouns in the singular when they are used in text references with numbers or letters indicating place, position or major division in a sequence. Capitalize a letter following such a term:",
+            "examples": [
+              "Act II",
+              "Figure 7",
+              "Appendix B",
+              "Plate 4",
+              "Chapter 3",
+              "Scene iii",
+              "Chart 2",
+              "Table 3",
+              "Corollary 1",
+              "Theorem 3",
+              "Exhibit A",
+              "Volume 13"
+            ]
+          },
+          {
+            "letter": "b",
+            "title": "Minor subdivisions",
+            "text": "Do not capitalize minor subdivisions such as page, note, line, paragraph and verse:",
+            "examples": [
+              "See page 6, line 48."
+            ]
+          },
+          {
+            "letter": "c",
+            "title": "Sections in laws",
+            "text": "Do not capitalize section when used for part of a law or set of regulations, but capitalize it if it refers to a large subdivision of a report, book or other document:",
+            "lowercase": [
+              "under section 23 of the Act"
+            ],
+            "capitalized": [
+              "Volume 10, Section 5"
+            ]
+          },
+          {
+            "letter": "d",
+            "title": "General references",
+            "text": "Do not capitalize words referring to parts of a book when they are used in a general sense, are preceded by modifiers, or are in plural forms:",
+            "examples": [
+              "The theory will be discussed in the next chapter.",
+              "The appendixes outline other migration patterns.",
+              "Even Miller's extensive bibliography is not complete."
+            ]
+          },
+          {
+            "letter": "e",
+            "title": "Cross-references",
+            "text": "Capitalize cross-references within a book when they refer to a particular section:",
+            "examples": [
+              "Further readings are listed in the Bibliography.",
+              "See the Appendix for urban statistics."
+            ]
+          },
+          {
+            "letter": "f",
+            "title": "Informal references",
+            "text": "Informal references to chapter and topic titles may be capitalized and written without italics or quotation marks:",
+            "examples": [
+              "His topics included Northern Travel, Survival on the Road, and Basic Maintenance."
+            ]
+          }
+        ],
+        "reference": {
+          "text": "See also 1.12."
+        }
+      }
+    }
+  ]
+}
