@@ -162,9 +162,108 @@ export function buildRules(content) {
                     html += `<p class="exception"><strong>Exception:</strong> ${rule.exception}</p>`;
                 }
                 
+                // Adjectival use (from old code)
+                if (rule.adjectivalUse && typeof rule.adjectivalUse === 'object') {
+                    html += `
+                        <div class="adjectival-use">
+                            <p>${rule.adjectivalUse.text}</p>
+                            ${rule.adjectivalUse.examples && Array.isArray(rule.adjectivalUse.examples) ? `
+                                <ul>
+                                    ${rule.adjectivalUse.examples.map(ex => `<li>${ex}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                        </div>
+                    `;
+                }
+                
+                // Title examples
+                if (rule.titleExamples && Array.isArray(rule.titleExamples)) {
+                    html += `<ul>`;
+                    rule.titleExamples.forEach(ex => {
+                        html += `<li>${ex}</li>`;
+                    });
+                    html += `</ul>`;
+                }
+                
                 html += `</div>`;
             });
         }
+    }
+    
+    return html;
+}
+
+// Additional handlers that were missing
+export function buildMiscContent(content) {
+    let html = '';
+    
+    // Additional notes
+    if (content.additionalNotes && Array.isArray(content.additionalNotes)) {
+        html += `<ul>`;
+        content.additionalNotes.forEach(note => {
+            html += `<li>${note}</li>`;
+        });
+        html += `</ul>`;
+    }
+    
+    // Order of Precedence
+    if (content.orderOfPrecedence) {
+        html += `
+            <div class="info-box">
+                <h4>${content.orderOfPrecedence.title || 'Order of Precedence'}</h4>
+                <p>${content.orderOfPrecedence.content || ''}</p>
+                ${content.orderOfPrecedence.order && Array.isArray(content.orderOfPrecedence.order) ? `
+                    <ul>
+                        ${content.orderOfPrecedence.order.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                ` : ''}
+            </div>
+        `;
+    }
+    
+    // Simple arrays
+    const simpleArrayFields = [
+        'titles', 'ranks', 'degrees', 'provinces', 'monthAbbreviations', 'timeZones',
+        'commonUnits', 'commonAbbreviations', 'capitalizationRules', 
+        'exceptions', 'criticalRules', 'additionalUnits', 'incorrectAbbreviations', 'spacingRules'
+    ];
+    
+    simpleArrayFields.forEach(field => {
+        if (content[field] && Array.isArray(content[field])) {
+            html += `<ul>`;
+            content[field].forEach(item => {
+                const itemText = typeof item === 'object' ? (item.text || JSON.stringify(item)) : item;
+                html += `<li>${itemText}</li>`;
+            });
+            html += `</ul>`;
+        }
+    });
+    
+    // Reference note (complex)
+    if (content.referenceNote) {
+        if (typeof content.referenceNote === 'string') {
+            html += `<p class="note"><strong>Reference:</strong> ${content.referenceNote}</p>`;
+        } else if (typeof content.referenceNote === 'object' && content.referenceNote.text) {
+            html += `<p class="note"><strong>Reference:</strong> ${content.referenceNote.text}</p>`;
+        }
+    }
+    
+    // Special Rule
+    if (content.specialRule) {
+        html += `
+            <div class="key-principle">
+                <h4>${content.specialRule.title || 'Special Rule'}</h4>
+                <p>${content.specialRule.content || ''}</p>
+                ${content.specialRule.examples && Array.isArray(content.specialRule.examples) ? `
+                    <ul>
+                        ${content.specialRule.examples.map(ex => {
+                            const exText = typeof ex === 'object' ? (ex.text || String(ex)) : ex;
+                            return `<li>${exText}</li>`;
+                        }).join('')}
+                    </ul>
+                ` : ''}
+            </div>
+        `;
     }
     
     return html;
