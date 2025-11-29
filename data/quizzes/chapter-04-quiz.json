@@ -1,0 +1,403 @@
+{
+  "chapterId": 4,
+  "title": "Capitalization",
+  "description": "Test your knowledge of proper capitalization rules in Canadian English",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "section": "4.01",
+      "type": "single",
+      "question": "What are the three basic uses of capital letters in English?",
+      "options": [
+        "Emphasis, proper nouns, and headings",
+        "Titles, names, and addresses",
+        "Beginning of sentences, people's names, and place names",
+        "Official documents, legal writing, and technical writing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Capital letters have three basic uses: (1) to give emphasis, as in official titles and initial words; (2) to distinguish proper nouns and adjectives from common ones; and (3) to highlight words in headings and captions."
+    },
+    {
+      "id": 2,
+      "section": "4.02",
+      "type": "multiple",
+      "question": "Which of the following should be capitalized? (Select all that apply)",
+      "options": [
+        "The first word of a sentence",
+        "The first word of a direct quotation that is itself a complete sentence",
+        "The first word after a colon if it introduces a complete sentence",
+        "Every word after a quotation mark"
+      ],
+      "correctAnswer": [0, 1],
+      "explanation": "Capitalize the first word of a sentence and the first word of a direct quotation that is itself a complete sentence. Do not capitalize the first word after a colon unless it introduces more than one sentence or a formal statement. Not every word after a quotation mark is capitalized."
+    },
+    {
+      "id": 3,
+      "section": "4.03",
+      "type": "single",
+      "question": "How should nicknames and epithets be capitalized?",
+      "options": [
+        "Never capitalize nicknames",
+        "Capitalize nicknames when they replace the person's name",
+        "Always use quotation marks instead of capitals",
+        "Only capitalize if the person is famous"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize a nickname or epithet replacing a person's name, or a nickname or by-name used with the name: Alexander the Great, Ivan the Terrible."
+    },
+    {
+      "id": 4,
+      "section": "4.04",
+      "type": "true-false",
+      "question": "Proper adjectives derived from proper nouns are always capitalized.",
+      "options": ["True", "False"],
+      "correctAnswer": 1,
+      "explanation": "False. Most words derived from proper nouns are capitalized (Canadian values, Shakespearean), but some have lost their association and are lower-cased (brussels sprouts, french fries, scotch whisky)."
+    },
+    {
+      "id": 5,
+      "section": "4.05",
+      "type": "single",
+      "question": "Which is the correct capitalization for a government department?",
+      "options": [
+        "the department of health",
+        "The Department Of Health",
+        "the Department of Health (full name), the department (short form)",
+        "The department of Health"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize the full name of a government department or agency, but lower-case short forms: the Department of Health, but: the department issued new guidelines."
+    },
+    {
+      "id": 6,
+      "section": "4.06",
+      "type": "multiple",
+      "question": "Which institutional names are correctly capitalized? (Select all that apply)",
+      "options": [
+        "the United Nations",
+        "The University (as a short form)",
+        "the Roman Catholic Church",
+        "The Liberal Party of Canada"
+      ],
+      "correctAnswer": [0, 2, 3],
+      "explanation": "Capitalize the full, official names of institutions and organizations. However, generic short forms like 'the university' or 'the church' are lower-cased unless they form part of an official title."
+    },
+    {
+      "id": 7,
+      "section": "4.07",
+      "type": "single",
+      "question": "How should political movements be capitalized?",
+      "options": [
+        "Always capitalize all political movements",
+        "Never capitalize political movements",
+        "Capitalize only when part of an official party name",
+        "Capitalize only communist and socialist movements"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize political parties but not movements or ideologies unless they form part of the official party name: the New Democratic Party, but: democratic socialism, communism."
+    },
+    {
+      "id": 8,
+      "section": "4.08",
+      "type": "single",
+      "question": "When should a job title be capitalized?",
+      "options": [
+        "Always capitalize all job titles",
+        "Only when it directly precedes the person's name",
+        "When it directly precedes the name or is used in direct address",
+        "Never capitalize job titles"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize a title of office or rank when it directly precedes a personal name or is used in direct address: Prime Minister Trudeau, but: Justin Trudeau, the prime minister."
+    },
+    {
+      "id": 9,
+      "section": "4.08",
+      "type": "true-false",
+      "question": "Former titles retain capitalization: 'Former President Obama spoke at the event.'",
+      "options": ["True", "False"],
+      "correctAnswer": 1,
+      "explanation": "False. Do not capitalize former titles: former president Barack Obama, not Former President Obama."
+    },
+    {
+      "id": 10,
+      "section": "4.09",
+      "type": "single",
+      "question": "Which sentence correctly capitalizes a personification?",
+      "options": [
+        "We must stop time from running out.",
+        "We must stop Time from running out.",
+        "justice is blind",
+        "The crown is made of gold."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize vivid personifications: 'the march of Time,' 'Fate's fool.' Also capitalize metonymic nouns like 'the Crown' (representing the monarchy)."
+    },
+    {
+      "id": 11,
+      "section": "4.10",
+      "type": "multiple",
+      "question": "Which family appellations are correctly capitalized? (Select all that apply)",
+      "options": [
+        "I saw Mother at the store.",
+        "I saw my mother at the store.",
+        "Grandmother Smith is visiting.",
+        "My grandmother is visiting."
+      ],
+      "correctAnswer": [0, 2],
+      "explanation": "Capitalize family appellations when unmodified (Mother, not my mother), when followed by a name (Grandmother Smith), or in direct address (Hello, Father)."
+    },
+    {
+      "id": 12,
+      "section": "4.11",
+      "type": "single",
+      "question": "How should racial, linguistic, and national groups be capitalized?",
+      "options": [
+        "Capitalize all terms for races and nationalities",
+        "Never capitalize racial terms",
+        "Capitalize only European groups",
+        "Capitalize national groups but not racial terms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Capitalize names of races, languages, and peoples: English, French, Inuk, Indigenous peoples, Asian. Also capitalize Black when referring to people of African descent."
+    },
+    {
+      "id": 13,
+      "section": "4.12",
+      "type": "single",
+      "question": "Which is correct for school subjects?",
+      "options": [
+        "I'm studying History and mathematics.",
+        "I'm studying history and Mathematics.",
+        "I'm studying history and mathematics.",
+        "I'm studying History and Mathematics."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Do not capitalize the names of school subjects except for languages and course titles: She studies history, French, and biology, but: She's taking History 101."
+    },
+    {
+      "id": 14,
+      "section": "4.13",
+      "type": "true-false",
+      "question": "Military ranks should always be capitalized, even when used generically.",
+      "options": ["True", "False"],
+      "correctAnswer": 1,
+      "explanation": "False. Capitalize military ranks only when they precede a name or are used in direct address: General Smith, but: the general arrived."
+    },
+    {
+      "id": 15,
+      "section": "4.14",
+      "type": "single",
+      "question": "How should ship and aircraft names be written?",
+      "options": [
+        "HMCS Ville de Québec (in italics)",
+        "HMCS Ville de Québec (no italics)",
+        "HMS ville de québec",
+        "hmcs Ville de Québec"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Capitalize and italicize the names of specific ships, aircraft, and spacecraft: HMCS Ville de Québec, Air Force One. Do not italicize abbreviations like HMCS."
+    },
+    {
+      "id": 16,
+      "section": "4.15",
+      "type": "single",
+      "question": "Which is the correct capitalization for awards?",
+      "options": [
+        "nobel prize in physics",
+        "Nobel prize in Physics",
+        "Nobel Prize in Physics",
+        "Nobel Prize In Physics"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize the names of medals, awards, honours, and decorations: Nobel Prize in Physics, Order of Canada, Victoria Cross."
+    },
+    {
+      "id": 17,
+      "section": "4.17",
+      "type": "multiple",
+      "question": "Which time references should be capitalized? (Select all that apply)",
+      "options": [
+        "The Middle Ages",
+        "the twentieth century",
+        "the Roaring Twenties",
+        "Monday, January 15"
+      ],
+      "correctAnswer": [0, 2, 3],
+      "explanation": "Capitalize historical periods (the Middle Ages), named decades (the Roaring Twenties), and days/months (Monday, January). Do not capitalize centuries (the twentieth century) or seasons (spring, summer)."
+    },
+    {
+      "id": 18,
+      "section": "4.18",
+      "type": "single",
+      "question": "How should cultural movements be capitalized?",
+      "options": [
+        "the renaissance period",
+        "The Renaissance Period",
+        "the Renaissance",
+        "The renaissance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize names of cultural, intellectual, and philosophical movements: the Renaissance, the Enlightenment, Romanticism."
+    },
+    {
+      "id": 19,
+      "section": "4.19",
+      "type": "multiple",
+      "question": "Which religious terms are correctly capitalized? (Select all that apply)",
+      "options": [
+        "the Bible",
+        "biblical times",
+        "the Koran",
+        "God's Creation"
+      ],
+      "correctAnswer": [0, 2, 3],
+      "explanation": "Capitalize sacred books (the Bible, the Koran), terms for the deity (God), and nouns or pronouns referring to the deity. The adjective 'biblical' is lower-cased."
+    },
+    {
+      "id": 20,
+      "section": "4.20",
+      "type": "single",
+      "question": "How should the word 'god' be capitalized when referring to deities?",
+      "options": [
+        "Always capitalize God",
+        "Capitalize God (monotheistic), but not gods (polytheistic)",
+        "Never capitalize god",
+        "Only capitalize in the Bible"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize God when referring to the deity in monotheistic religions, but lower-case when referring to pagan deities: the ancient Greeks worshipped many gods."
+    },
+    {
+      "id": 21,
+      "section": "4.21",
+      "type": "single",
+      "question": "Which geographical term is correctly written?",
+      "options": [
+        "Northern new brunswick",
+        "northern New Brunswick",
+        "the East coast of Nova Scotia",
+        "the west"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize official place names (New Brunswick) but not compass points used descriptively (northern). However, capitalize compass points when they have political connotations: the West, the Far North."
+    },
+    {
+      "id": 22,
+      "section": "4.22",
+      "type": "true-false",
+      "question": "The names of buildings and monuments should always be capitalized when used in plural.",
+      "options": ["True", "False"],
+      "correctAnswer": 1,
+      "explanation": "False. Do not capitalize when used in plural or generically: the National Gallery, but: national galleries; St. Andrew's Church, but: an Anglican church."
+    },
+    {
+      "id": 23,
+      "section": "4.23",
+      "type": "single",
+      "question": "When should 'earth,' 'sun,' and 'moon' be capitalized?",
+      "options": [
+        "Always capitalize these astronomical bodies",
+        "Never capitalize them",
+        "Only when mentioned in relation to other planets",
+        "Only in scientific writing"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize earth, sun, and moon only when mentioned in relation to other planets: 'The sun shines brightly' but 'Mercury is closer than the Earth to the Sun.'"
+    },
+    {
+      "id": 24,
+      "section": "4.24",
+      "type": "single",
+      "question": "In biological classifications, which should be capitalized?",
+      "options": [
+        "Both genus and species names",
+        "Only the genus name",
+        "Only the species name",
+        "Neither should be capitalized"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize the genus but not the species: Sporotrichum schenkii. Capitalize phylum, order, class, and family names as well."
+    },
+    {
+      "id": 25,
+      "section": "4.25",
+      "type": "multiple",
+      "question": "Which chemical and medical terms are correctly written? (Select all that apply)",
+      "options": [
+        "sodium bicarbonate",
+        "Huntington's chorea",
+        "Phenobarbital",
+        "H2O"
+      ],
+      "correctAnswer": [0, 1, 3],
+      "explanation": "Do not capitalize chemical elements (sodium bicarbonate) or generic drug names (phenobarbital). Capitalize personal names in medical conditions (Huntington's chorea). Chemical symbols follow standard practice (H2O)."
+    },
+    {
+      "id": 26,
+      "section": "4.29",
+      "type": "single",
+      "question": "How should book titles be capitalized?",
+      "options": [
+        "Capitalize all words",
+        "Capitalize only the first word",
+        "Capitalize major words but not articles, conjunctions, or short prepositions",
+        "Use all capital letters"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Capitalize the first and last words and all major words in titles. Lower-case articles (a, an, the), coordinating conjunctions, and prepositions of three or fewer letters: The Canadian Style."
+    },
+    {
+      "id": 27,
+      "section": "4.30",
+      "type": "single",
+      "question": "Which reference to a book part is correct?",
+      "options": [
+        "see chapter 3, page 45",
+        "see Chapter 3, page 45",
+        "see Chapter 3, Page 45",
+        "See chapter 3, page 45"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize specific references to major divisions (Chapter 3, Appendix B, Table 4) but not minor subdivisions (page 45, line 12, note 6)."
+    },
+    {
+      "id": 28,
+      "section": "4.32",
+      "type": "true-false",
+      "question": "Terms indicating time or numbered sequence should be capitalized when followed by numbers: 'Day 15,' 'Highway 401.'",
+      "options": ["True", "False"],
+      "correctAnswer": 0,
+      "explanation": "True. Capitalize common singular nouns followed by a date, number, or letter to denote time or sequence: Day 15, Highway 401, Room 234, Flight 204."
+    },
+    {
+      "id": 29,
+      "section": "4.34",
+      "type": "single",
+      "question": "In legal writing, how should acts and legislation be referenced?",
+      "options": [
+        "Always capitalize short forms of acts",
+        "Capitalize full names; lower-case short forms used generically",
+        "Never capitalize legal terms",
+        "Capitalize everything in legal writing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capitalize the full official name (the Financial Administration Act) but lower-case short forms used in a general sense: 'Parliament discussed the new white papers before it adjourned.'"
+    },
+    {
+      "id": 30,
+      "section": "4.36",
+      "type": "single",
+      "question": "In hyphenated compounds, how should proper nouns be treated?",
+      "options": [
+        "Lower-case all elements in compounds",
+        "Capitalize both elements always",
+        "The proper noun retains its capital",
+        "Capitalize only the first element"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A proper noun or adjective in a hyphenated compound retains the capital: Greco-Roman, neo-Nazi, trans-Canada, Pan-American."
+    }
+  ]
+}
