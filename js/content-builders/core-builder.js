@@ -221,43 +221,11 @@ export function buildMiscContent(content) {
         `;
     }
     
-    // Symbols Table (Section 1.25) - THIS IS THE NEW HANDLER!
-    if (content.symbols && Array.isArray(content.symbols)) {
-        html += `
-            <div class="symbols-table-section">
-                <table class="symbols-table">
-                    <thead>
-                        <tr>
-                            <th>Symbol</th>
-                            <th>Meaning</th>
-                            <th>Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-        `;
-        
-        content.symbols.forEach(symbolObj => {
-            html += `
-                <tr>
-                    <td class="symbol-cell">${symbolObj.symbol || ''}</td>
-                    <td>${symbolObj.meaning || ''}</td>
-                    <td><code>${symbolObj.example || ''}</code></td>
-                </tr>
-            `;
-        });
-        
-        html += `
-                    </tbody>
-                </table>
-            </div>
-        `;
-    }
-    
     // Simple arrays
     const simpleArrayFields = [
         'titles', 'ranks', 'degrees', 'provinces', 'monthAbbreviations', 'timeZones',
         'commonUnits', 'commonAbbreviations', 'capitalizationRules', 
-        'exceptions', 'criticalRules', 'additionalUnits', 'incorrectAbbreviations', 'spacingRules'
+        'exceptions', 'criticalRules', 'incorrectAbbreviations', 'spacingRules'
     ];
     
     simpleArrayFields.forEach(field => {
