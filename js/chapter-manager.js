@@ -44,7 +44,7 @@ async function loadBuilders() {
             import('./content-builders/core-builder.js'),
             import('./content-builders/box-builder.js'),
             import('./content-builders/lists-builder.js'),
-            import('./content-builders/chapter-01-builder.js'),
+            import('./content-builders/chapter1-builder.js'),
             import('./content-builders/chapter3-builder.js'),
             import('./content-builders/chapter4-builder.js')
         ]);
