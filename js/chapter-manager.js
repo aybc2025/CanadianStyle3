@@ -40,10 +40,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 async function loadBuilders() {
     try {
         // Import all builder modules
-        const [coreBuilder, boxBuilder, listsBuilder, chapter3Builder, chapter4Builder] = await Promise.all([
+        const [coreBuilder, boxBuilder, listsBuilder, chapter1Builder, chapter3Builder, chapter4Builder] = await Promise.all([
             import('./content-builders/core-builder.js'),
             import('./content-builders/box-builder.js'),
             import('./content-builders/lists-builder.js'),
+            import('./content-builders/chapter-01-builder.js'),
             import('./content-builders/chapter3-builder.js'),
             import('./content-builders/chapter4-builder.js')
         ]);
@@ -52,6 +53,7 @@ async function loadBuilders() {
             core: coreBuilder,
             box: boxBuilder,
             lists: listsBuilder,
+            chapter1: chapter1Builder,
             chapter3: chapter3Builder,
             chapter4: chapter4Builder
         };
@@ -192,6 +194,10 @@ function buildSectionHTML(section) {
     
     // Use chapter-specific builders based on chapter ID
     const chapterId = chapterData.id;
+    
+    if (chapterId === 1) {
+        html += contentBuilders.chapter1.buildChapter1Content(content);
+    }
     
     if (chapterId === 3) {
         html += contentBuilders.chapter3.buildChapter3Content(content);
