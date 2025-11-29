@@ -1528,6 +1528,229 @@
           "text": "See also 1.12."
         }
       }
+    },
+    {
+    "id": "4.31",
+    "title": "Headings",
+    "content": {
+      "marginHeadings": {
+        "text": "In headings that begin at the margin, capitalize only the first word and any other words that require capitals in their own right."
+      },
+      "centredHeadings": {
+        "text": "In centred headings, capitalize all words except for articles (unless they begin the heading) and any conjunctions or prepositions of fewer than four letters. Prepositions that are an inseparable part of the verb should also be capitalized."
+      },
+      "reference": {
+        "text": "For further information, see 11.16."
+      }
     }
+  },
+  {
+    "id": "4.32",
+    "title": "Terms indicating time or numbered sequence",
+    "content": {
+      "mainRule": {
+        "text": "Capitalize common singular nouns and abbreviations followed by a date, number or letter to denote time or sequence, or for the purpose of reference:",
+        "examples": [
+          "It's Day 15 of the election campaign.",
+          "The shortest route from Toronto to Montréal is along Highway 401."
+        ]
+      },
+      "idiomaticExpressions": {
+        "text": "Some idiomatic expressions containing common nouns followed by a letter or number are also capitalized. The numbers in such expressions are often spelled out:",
+        "examples": [
+          "Back to Square One.",
+          "He's on Cloud Nine."
+        ]
+      }
+    }
+  },
+  {
+    "id": "4.33",
+    "title": "Lists",
+    "content": {
+      "introduction": {
+        "text": "Point-form lists make it easier for the reader to understand how the elements are related. Grammar and syntax determine the internal capitalization and punctuation of the initial letters of items in lists. It is more important for lists to be logically understandable and syntactically consistent than to look alike."
+      },
+      "syntacticallyRelated": {
+        "text": "If the lead-in to a list is syntactically related to the points that follow, as in this list,",
+        "rules": [
+          "do not capitalize the first words of items within the list, and",
+          "except for the bullets or dashes, punctuate as if the entire sentence were not in point form."
+        ]
+      },
+      "capitalizedLists": {
+        "text": "Items in lists are sometimes capitalized. This list illustrates one possible set of conditions:",
+        "conditions": [
+          "It is made up of complete sentences, which do not depend on the lead-in sentence fragment and which end with a period.",
+          "It contains points that are more easily grasped separately than together."
+        ]
+      },
+      "lowercaseItems": {
+        "text": "Incomplete sentences or single words entered as points in lists are normally lower-cased:",
+        "example": {
+          "leadIn": "Four issues are related to the economics of healthy housing:",
+          "items": [
+            "affordability",
+            "adaptability",
+            "viability for the construction industry",
+            "marketability"
+          ],
+          "note": "Note that there is no period at the end of the list."
+        }
+      },
+      "reference": {
+        "text": "See also 7.70."
+      }
+    }
+  },
+  {
+    "id": "4.34",
+    "title": "Legal usage",
+    "content": {
+      "rules": [
+        {
+          "letter": "a",
+          "title": "Common nouns in legal contexts",
+          "text": "Some common nouns referring to parties to an action, the names of documents or judicial bodies are capitalized:",
+          "capitalized": [
+            "Counsel for the Plaintiff",
+            "The Court (meaning the judge) sustained the objection.",
+            "the said Notary",
+            "the aforementioned Agreement"
+          ],
+          "but": [
+            "The court was in session."
+          ]
+        },
+        {
+          "letter": "b",
+          "title": "Official names of legal documents",
+          "text": "Capitalize the official names of treaties, agreements, legal codes, pieces of legislation and other official documents, as well as their official short forms:",
+          "examples": [
+            "the Treaty of Versailles",
+            "the Financial Administration Act",
+            "the White Paper on Taxation",
+            "Order-in-Council P.C. 1354"
+          ]
+        },
+        {
+          "letter": "c",
+          "title": "Short forms",
+          "text": "Short forms are normally capitalized only when they constitute proper nouns or refer to a document of great significance:",
+          "capitalized": [
+            "An appeal was launched under the Charter (full name: Canadian Charter of Rights and Freedoms)."
+          ],
+          "lowercase": {
+            "text": "Do not capitalize short forms when they are used in a general sense, as adjectives or plurals, or with modifiers:",
+            "examples": [
+              "Farmers objected to some of the treaty provisions.",
+              "Parliament discussed the new white papers before it adjourned.",
+              "Under this act, a subsidy was offered to transportation companies."
+            ]
+          }
+        },
+        {
+          "letter": "d",
+          "title": "Pending and defeated legislation",
+          "text": "Do not capitalize general references to pending and defeated legislation:",
+          "examples": [
+            "Parliament is discussing a new Privacy act."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "4.35",
+    "title": "The salutation and complimentary close",
+    "content": {
+      "mainRule": {
+        "text": "Use capitals for the first word and all nouns in the salutation of a letter, but only for the first word in a close:",
+        "salutations": [
+          "My dear Sir",
+          "Dear Madam"
+        ],
+        "closes": [
+          "Yours truly",
+          "Very sincerely yours"
+        ]
+      }
+    }
+  },
+  {
+    "id": "4.36",
+    "title": "Compounds",
+    "content": {
+      "properNouns": {
+        "text": "A proper noun or adjective in a hyphenated compound retains the capital:",
+        "examples": [
+          "Greco-Roman",
+          "neo-Nazi",
+          "trans-Canada",
+          "Pan-American"
+        ]
+      },
+      "prefixesAndSuffixes": {
+        "text": "In general, do not capitalize prefixes or suffixes added to proper nouns:",
+        "examples": [
+          "The President-elect will tour the mid-Atlantic States in an American-made car."
+        ]
+      },
+      "modifyingElements": {
+        "text": "Do not capitalize the second element of a compound if it simply modifies the first or if the hyphenated elements make up a single word:",
+        "examples": [
+          "Sonata in E-flat Major",
+          "Re-education for development",
+          "Forty-second Street"
+        ]
+      }
+    }
+  },
+  {
+    "id": "4.37",
+    "title": "The definite article",
+    "content": {
+      "partOfCorporateName": {
+        "text": "Capitalize the when it is part of a corporate name:",
+        "examples": [
+          "The Globe and Mail",
+          "The Pas",
+          "The Canadian Red Cross Society"
+        ]
+      },
+      "adjectivalUse": {
+        "text": "Do not capitalize the when it is used adjectivally:",
+        "examples": [
+          "The Minister answered the Globe and Mail reporter."
+        ]
+      },
+      "frenchArticle": {
+        "text": "The French definite article should be retained if it is part of a corporate name, and the should not precede it. If the French article is not part of the official title, replace it with the:",
+        "withFrenchArticle": [
+          "an article in Le Devoir"
+        ],
+        "withEnglishArticle": [
+          "a representative of the Office des professions du Québec"
+        ]
+      }
+    }
+  },
+  {
+    "id": "4.38",
+    "title": "Single letters used as words",
+    "content": {
+      "mainRule": {
+        "text": "Capitalize a single letter used as a word, whether hyphenated or not:",
+        "examples": [
+          "C minor",
+          "U-turn",
+          "H-bomb",
+          "vitamin A",
+          "T-shirt",
+          "X-ray"
+        ]
+      }
+    }
+  }
   ]
 }
