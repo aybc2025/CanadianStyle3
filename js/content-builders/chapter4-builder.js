@@ -1,10 +1,14 @@
 // ===================================
-// Chapter 4 Content Builder
-// Handles structures specific to Chapter 4 (Capitalization)
+// Chapter 4 Content Builder - UPDATED
+// Now includes handlers for sections 31-38
 // ===================================
 
 export function buildChapter4Content(content) {
     let html = '';
+    
+    // ==========================================
+    // EXISTING HANDLERS (from original builder)
+    // ==========================================
     
     // Main Rule (single object with text and examples)
     if (content.mainRule && typeof content.mainRule === 'object') {
@@ -47,6 +51,28 @@ export function buildChapter4Content(content) {
             `;
         }
         
+        if (content.mainRule.salutations && Array.isArray(content.mainRule.salutations)) {
+            html += `
+                <div class="salutations-section">
+                    <h5>Salutations:</h5>
+                    <ul>
+                        ${content.mainRule.salutations.map(s => `<li>${s}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+        
+        if (content.mainRule.closes && Array.isArray(content.mainRule.closes)) {
+            html += `
+                <div class="closes-section">
+                    <h5>Complimentary closes:</h5>
+                    <ul>
+                        ${content.mainRule.closes.map(c => `<li>${c}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+        
         html += `</div>`;
     }
     
@@ -59,34 +85,12 @@ export function buildChapter4Content(content) {
                     ${mainRule.text ? `<p>${mainRule.text}</p>` : ''}
             `;
             
-            if (mainRule.capitalized && Array.isArray(mainRule.capitalized)) {
+            if (mainRule.examples && Array.isArray(mainRule.examples)) {
                 html += `
-                    <div class="capitalized-section">
-                        <h4>Capitalized:</h4>
-                        <ul>
-                            ${mainRule.capitalized.map(ex => `<li>${ex}</li>`).join('')}
-                        </ul>
-                    </div>
+                    <ul>
+                        ${mainRule.examples.map(ex => `<li>${ex}</li>`).join('')}
+                    </ul>
                 `;
-            }
-            
-            if (mainRule.lowercase && Array.isArray(mainRule.lowercase)) {
-                html += `
-                    <div class="lowercase-section">
-                        <h4>Lowercase:</h4>
-                        <ul>
-                            ${mainRule.lowercase.map(ex => `<li>${ex}</li>`).join('')}
-                        </ul>
-                    </div>
-                `;
-            }
-            
-            if (mainRule.capitalized && typeof mainRule.capitalized === 'string') {
-                html += `<p><strong>Capitalized:</strong> ${mainRule.capitalized}</p>`;
-            }
-            
-            if (mainRule.lowercase && typeof mainRule.lowercase === 'string') {
-                html += `<p><strong>Lowercase:</strong> ${mainRule.lowercase}</p>`;
             }
             
             html += `</div>`;
@@ -102,17 +106,17 @@ export function buildChapter4Content(content) {
         `;
         
         if (content.remoteAssociation.examples && Array.isArray(content.remoteAssociation.examples)) {
-            html += `
-                <ul>
-                    ${content.remoteAssociation.examples.map(ex => `<li>${ex}</li>`).join('')}
-                </ul>
-            `;
+            html += `<ul>`;
+            content.remoteAssociation.examples.forEach(ex => {
+                html += `<li>${ex}</li>`;
+            });
+            html += `</ul>`;
         }
         
         html += `</div>`;
     }
     
-    // Verbs (4.04 style - object with capitalized and lowercase arrays)
+    // Verbs (4.04 style)
     if (content.verbs && typeof content.verbs === 'object') {
         html += `
             <div class="verbs-section">
@@ -172,99 +176,305 @@ export function buildChapter4Content(content) {
                 ${content.abstractions.text ? `<p>${content.abstractions.text}</p>` : ''}
         `;
         
-        if (content.abstractions.capitalized && Array.isArray(content.abstractions.capitalized)) {
+        if (content.abstractions.examples && Array.isArray(content.abstractions.examples)) {
             html += `
-                <div class="capitalized-abstractions">
-                    <h5>Capitalized examples:</h5>
-                    <ul>
-                        ${content.abstractions.capitalized.map(ex => `<li>${ex}</li>`).join('')}
-                    </ul>
-                </div>
+                <ul>
+                    ${content.abstractions.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
             `;
         }
         
         html += `</div>`;
     }
     
-    // Chemical Elements (4.25a)
+    // Chemical Elements (4.25)
     if (content.chemicalElements && typeof content.chemicalElements === 'object') {
-        html += buildChapter4SubSection(content.chemicalElements, 'Chemical elements and compounds');
-    }
-    
-    // Chemical Symbols (4.25b)
-    if (content.chemicalSymbols && typeof content.chemicalSymbols === 'object') {
-        html += buildChapter4SubSection(content.chemicalSymbols, 'Chemical symbols');
-    }
-    
-    // Medical Conditions (4.25c)
-    if (content.medicalConditions && typeof content.medicalConditions === 'object') {
-        html += buildChapter4SubSection(content.medicalConditions, 'Medical conditions');
-    }
-    
-    // Infectious Organisms (4.25d)
-    if (content.infectiousOrganisms && typeof content.infectiousOrganisms === 'object') {
-        html += buildChapter4SubSection(content.infectiousOrganisms, 'Infectious organisms');
-    }
-    
-    // Drug Names (4.25e)
-    if (content.drugNames && typeof content.drugNames === 'object') {
-        html += buildChapter4SubSection(content.drugNames, 'Generic drug names');
-    }
-    
-    // Trade Names (4.27a)
-    if (content.tradeNames && typeof content.tradeNames === 'object') {
-        html += buildChapter4SubSection(content.tradeNames, 'Trade names');
-    }
-    
-    // High Tech Products (4.27c)
-    if (content.highTechProducts && typeof content.highTechProducts === 'object') {
-        html += buildChapter4SubSection(content.highTechProducts, 'High-technology products');
-    }
-    
-    // Generic Usage (4.27d)
-    if (content.genericUsage && typeof content.genericUsage === 'object') {
         html += `
-            <div class="generic-usage-section">
-                <h4>${content.genericUsage.title || 'Generic usage'}</h4>
-                ${content.genericUsage.text ? `<p>${content.genericUsage.text}</p>` : ''}
+            <div class="chemical-elements-section">
+                <h4>${content.chemicalElements.title || 'Chemical Elements'}</h4>
+                ${content.chemicalElements.text ? `<p>${content.chemicalElements.text}</p>` : ''}
+        `;
+        
+        if (content.chemicalElements.examples && Array.isArray(content.chemicalElements.examples)) {
+            html += `<ul>`;
+            content.chemicalElements.examples.forEach(ex => {
+                html += `<li>${ex}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // Drug Names (4.25)
+    if (content.drugNames && typeof content.drugNames === 'object') {
+        html += `
+            <div class="drug-names-section">
+                <h4>${content.drugNames.title || 'Drug Names'}</h4>
+                ${content.drugNames.text ? `<p>${content.drugNames.text}</p>` : ''}
+        `;
+        
+        if (content.drugNames.examples && Array.isArray(content.drugNames.examples)) {
+            html += `<ul>`;
+            content.drugNames.examples.forEach(ex => {
+                html += `<li>${ex}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // Trade Names (4.27)
+    if (content.tradeNames && typeof content.tradeNames === 'object') {
+        html += `
+            <div class="trade-names-section">
+                <h4>${content.tradeNames.title || 'Trade Names'}</h4>
+                ${content.tradeNames.text ? `<p>${content.tradeNames.text}</p>` : ''}
+        `;
+        
+        if (content.tradeNames.examples && Array.isArray(content.tradeNames.examples)) {
+            html += `<ul>`;
+            content.tradeNames.examples.forEach(ex => {
+                html += `<li>${ex}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // ==========================================
+    // NEW HANDLERS FOR SECTIONS 31-38
+    // ==========================================
+    
+    // 4.31 - Margin Headings
+    if (content.marginHeadings && typeof content.marginHeadings === 'object') {
+        html += `
+            <div class="margin-headings-section">
+                <h4>Margin Headings</h4>
+                ${content.marginHeadings.text ? `<p>${content.marginHeadings.text}</p>` : ''}
             </div>
         `;
     }
     
-    // Generic Use (4.22)
-    if (content.genericUse && typeof content.genericUse === 'object') {
-        html += buildChapter4SubSection(content.genericUse, 'Generic use');
+    // 4.31 - Centred Headings
+    if (content.centredHeadings && typeof content.centredHeadings === 'object') {
+        html += `
+            <div class="centred-headings-section">
+                <h4>Centred Headings</h4>
+                ${content.centredHeadings.text ? `<p>${content.centredHeadings.text}</p>` : ''}
+            </div>
+        `;
     }
     
-    // Generic Parts (4.23)
-    if (content.genericParts && typeof content.genericParts === 'object') {
-        html += buildChapter4SubSection(content.genericParts, 'Generic parts');
+    // 4.32 - Idiomatic Expressions
+    if (content.idiomaticExpressions && typeof content.idiomaticExpressions === 'object') {
+        html += `
+            <div class="idiomatic-expressions-section">
+                ${content.idiomaticExpressions.text ? `<p>${content.idiomaticExpressions.text}</p>` : ''}
+        `;
+        
+        if (content.idiomaticExpressions.examples && Array.isArray(content.idiomaticExpressions.examples)) {
+            html += `
+                <ul>
+                    ${content.idiomaticExpressions.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
     }
     
-    // Proper Nouns in Common Names (4.24)
-    if (content.properNounsInCommonNames && typeof content.properNounsInCommonNames === 'object') {
+    // 4.33 - Introduction (for Lists section)
+    if (content.introduction && typeof content.introduction === 'object') {
+        html += `
+            <div class="introduction-section">
+                ${content.introduction.text ? `<p>${content.introduction.text}</p>` : ''}
+            </div>
+        `;
+    }
+    
+    // 4.33 - Syntactically Related
+    if (content.syntacticallyRelated && typeof content.syntacticallyRelated === 'object') {
+        html += `
+            <div class="syntactically-related-section">
+                ${content.syntacticallyRelated.text ? `<p>${content.syntacticallyRelated.text}</p>` : ''}
+        `;
+        
+        if (content.syntacticallyRelated.rules && Array.isArray(content.syntacticallyRelated.rules)) {
+            html += `<ul>`;
+            content.syntacticallyRelated.rules.forEach(rule => {
+                html += `<li>${rule}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.33 - Capitalized Lists
+    if (content.capitalizedLists && typeof content.capitalizedLists === 'object') {
+        html += `
+            <div class="capitalized-lists-section">
+                ${content.capitalizedLists.text ? `<p>${content.capitalizedLists.text}</p>` : ''}
+        `;
+        
+        if (content.capitalizedLists.conditions && Array.isArray(content.capitalizedLists.conditions)) {
+            html += `<ul>`;
+            content.capitalizedLists.conditions.forEach(condition => {
+                html += `<li>${condition}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.33 - Lowercase Items
+    if (content.lowercaseItems && typeof content.lowercaseItems === 'object') {
+        html += `
+            <div class="lowercase-items-section">
+                ${content.lowercaseItems.text ? `<p>${content.lowercaseItems.text}</p>` : ''}
+        `;
+        
+        if (content.lowercaseItems.example && typeof content.lowercaseItems.example === 'object') {
+            const example = content.lowercaseItems.example;
+            
+            if (example.leadIn) {
+                html += `<p class="lead-in">${example.leadIn}</p>`;
+            }
+            
+            if (example.items && Array.isArray(example.items)) {
+                html += `<ul>`;
+                example.items.forEach(item => {
+                    html += `<li>${item}</li>`;
+                });
+                html += `</ul>`;
+            }
+            
+            if (example.note) {
+                html += `<p class="note"><em>Note: ${example.note}</em></p>`;
+            }
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.36 - Proper Nouns
+    if (content.properNouns && typeof content.properNouns === 'object') {
         html += `
             <div class="proper-nouns-section">
-                ${content.properNounsInCommonNames.text ? `<p>${content.properNounsInCommonNames.text}</p>` : ''}
+                ${content.properNouns.text ? `<p>${content.properNouns.text}</p>` : ''}
         `;
         
-        if (content.properNounsInCommonNames.capitalized && Array.isArray(content.properNounsInCommonNames.capitalized)) {
+        if (content.properNouns.examples && Array.isArray(content.properNouns.examples)) {
             html += `
-                <div class="capitalized-examples">
-                    <h4>Capitalized:</h4>
+                <ul>
+                    ${content.properNouns.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.36 - Prefixes and Suffixes
+    if (content.prefixesAndSuffixes && typeof content.prefixesAndSuffixes === 'object') {
+        html += `
+            <div class="prefixes-suffixes-section">
+                ${content.prefixesAndSuffixes.text ? `<p>${content.prefixesAndSuffixes.text}</p>` : ''}
+        `;
+        
+        if (content.prefixesAndSuffixes.examples && Array.isArray(content.prefixesAndSuffixes.examples)) {
+            html += `
+                <ul>
+                    ${content.prefixesAndSuffixes.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.36 - Modifying Elements
+    if (content.modifyingElements && typeof content.modifyingElements === 'object') {
+        html += `
+            <div class="modifying-elements-section">
+                ${content.modifyingElements.text ? `<p>${content.modifyingElements.text}</p>` : ''}
+        `;
+        
+        if (content.modifyingElements.examples && Array.isArray(content.modifyingElements.examples)) {
+            html += `
+                <ul>
+                    ${content.modifyingElements.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.37 - Part of Corporate Name
+    if (content.partOfCorporateName && typeof content.partOfCorporateName === 'object') {
+        html += `
+            <div class="corporate-name-section">
+                ${content.partOfCorporateName.text ? `<p>${content.partOfCorporateName.text}</p>` : ''}
+        `;
+        
+        if (content.partOfCorporateName.examples && Array.isArray(content.partOfCorporateName.examples)) {
+            html += `
+                <ul>
+                    ${content.partOfCorporateName.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.37 - Adjectival Use
+    if (content.adjectivalUse && typeof content.adjectivalUse === 'object') {
+        html += `
+            <div class="adjectival-use-section">
+                ${content.adjectivalUse.text ? `<p>${content.adjectivalUse.text}</p>` : ''}
+        `;
+        
+        if (content.adjectivalUse.examples && Array.isArray(content.adjectivalUse.examples)) {
+            html += `
+                <ul>
+                    ${content.adjectivalUse.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // 4.37 - French Article
+    if (content.frenchArticle && typeof content.frenchArticle === 'object') {
+        html += `
+            <div class="french-article-section">
+                ${content.frenchArticle.text ? `<p>${content.frenchArticle.text}</p>` : ''}
+        `;
+        
+        if (content.frenchArticle.withFrenchArticle && Array.isArray(content.frenchArticle.withFrenchArticle)) {
+            html += `
+                <div class="with-french-article">
+                    <h5>With French article:</h5>
                     <ul>
-                        ${content.properNounsInCommonNames.capitalized.map(ex => `<li>${ex}</li>`).join('')}
+                        ${content.frenchArticle.withFrenchArticle.map(ex => `<li>${ex}</li>`).join('')}
                     </ul>
                 </div>
             `;
         }
         
-        if (content.properNounsInCommonNames.lowercase && Array.isArray(content.properNounsInCommonNames.lowercase)) {
+        if (content.frenchArticle.withEnglishArticle && Array.isArray(content.frenchArticle.withEnglishArticle)) {
             html += `
-                <div class="lowercase-examples">
-                    <h4>Lowercase:</h4>
+                <div class="with-english-article">
+                    <h5>With English article:</h5>
                     <ul>
-                        ${content.properNounsInCommonNames.lowercase.map(ex => `<li>${ex}</li>`).join('')}
+                        ${content.frenchArticle.withEnglishArticle.map(ex => `<li>${ex}</li>`).join('')}
                     </ul>
                 </div>
             `;
@@ -273,137 +483,14 @@ export function buildChapter4Content(content) {
         html += `</div>`;
     }
     
-    // Special Case (4.26 - Eponyms)
-    if (content.specialCase && typeof content.specialCase === 'object') {
+    // Reference (general - can appear in multiple sections)
+    if (content.reference && typeof content.reference === 'object') {
         html += `
-            <div class="special-case-section">
-                ${content.specialCase.text ? `<p>${content.specialCase.text}</p>` : ''}
-        `;
-        
-        if (content.specialCase.capitalized && Array.isArray(content.specialCase.capitalized)) {
-            html += `
-                <div class="capitalized-examples">
-                    <h4>Capitalized:</h4>
-                    <ul>
-                        ${content.specialCase.capitalized.map(ex => `<li>${ex}</li>`).join('')}
-                    </ul>
-                </div>
-            `;
-        }
-        
-        if (content.specialCase.lowercase && Array.isArray(content.specialCase.lowercase)) {
-            html += `
-                <div class="lowercase-examples">
-                    <h4>Lowercase:</h4>
-                    <ul>
-                        ${content.specialCase.lowercase.map(ex => `<li>${ex}</li>`).join('')}
-                    </ul>
-                </div>
-            `;
-        }
-        
-        html += `</div>`;
-    }
-    
-    // NEW HANDLERS FROM OLD CODE:
-    
-    // Short titles (4.29d)
-    if (content.shortTitles && typeof content.shortTitles === 'object') {
-        html += `
-            <div class="short-titles-section">
-                <h4>${content.shortTitles.title || 'Short titles'}</h4>
-                ${content.shortTitles.text ? `<p>${content.shortTitles.text}</p>` : ''}
-                ${content.shortTitles.examples && Array.isArray(content.shortTitles.examples) ? `
-                    <ul>
-                        ${content.shortTitles.examples.map(ex => `<li>${ex}</li>`).join('')}
-                    </ul>
-                ` : ''}
+            <div class="reference-section">
+                <p class="reference"><em>${content.reference.text}</em></p>
             </div>
         `;
     }
-    
-    // Original typography (4.29e)
-    if (content.originalTypography && typeof content.originalTypography === 'string') {
-        html += `<p>${content.originalTypography}</p>`;
-    }
-    
-    // Ancient manuscripts (4.29f)
-    if (content.ancientManuscripts && typeof content.ancientManuscripts === 'object') {
-        html += `
-            <div class="ancient-manuscripts-section">
-                <h4>${content.ancientManuscripts.title || 'Ancient manuscripts'}</h4>
-                ${content.ancientManuscripts.text ? `<p>${content.ancientManuscripts.text}</p>` : ''}
-                ${content.ancientManuscripts.examples && Array.isArray(content.ancientManuscripts.examples) ? `
-                    <ul>
-                        ${content.ancientManuscripts.examples.map(ex => `<li>${ex}</li>`).join('')}
-                    </ul>
-                ` : ''}
-            </div>
-        `;
-    }
-    
-    // French titles (4.29f)
-    if (content.frenchTitles && typeof content.frenchTitles === 'string') {
-        html += `<p>${content.frenchTitles}</p>`;
-    }
-    
-    // Hyphenated compounds (4.29g)
-    if (content.hyphenatedCompounds && typeof content.hyphenatedCompounds === 'object') {
-        html += `
-            <div class="hyphenated-compounds-section">
-                <h4>${content.hyphenatedCompounds.title || 'Hyphenated compounds'}</h4>
-                ${content.hyphenatedCompounds.text ? `<p>${content.hyphenatedCompounds.text}</p>` : ''}
-                ${content.hyphenatedCompounds.examples && Array.isArray(content.hyphenatedCompounds.examples) ? `
-                    <ul>
-                        ${content.hyphenatedCompounds.examples.map(ex => `<li>${ex}</li>`).join('')}
-                    </ul>
-                ` : ''}
-            </div>
-        `;
-    }
-    
-    return html;
-}
-
-// Helper function to build standard subsections
-function buildChapter4SubSection(sectionContent, defaultTitle) {
-    let html = `
-        <div class="chapter4-subsection">
-            <h4>${sectionContent.title || defaultTitle}</h4>
-            ${sectionContent.text ? `<p>${sectionContent.text}</p>` : ''}
-    `;
-    
-    if (sectionContent.examples && Array.isArray(sectionContent.examples)) {
-        html += `
-            <ul>
-                ${sectionContent.examples.map(ex => `<li>${ex}</li>`).join('')}
-            </ul>
-        `;
-    }
-    
-    if (sectionContent.capitalized && Array.isArray(sectionContent.capitalized)) {
-        html += `
-            <div class="capitalized-examples">
-                <h5>Capitalized:</h5>
-                <ul>
-                    ${sectionContent.capitalized.map(ex => `<li>${ex}</li>`).join('')}
-                </ul>
-            </div>
-        `;
-    }
-    
-    if (sectionContent.lowercase && Array.isArray(sectionContent.lowercase)) {
-        html += `
-            <div class="lowercase-examples">
-                <h5>Lowercase:</h5>
-                <ul>
-                    ${sectionContent.lowercase.map(ex => `<li>${ex}</li>`).join('')}
-                </ul>
-            </div>
-        `;
-    }
-    
-    html += `</div>`;
     
     return html;
 }
