@@ -92,26 +92,33 @@ export function buildChapter3Content(content) {
         html += `</div>`;
     }
     
-    // === 3.08, 3.10, 3.13, 3.14: derivedExamples ===
-    if (content.derivedExamples && Array.isArray(content.derivedExamples)) {
-        html += `
-            <div class="derived-examples-section">
-                <h4>Examples</h4>
-                <ul class="styled-list">
-        `;
-        
-        content.derivedExamples.forEach(ex => {
-            if (typeof ex === 'object' && ex.base && ex.derived) {
-                html += `<li><strong>${ex.base}</strong> → ${ex.derived}</li>`;
-            } else {
-                html += `<li>${ex}</li>`;
-            }
-        });
-        
-        html += `
-                </ul>
-            </div>
-        `;
+    // === 3.08, 3.10, 3.13, 3.14: Examples with base→derived ===
+    // This handles regular 'examples' arrays that have base/derived structure
+    if (content.examples && Array.isArray(content.examples)) {
+        // Check if first example has base/derived structure
+        const firstEx = content.examples[0];
+        if (typeof firstEx === 'object' && (firstEx.base || firstEx.root)) {
+            html += `
+                <div class="derived-examples-section">
+                    <h4>Examples</h4>
+                    <ul class="styled-list">
+            `;
+            
+            content.examples.forEach(ex => {
+                if (ex.base && ex.derived) {
+                    html += `<li><strong>${ex.base}</strong> → ${ex.derived}</li>`;
+                } else if (ex.root && ex.derived) {
+                    html += `<li><strong>${ex.root}</strong> → ${ex.derived}</li>`;
+                } else {
+                    html += `<li>${JSON.stringify(ex)}</li>`;
+                }
+            });
+            
+            html += `
+                    </ul>
+                </div>
+            `;
+        }
     }
     
     // === 3.16: ise/ize words ===
@@ -357,6 +364,45 @@ export function buildChapter3Content(content) {
             html += `</div>`;
         }
     });
+    
+    // === 3.08: Able/Ative and Ible/Itive Examples ===
+    if (content.ableAtiveExamples && typeof content.ableAtiveExamples === 'object') {
+        html += `
+            <div class="able-ative-section">
+                <h4>${content.ableAtiveExamples.title || 'Words with -able or -ative'}</h4>
+        `;
+        
+        if (content.ableAtiveExamples.examples && Array.isArray(content.ableAtiveExamples.examples)) {
+            html += `<ul class="styled-list">`;
+            content.ableAtiveExamples.examples.forEach(ex => {
+                if (ex.root && ex.derived) {
+                    html += `<li><strong>${ex.root}</strong> → ${ex.derived}</li>`;
+                }
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    if (content.ibleItiveExamples && typeof content.ibleItiveExamples === 'object') {
+        html += `
+            <div class="ible-itive-section">
+                <h4>${content.ibleItiveExamples.title || 'Words with -ible or -itive'}</h4>
+        `;
+        
+        if (content.ibleItiveExamples.examples && Array.isArray(content.ibleItiveExamples.examples)) {
+            html += `<ul class="styled-list">`;
+            content.ibleItiveExamples.examples.forEach(ex => {
+                if (ex.root && ex.derived) {
+                    html += `<li><strong>${ex.root}</strong> → ${ex.derived}</li>`;
+                }
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
     
     return html;
 }
