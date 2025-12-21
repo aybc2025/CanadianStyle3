@@ -9,7 +9,7 @@ export function buildChapter1Content(content) {
     // === 1.17: Number Symbol (No. or Nos.) ===
     if (content.numberSymbol && typeof content.numberSymbol === 'object') {
         html += `
-            <div class="number-symbol-section">
+            <div class="info-box">
                 <h4>${content.numberSymbol.symbol}</h4>
                 <p>${content.numberSymbol.usage}</p>
         `;
@@ -33,7 +33,7 @@ export function buildChapter1Content(content) {
     // === 1.17: Percent Symbol (%) ===
     if (content.percentSymbol && typeof content.percentSymbol === 'object') {
         html += `
-            <div class="percent-symbol-section">
+            <div class="info-box">
                 <h4>${content.percentSymbol.symbol}</h4>
                 <p>${content.percentSymbol.usage}</p>
         `;
@@ -72,7 +72,7 @@ export function buildChapter1Content(content) {
     // === 1.21: Time of Day ===
     if (content.timeOfDay && typeof content.timeOfDay === 'object') {
         html += `
-            <div class="time-of-day-section">
+            <div class="info-box">
                 <h4>${content.timeOfDay.title || 'Time of Day'}</h4>
         `;
         
@@ -94,7 +94,7 @@ export function buildChapter1Content(content) {
     // === 1.21: Elapsed Time ===
     if (content.elapsedTime && typeof content.elapsedTime === 'object') {
         html += `
-            <div class="elapsed-time-section">
+            <div class="info-box">
                 <h4>${content.elapsedTime.title || 'Elapsed Time'}</h4>
                 <p><strong>Format:</strong> ${content.elapsedTime.format}</p>
         `;
