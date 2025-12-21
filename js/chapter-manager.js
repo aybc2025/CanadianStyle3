@@ -189,23 +189,26 @@ function buildSectionHTML(section) {
     // Use box builder for special boxes
     html += contentBuilders.box.buildBoxes(content);
     
-    // Use lists builder for lists and examples
-    html += contentBuilders.lists.buildLists(content);
-    
-    // Use chapter-specific builders based on chapter ID
-    const chapterId = chapterData.id;
-    
-    if (chapterId === 1) {
-        html += contentBuilders.chapter1.buildChapter1Content(content);
-    }
-    
-    if (chapterId === 3) {
-        html += contentBuilders.chapter3.buildChapter3Content(content);
-    }
-    
-    if (chapterId === 4) {
-        html += contentBuilders.chapter4.buildChapter4Content(content);
-    }
+    // This prevents duplicate "Examples" headers in Chapter 3
+const chapterId = chapterData.id;
+
+if (chapterId === 1) {
+    html += contentBuilders.chapter1.buildChapter1Content(content);
+}
+
+if (chapterId === 3) {
+    // Chapter 3 builder MUST run before lists builder
+    // to handle base→derived examples correctly
+    html += contentBuilders.chapter3.buildChapter3Content(content);
+}
+
+if (chapterId === 4) {
+    html += contentBuilders.chapter4.buildChapter4Content(content);
+}
+
+// Use lists builder for lists and examples
+// (This now runs AFTER chapter-specific builders)
+html += contentBuilders.lists.buildLists(content);
     
     return html;
 }
