@@ -1,0 +1,977 @@
+{
+  "id": 5,
+  "title": "Numerical Expressions",
+  "description": "Format numbers, dates, and measurements correctly in Canadian government writing",
+  "sections": [
+    {
+      "id": "5.01",
+      "title": "Introduction",
+      "content": {
+        "text": "Numerical information should be conveyed in such a way as to be understood quickly, easily and without ambiguity. For this reason, numerals are preferred to spelled-out forms in technical writing. Except in certain adjectival expressions (see 5.05) and in technical writing, write out one-digit numbers and use numerals for the rest. Ordinals should be treated in the same way as cardinal numbers, e.g. seven and seventh, 101 and 101st.",
+        "additionalText": "Many other factors enter into the decision whether to write numbers out or to express them in numerals. This chapter discusses the most important of these and presents some of the conventions governing the use of special signs and symbols with numerals. The rules stated should, in most cases, be regarded as guidelines for general use that may be superseded by the requirements of particular applications.",
+        "keyPrinciple": {
+          "title": "Basic Rule",
+          "content": "Write out one-digit numbers (one to nine) and use numerals for the rest (10 and above). Ordinals follow the same pattern: seventh, 101st."
+        }
+      }
+    },
+    {
+      "id": "5.02",
+      "title": "Round Numbers",
+      "content": {
+        "text": "Round numbers require special treatment depending on their use and context.",
+        "rules": [
+          "Write out numbers used figuratively",
+          "Numbers in the millions or higher should be written as a combination of words and figures",
+          "When such compound numbers are used adjectivally, insert hyphens between the components",
+          "Whether or not it is used adjectivally, the entire number (numeral and word) should appear on the same line",
+          "Numbers with a long succession of zeros should normally be rewritten. Thus 2.6 million is preferable to 2 600 000",
+          "Numbers are normally rounded to no more than three significant digits. Thus 2 653 000 becomes 2.65 million, not 2.653 million",
+          "The proper form for large numbers that must be written in full is as illustrated in the examples",
+          "The practice of writing a number in numerals and then repeating it in full in parentheses should be reserved for legal documents"
+        ],
+        "examples": [
+          {
+            "type": "figurative",
+            "text": "a thousand and one excuses"
+          },
+          {
+            "type": "figurative",
+            "text": "They may attack me with an army of six hundred syllogisms. —Erasmus"
+          },
+          {
+            "type": "figurative",
+            "text": "And torture one poor word ten thousand ways. —Dryden"
+          },
+          {
+            "type": "correct",
+            "text": "23 million"
+          },
+          {
+            "type": "correct",
+            "text": "3.1 million"
+          },
+          {
+            "type": "correct",
+            "text": "There were more than 2.5 million Canadians between the ages of 30 and 40 in 1971."
+          },
+          {
+            "type": "correct",
+            "text": "a 1.7-million increase in population (adjectival with hyphens)"
+          },
+          {
+            "type": "correct",
+            "text": "one hundred and fifty-two thousand three hundred and five (written in full)"
+          },
+          {
+            "type": "legal",
+            "text": "nineteen hundred and ninety-six (1996)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.03",
+      "title": "Consistency",
+      "content": {
+        "text": "Numbers modifying the same or similar items should be treated alike within a given passage. If numerals are to be used for any, they should be used for all.",
+        "note": "Where many numbers occur in close succession, as in scientific, technical or financial documents, express all of them in numerals.",
+        "examples": [
+          {
+            "type": "correct",
+            "text": "Of the firm's 318 outlets currently operating in Atlantic Canada, only 6 accept more than two major credit cards."
+          },
+          {
+            "type": "correct",
+            "text": "Out of a population of 74 000 000, only 360 000 voted for the Socialist candidate."
+          },
+          {
+            "type": "correct",
+            "text": "the 3rd, 6th and 127th items in the series"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.04",
+      "title": "Initial Numbers",
+      "content": {
+        "text": "Special rules apply when numbers appear at the beginning of sentences.",
+        "rules": [
+          "Spell out a number—or the word number—when it occurs at the beginning of a sentence, as well as any related numbers that closely follow it",
+          "Where this would result in a cumbersome construction, recast the sentence",
+          "To avoid starting with a number, it may be possible to end the preceding sentence with a semicolon or to punctuate in some other manner",
+          "In accordance with 5.10, a number followed by a unit of measurement may have to be written in numerals. Thus, to avoid using numerals at the start of a sentence, rewrite the sentence"
+        ],
+        "examples": [
+          {
+            "type": "correct",
+            "text": "Three hundred persons were expected, but only twenty-three showed up."
+          },
+          {
+            "type": "correct",
+            "text": "Number 6 was the last in the series; there was no number 7."
+          },
+          {
+            "type": "better",
+            "text": "A crowd of 300 was expected, but only 23 showed up. (recasting to avoid cumbersome construction)"
+          },
+          {
+            "type": "incorrect",
+            "text": "But that was now in the past. 1994 was another year."
+          },
+          {
+            "type": "correct",
+            "text": "But that was now in the past; 1994 was another year. (semicolon solution)"
+          },
+          {
+            "type": "correct",
+            "text": "...in the past and 1994... (punctuation solution)"
+          },
+          {
+            "type": "incorrect",
+            "text": "18.3 cm/s was the best result we could obtain."
+          },
+          {
+            "type": "correct",
+            "text": "A result of 18.3 cm/s was the best we could obtain."
+          },
+          {
+            "type": "incorrect",
+            "text": "Eighteen point three... (do not spell out measurements)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.05",
+      "title": "Adjectival Expressions and Juxtaposed Numbers",
+      "content": {
+        "text": "When numbers are used as adjectives or when two numbers appear together, special formatting rules apply.",
+        "rules": [
+          "Normally, for numbers used in adjectival expressions, follow the rule given in 5.01, i.e. write out those from one to nine and use numerals for the rest",
+          "If the unit is represented by an abbreviation or symbol, use numerals",
+          "Do not use a hyphen between a numeral and a non-letter symbol",
+          "When a number immediately precedes a compound modifier containing another number, spell out the first or the smaller number"
+        ],
+        "examples": [
+          {
+            "type": "correct",
+            "text": "seven-hour day"
+          },
+          {
+            "type": "correct",
+            "text": "two-metre-wide entrance"
+          },
+          {
+            "type": "correct",
+            "text": "a 10-year-old boy"
+          },
+          {
+            "type": "correct",
+            "text": "a 2.36 m high jump (with abbreviation)"
+          },
+          {
+            "type": "correct",
+            "text": "three 5-L containers or three 5 L containers"
+          },
+          {
+            "type": "correct",
+            "text": "a 90° angle (no hyphen before non-letter symbol)"
+          },
+          {
+            "type": "correct",
+            "text": "four 100°C thermometers"
+          },
+          {
+            "type": "correct",
+            "text": "ten 34-cent stamps (spell out first/smaller number)"
+          },
+          {
+            "type": "correct",
+            "text": "15 one-litre jugs"
+          },
+          {
+            "type": "correct",
+            "text": "two 10-room houses"
+          },
+          {
+            "type": "correct",
+            "text": "120 eight-page reports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.06",
+      "title": "Mathematical Usage",
+      "content": {
+        "text": "Use numerals for numbers treated as nouns in mathematical usage.",
+        "note": "Algebraic expressions used in association with units of measurement should be distinguished from the latter by means of italics, unless the units are written in full.",
+        "examples": [
+          {
+            "type": "correct",
+            "text": "multiply by 3"
+          },
+          {
+            "type": "correct",
+            "text": "factor of 2"
+          },
+          {
+            "type": "correct",
+            "text": "14 plus 6"
+          },
+          {
+            "type": "correct",
+            "text": "3ab metres or 3ab m (algebraic expression in italics)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.07",
+      "title": "Ratios",
+      "content": {
+        "text": "Ratios can be expressed in several standard forms.",
+        "formats": [
+          "1 to 4 or 1:4",
+          "1:3:4 (1 to 3 to 4)",
+          "3:19::12:76 (3 is to 19 as 12 is to 76)"
+        ],
+        "note": "Certain types of ratios may be re-expressed as percentages or decimals. For example, a slope of 1:10 (or a slope of 1 in 10) may be written as a 10% slope."
+      }
+    },
+    {
+      "id": "5.08",
+      "title": "Fractions",
+      "content": {
+        "text": "In non-technical writing, spell out simple fractions, especially when used in isolation.",
+        "rules": [
+          "When a fraction is used adjectivally, place a hyphen between the numerator and the denominator unless either of these elements is itself hyphenated",
+          "Fractions such as these, which lend themselves to confusion, are better expressed in numerals",
+          "For the use of hyphens with fractions, see 2.11",
+          "It is incorrect to use th or ths after fractions expressed in numerals",
+          "A fraction expressed in numerals should not be followed by 'of a' or 'of an'",
+          "If the sentence seems to require 'of a', the fraction should be spelled out",
+          "Mixed numbers (combinations of a whole number and a fraction) should be given in numerals"
+        ],
+        "examples": [
+          {
+            "type": "correct",
+            "text": "half of one percent"
+          },
+          {
+            "type": "correct",
+            "text": "half an inch or one-half inch"
+          },
+          {
+            "type": "correct",
+            "text": "a quarter of an inch or one-quarter inch"
+          },
+          {
+            "type": "correct",
+            "text": "three quarters of an inch or three-quarters inch (not inches)"
+          },
+          {
+            "type": "correct",
+            "text": "three-quarter length"
+          },
+          {
+            "type": "correct",
+            "text": "four-fifths inch (adjectival with hyphen)"
+          },
+          {
+            "type": "correct",
+            "text": "a three-quarters majority"
+          },
+          {
+            "type": "correct",
+            "text": "1/25 (not 1/25th)"
+          },
+          {
+            "type": "correct",
+            "text": "3/100 (not 3/100ths)"
+          },
+          {
+            "type": "correct",
+            "text": "3/8 inch (not 3/8 of an inch)"
+          },
+          {
+            "type": "correct",
+            "text": "2¾ (mixed number in numerals)"
+          },
+          {
+            "type": "correct",
+            "text": "time and a half for overtime (exception)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.09",
+      "title": "Decimal Fractions",
+      "content": {
+        "text": "In technical and statistical writing and with SI/metric units, decimals are preferred to fractions. Normally, no number should begin or end with a decimal point. A zero is written before the decimal point of numbers smaller than 1, while in whole numbers the decimal point should either be dropped or be followed by a zero.",
+        "rules": [
+          "Use a zero before the decimal point for numbers less than 1",
+          "For whole numbers, drop the decimal point or follow it with a zero",
+          "Zeros may be used to indicate the number of decimal places to which a value is significant: 0.60 implies significance to two decimal places, 0.600 to three"
+        ],
+        "examples": [
+          {
+            "type": "correct",
+            "text": "$0.64 (not $.64)"
+          },
+          {
+            "type": "correct",
+            "text": "11 or 11.0 (not 11.)"
+          },
+          {
+            "type": "exception",
+            "text": "a .39 calibre revolver"
+          },
+          {
+            "type": "exception",
+            "text": ".999 fine gold"
+          }
+        ],
+        "spacingRules": {
+          "title": "Spacing of Numerals",
+          "text": "The Canadian Metric Practice Guide specifies that groups of three numerals (triads) shall be separated by a space, except in the case of monetary values. It advises against the use of commas as separators. Although both commas and spaces are still widely used in Canada, The Canadian Style recommends that, except in financial documents, a space be used instead of a comma. Such a space is also to be inserted after groups of three digits to the right of a decimal point.",
+          "note": "Note that numbers of four digits only (on either side of the decimal marker) need not be so spaced unless used in combination with other numbers of more than four digits.",
+          "examples": [
+            "whole numbers: 5005 or 5 005",
+            "50 005",
+            "500 005",
+            "500 005 000",
+            "decimals: 5.0005 or 5.000 5",
+            "5.00005",
+            "5.000 005",
+            "5.000 005 000"
+          ],
+          "omitSpacing": "Omit the space in pagination, inclusive numbers, addresses, numbering of verse, telephone numbers, library numbers, serial numbers and the like."
+        },
+        "note1": "In many countries the decimal marker is the comma, not the period. In Canada, however, the period is the generally used decimal marker in English-language texts.",
+        "note2": "See 5.09 Note 2 above regarding spacing of triads"
+      }
+    },
+    {
+      "id": "5.10",
+      "title": "Quantities and Measures",
+      "content": {
+        "text": "When quantities or measures consist of two or more elements, when they are used in a technical context, or when a decimal marker is involved, write them in numerals. Otherwise, follow the rule of writing the number out if it is less than 10 (see 5.01).",
+        "partA": {
+          "title": "General Rules",
+          "examples": [
+            {
+              "type": "correct",
+              "text": "three miles"
+            },
+            {
+              "type": "correct",
+              "text": "5.6 km"
+            },
+            {
+              "type": "correct",
+              "text": "20/20 vision"
+            },
+            {
+              "type": "correct",
+              "text": "a magnification of 50 or a 50× magnification"
+            },
+            {
+              "type": "correct",
+              "text": "two metres tall"
+            },
+            {
+              "type": "correct",
+              "text": "1.6 m tall (not 1 m 60 cm tall)"
+            },
+            {
+              "type": "correct",
+              "text": "six feet tall"
+            },
+            {
+              "type": "correct",
+              "text": "5 feet 11 inches tall (no comma between elements)"
+            },
+            {
+              "type": "correct",
+              "text": "8½ by 11 inch paper or 8½ × 11 inch paper"
+            },
+            {
+              "type": "correct",
+              "text": "50 cm × 75 cm × 2 m (unit repeated to avoid ambiguity)"
+            }
+          ]
+        },
+        "partB": {
+          "title": "SI/Metric System",
+          "text": "Use of the International System of units (SI) is now the norm in technical writing. Basic information about SI symbols and their use is found in Chapter 1 of this guide. For more detailed information, consult the Canadian Metric Practice Guide.",
+          "rule": "As noted in 1.23, SI usage requires either that both the number and the unit be written in full or that both be abbreviated:",
+          "examples": [
+            {
+              "type": "correct",
+              "text": "two metres or 2 m"
+            },
+            {
+              "type": "incorrect",
+              "text": "2 metres or two m"
+            }
+          ],
+          "note": "Prefixed units should not normally appear as denominators in expressions of the form g/cm³, which should be re-expressed in terms of cubic metres. An exception to this rule is the symbol kg, since the kilogram is considered the base unit of mass."
+        },
+        "partC": {
+          "title": "Unit Conversion",
+          "text": "When one type of unit is converted to another in non-technical work, the converted value should normally be rounded to within five percent of the initial numeral and should be preceded by the word 'about' or some other indication that the value is an approximation:",
+          "example": "5 lb. or about 2.3 kg"
+        },
+        "partD": {
+          "title": "Degree Symbol Conventions",
+          "examples": [
+            "40° 40 proof",
+            "30°–50°C (symbol repeated but 30 ±2°C",
+            "10–15°C",
+            "–10 to –15°C (not 10–15°C)",
+            "10°C 10.5°C",
+            "300 K (not 300°K)",
+            "10° (of arc)",
+            "10.5° or 10.°5 or 10°30' or 10°30'00\"",
+            "36°N lat. 36th parallel",
+            "mm/degree (not mm/° — ° not to be used alone in denominator)"
+          ],
+          "note": "See 1.17 for use of the term percent and the percent sign."
+        }
+      }
+    },
+    {
+      "id": "5.11",
+      "title": "Money",
+      "content": {
+        "text": "Sums of money are usually expressed in numerals, except when they refer to round or indefinite amounts or are used in a formal or legal context.",
+        "rules": [
+          "The abbreviations B for billion, M for million and K for thousand are often encountered, especially in newspaper headlines. Avoid them in formal writing. Note that there is no space between the numeral and the letter",
+          "When dollar amounts are used with SI symbols, use specific formats",
+          "Place the dollar sign before the numeral in question",
+          "For representation of dollar amounts in Canadian and other currencies, see 5.26"
+        ],
+        "correctForms": [
+          "65¢ or $0.65 or 65 cents (not $.65 or .65¢)",
+          "two million dollars or $2 million or $2 000 000 or $2,000,000",
+          "a two-million dollar loan",
+          "$100 (not $100. or $100.00 when standing alone)",
+          "five dollars or $5 (not 5 dollars)",
+          "$5 worth or five dollars' worth"
+        ],
+        "examples": [
+          {
+            "type": "correct",
+            "text": "$5.98/m²"
+          },
+          {
+            "type": "correct",
+            "text": "a fare of 75¢"
+          },
+          {
+            "type": "correct",
+            "text": "a few thousand dollars"
+          },
+          {
+            "type": "correct",
+            "text": "a twenty-dollar bill"
+          },
+          {
+            "type": "formal",
+            "text": "Payments shall be made in equal instalments of two hundred and thirty dollars per month."
+          },
+          {
+            "type": "informal",
+            "text": "Foreign aid reduced by $5B in budget (newspaper headline)"
+          }
+        ],
+        "siSymbols": [
+          {
+            "correct": "$11.50/m²",
+            "incorrect": "$11.50/square metre"
+          },
+          {
+            "correct": "$3.99/kg",
+            "incorrect": "3.99/kilogram or $3.99/kilo"
+          },
+          {
+            "correct": "98¢/L",
+            "incorrect": "98¢ per litre"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.12",
+      "title": "Representation of Time in Ordinary Prose and with SI Units",
+      "content": {
+        "text": "Except in descriptive text and in approximations, write the time of day in numerical form.",
+        "examples": [
+          {
+            "type": "correct",
+            "text": "The program will be broadcast at 8:05 p.m."
+          },
+          {
+            "type": "correct",
+            "text": "He said that he would call after ten o'clock. (descriptive/approximation)"
+          }
+        ],
+        "technicalContext": {
+          "title": "Elapsed Time in Scientific/Technical Context",
+          "text": "In a scientific or technical context, express precise measurements of elapsed time by means of the internationally recognized symbols of time: d for day, h for hour, min for minute and s for second.",
+          "examples": [
+            "7 h 20 min flying time",
+            "The test run took 1 d 3 h 43 min 09 s precisely."
+          ],
+          "siUsage": "These symbols should also be used when units of time are expressed with SI units:",
+          "siExamples": [
+            "16 km/d",
+            "16 m/s",
+            "10 J/h",
+            "60 r/min"
+          ]
+        }
+      }
+    },
+    {
+      "id": "5.13",
+      "title": "Representation of Time of Day",
+      "content": {
+        "text": "In documents presented in both official languages, and in all forms of international communication, it may be desirable to use the 24-hour system for representing time of day, in accordance with International Standard ISO 3307 and the Treasury Board Federal Identity Program Manual.",
+        "format": "The hour is represented by a two-digit number ranging from 00 up to 23 (or 24), the minute and second are represented by a two-digit number ranging from 00 up to 59, and the colon is used as a separator between hour and minute and between minute and second.",
+        "examples": {
+          "withSeconds": [
+            "00:15:00",
+            "08:00:00",
+            "12:00:00 (noon)",
+            "24:00:00 (midnight)",
+            "07:15:00",
+            "11:37:00",
+            "14:12:06"
+          ],
+          "withoutSeconds": [
+            "00:15",
+            "08:00",
+            "12:00 (noon)",
+            "24:00 (midnight)",
+            "07:15",
+            "11:37",
+            "14:12"
+          ]
+        },
+        "note": "The instant of midnight should be represented (when seconds are included) as either 24:00:00, the end of one day, or 00:00:00, the beginning of the next day, according to circumstances."
+      }
+    },
+    {
+      "id": "5.14",
+      "title": "Dates",
+      "content": {
+        "text": "For calendar dates, the common alphanumeric method remains acceptable, provided that cardinal numbers are used.",
+        "alphanumericFormat": {
+          "title": "Alphanumeric Format",
+          "recommended": [
+            "March 15, 1993 or 15 March 1993"
+          ],
+          "notRecommended": [
+            "March 15th, 1993",
+            "March fifteenth, 1993"
+          ],
+          "dayMonthOnly": {
+            "recommended": [
+              "August 17",
+              "the 17th of August",
+              "the seventeenth of August"
+            ],
+            "notRecommended": [
+              "August 17th",
+              "17 August"
+            ]
+          },
+          "note": "He was on holiday from September 20 to 25 inclusive. (not from September 20–25)"
+        },
+        "allNumericFormat": {
+          "title": "All-Numeric Format",
+          "text": "The all-numeric form of dating may be more appropriate for such purposes as office memorandums and chronological files and on documents such as certificates, forms and plaques that are presented in both official languages. The format prescribed below is in accordance with the Treasury Board Federal Identity Program Manual, National Standard of Canada CAN/CSA-Z234.4-87 and International Standard ISO 2014. The year, month and day should be separated by a space or hyphen.",
+          "examples": [
+            "1994 03 27 or 1994-03-27 (March 27, 1994)",
+            "1995 06 02 or 1995-06-02 (June 2, 1995)"
+          ],
+          "advantage": "The advantage of international standardization in this format is that, whereas 2/06/95 could mean either June 2, 1995 or February 6, 1995, the form 1995-06-02 can mean only the former."
+        },
+        "spelledOut": {
+          "title": "Spelled-Out Dates",
+          "text": "Dates are sometimes spelled out in cases such as the following:",
+          "examples": [
+            "the Fourth of July",
+            "during the seventies",
+            "He returned on the ninth of August. (reported speech)",
+            "I last saw him on November 11. By the morning of the twelfth he was dead."
+          ],
+          "formalContexts": "Dates are spelled out in legal texts and in formal invitations and announcements:",
+          "formalExample": "Mr. and Mrs. William and Mary Doddridge are pleased to announce the marriage of their daughter Vera Grace to Howard Albert West Saturday the tenth of October nineteen hundred and ninety-six"
+        },
+        "yearDesignations": [
+          "the class of '68",
+          "the 1880s",
+          "1300 BC",
+          "AD 1300"
+        ],
+        "note": "For the use of the comma in dates, see 7.20."
+      }
+    },
+    {
+      "id": "5.15",
+      "title": "Age",
+      "content": {
+        "text": "Exact age is usually indicated in numerals, even if less than 10. It is written out, however, in the case of approximate age and in formal contexts.",
+        "examples": [
+          {
+            "type": "exact",
+            "text": "Jane, aged 9, and her brother Tom, 10, led the hike."
+          },
+          {
+            "type": "approximate",
+            "text": "He's eighty if he's a day."
+          },
+          {
+            "type": "approximate",
+            "text": "She was no more than seventeen at the time."
+          },
+          {
+            "type": "formal",
+            "text": "On the occasion of her retirement at the age of sixty-five."
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.16",
+      "title": "Market Quotations",
+      "content": {
+        "text": "Market quotations are invariably given in numerals.",
+        "examples": [
+          "wheat at 2.30",
+          "sugar, .05 or sugar, 0.05",
+          "Preferred stocks sell at 24½.",
+          "Fastbuck Fortunes 5s at 17¼"
+        ]
+      }
+    },
+    {
+      "id": "5.17",
+      "title": "Votes, Scores, etc.",
+      "content": {
+        "text": "Give votes, scores and odds in numerals.",
+        "examples": [
+          "The vote was 51 to 3, with 6 abstentions.",
+          "The justices ruled 5 to 3 in his favour.",
+          "The Flames beat the Canucks 3 to 2 (3–2) in overtime.",
+          "The Netherlands was made favourite at 2 to 1."
+        ]
+      }
+    },
+    {
+      "id": "5.18",
+      "title": "Governmental, Military and Historical Designations",
+      "content": {
+        "partA": {
+          "title": "Dynasties, Governing Bodies, and Sessions",
+          "text": "Write out numbers of dynasties, governing bodies, and sessions of Parliament or Congress as ordinals.",
+          "examples": [
+            "First International",
+            "Third Reich",
+            "Fifth Republic",
+            "Twenty-fourth Dynasty",
+            "Thirty-second Parliament",
+            "Ninety-seventh Congress"
+          ]
+        },
+        "partB": {
+          "title": "Political and Administrative Divisions",
+          "text": "Write out ordinal numbers below 100 designating political and administrative divisions.",
+          "examples": [
+            "Fifth Ward",
+            "Twenty-second District",
+            "Tenth Circuit Court",
+            "Fifteenth Precinct"
+          ]
+        },
+        "partC": {
+          "title": "Military Units",
+          "text": "Designations of large military units, especially in a foreign or historical context, may be written out in ordinals; otherwise use cardinal numerals.",
+          "examples": [
+            "Sixth Fleet",
+            "First Canadian Army",
+            "5 Combat Engineer Regiment",
+            "422 Tactical Helicopter Squadron"
+          ]
+        },
+        "partD": {
+          "title": "Historical, Biblical or Formal References",
+          "text": "Write out numbers in historical, biblical or formal references.",
+          "examples": [
+            "the Thirteen Colonies",
+            "the Twelve Apostles",
+            "the Ten Commandments",
+            "the Third World"
+          ]
+        }
+      }
+    },
+    {
+      "id": "5.19",
+      "title": "Names of Organizations",
+      "content": {
+        "text": "Ordinals modifying the names of churches and religious bodies are usually written out. Use Arabic figures in referring to union locals, fraternal lodges and similar organizations.",
+        "churches": [
+          "First Baptist Church",
+          "Seventh-Day Adventists",
+          "First Church of Christ Scientist"
+        ],
+        "organizations": [
+          "Teamsters Union Local 91",
+          "Loyal Order of Moose 1765",
+          "Royal Canadian Legion, Stittsville Branch 618"
+        ]
+      }
+    },
+    {
+      "id": "5.20",
+      "title": "Numbers Used as Nouns",
+      "content": {
+        "text": "Use numerals when numbers are referred to as nouns.",
+        "examples": [
+          "Highway 3",
+          "Channel 3",
+          "Grade 4",
+          "Bulletin No. 40",
+          "Revolution No. 9",
+          "values of 0 and 1",
+          "Engine No. 9 is arriving on Track 3.",
+          "Air Canada Flight 67 now boarding at Gate 6."
+        ]
+      }
+    },
+    {
+      "id": "5.21",
+      "title": "Addresses",
+      "content": {
+        "text": "Street and avenue designations up to and including Tenth are usually spelled out, especially when this helps to prevent confusion with the building number. If the street name is written in numerals, modern usage tends to favour cardinal rather than ordinal numbers.",
+        "examples": [
+          "9511 TENTH AVENUE",
+          "96 AVE",
+          "101 ST"
+        ],
+        "apartmentFormat": "In abbreviated form, apartment or suite numbers are written before the building number and are often followed by an en dash:",
+        "apartmentExample": "107–6807 92 AVE N",
+        "floors": "Identify floors of a building as follows:",
+        "floorExample": "Floor 11, L'Esplanade Laurier"
+      }
+    },
+    {
+      "id": "5.22",
+      "title": "Reference Numbers",
+      "content": {
+        "text": "Page numbers are usually written in Arabic numerals, but in prefatory material they may be written as lower-case Roman numerals.",
+        "pageNumbers": [
+          "page vii of the Foreword",
+          "page 7 of the Introduction"
+        ],
+        "volumesAndChapters": {
+          "text": "Within the body of the text, volume numbers may be indicated by Arabic or Roman numerals or be spelled out. Numbers of chapters and other major divisions of a book may be spelled out, but are more often written in Roman or Arabic numerals—the tendency being away from Roman numerals in the case of both chapter and volume numbers. Verse numbers and those of minor divisions of a book are written as Arabic numerals.",
+          "examples": [
+            "I Kings 9:1–4",
+            "Volume 18, Section 8"
+          ]
+        },
+        "paragraphs": "Paragraphs may be numbered 1, 2, . . . ; clauses within paragraphs, 1), 2), . . . . Groups of paragraphs may be numbered with Roman numerals. In citations from legislation and the like, numbers and letters designating parts of a section should be enclosed in parentheses, with no space between them:",
+        "legislationExample": "section 123(4)(b)(ii)",
+        "note": "See also 4.30."
+      }
+    },
+    {
+      "id": "5.23",
+      "title": "Plurals",
+      "content": {
+        "text": "Plurals of numerals are usually formed by adding an s. In cases where this might cause misreading, add an apostrophe and s or italicize the numerals. Whichever practice is adopted, consistency should be maintained in any one document.",
+        "rules": [
+          "Do not pluralize SI/metric symbols"
+        ],
+        "examples": [
+          {
+            "type": "standard",
+            "text": "the 1960s"
+          },
+          {
+            "type": "standard",
+            "text": "five 5s"
+          },
+          {
+            "type": "standard",
+            "text": "The bonds are 4½s."
+          },
+          {
+            "type": "standard",
+            "text": "Korolev scored 9.85s on the floor and pommel horse exercises."
+          },
+          {
+            "type": "alternative",
+            "text": "Her performance earned her three 5.8's. (with apostrophe)"
+          },
+          {
+            "type": "alternative",
+            "text": "His 5's look like 6s. (with apostrophe)"
+          },
+          {
+            "type": "alternative",
+            "text": "His 5s look like 6s. (italicized)"
+          },
+          {
+            "type": "metric",
+            "text": "5 kg (not 5 kgs)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.24",
+      "title": "Comparative and Inclusive Numbers",
+      "content": {
+        "partA": {
+          "title": "General Comparisons",
+          "rules": [
+            "Use 'five times as great' not 'five times greater'",
+            "Use 'one fifth as large' not 'five times smaller'",
+            "Note that 'a four-to-one margin' is meaningless; 'a margin of three' is correct"
+          ],
+          "consecutiveNumbers": "Consecutive numbers are joined by 'or' or 'and', except where intermediate quantities are possible:",
+          "examples": [
+            "rows 5 and 6",
+            "but: a range of 5 to 6 (rather than a range of 5 or 6)"
+          ]
+        },
+        "partB": {
+          "title": "Page References",
+          "text": "In references to successive pages, p.15, 16 indicates matter that is disconnected in the two pages, whereas pp.15–16 indicates that the subject is continuous from the first page to the second."
+        },
+        "partC": {
+          "title": "Inclusive Numbers",
+          "text": "Opinions differ on the proper forms for inclusive numbers written as numerals. To ensure clarity, abbreviate second numbers according to the following principles.",
+          "rules": {
+            "below100": {
+              "title": "Numbers Below 100",
+              "rule": "Repeat all digits in numbers below 100",
+              "examples": ["4–10", "67–68", "82–99"]
+            },
+            "multiplesOf100": {
+              "title": "First Number is 100 or Multiple of 100",
+              "rule": "Repeat all digits where the first number is 100 or a multiple of 100",
+              "examples": ["100–138", "700–706", "1900–1901"]
+            },
+            "range101to109": {
+              "title": "Range 101–109 in Multiples of 100",
+              "rule": "Use the changed part only and omit unnecessary zeros",
+              "examples": ["101–39", "808–18", "1007–8"]
+            },
+            "range110to199": {
+              "title": "Range 110–199 in Multiples of 100",
+              "rule": "Use two or more digits, as needed",
+              "examples": ["435–37", "1986–87", "3740–75"]
+            },
+            "fourDigits": {
+              "title": "Numbers of Four Digits",
+              "rule": "Use all digits if three of them change",
+              "example": "1889–1915"
+            },
+            "specialCases": {
+              "title": "Special Cases",
+              "examples": [
+                "899–900 (second digit with even hundred)",
+                "398–396 BC (all digits repeated in years BC)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "5.25",
+      "title": "Roman Numerals",
+      "content": {
+        "text": "Roman numerals are becoming increasingly rare, but they still have the following uses:",
+        "uses": {
+          "rulers": {
+            "title": "Names of Rulers, Aristocrats, Ships, Racing Cars and Space Vehicles",
+            "examples": [
+              "Charles IV",
+              "Pius XII",
+              "Bluenose II",
+              "Apollo XIII"
+            ]
+          },
+          "divisions": {
+            "title": "Volumes, Chapters, Tables, Plates, Acts and Other Divisions",
+            "text": "Numbers of volumes, chapters, tables, plates, acts and other divisions of a book or play (now often replaced with Arabic numerals)",
+            "examples": [
+              "Psalm XXXIII",
+              "Volume XII",
+              "Appendix III",
+              "Act II, Scene iii (act number in upper case, scene number in lower case)",
+              "Iliad XI.26"
+            ]
+          },
+          "government": {
+            "title": "Government of Canada Statutes",
+            "examples": [
+              "Schedule IV",
+              "Part III"
+            ]
+          },
+          "historical": {
+            "title": "Years, Centuries and Recurring Events",
+            "examples": [
+              "MCMXCV (in very formal contexts)",
+              "XIX century (or 19th century)",
+              "XXIII Olympiad"
+            ]
+          }
+        },
+        "rules": [
+          "Do not use ordinal forms (st, nd, th, etc.) with Roman numerals",
+          "Lower-case Roman numerals may be used for page numbers in preliminary matter (preface, foreword, table of contents, etc.), subclauses and subordinate classifications in a series"
+        ],
+        "note": "Note that a bar over a letter in a Roman numeral multiplies its value by 1000: D̄ = 500 000, V̄ = 5000"
+      }
+    },
+    {
+      "id": "5.26",
+      "title": "Other Considerations",
+      "content": {
+        "text": "Clarity should be the primary consideration when communicating numerical information. Present it in such a way that it will be readily grasped by the reader. When writing for non-Canadians, make sure you are aware of the conventions used in the target country.",
+        "europeanConventions": {
+          "title": "European Conventions",
+          "text": "Europeans, for example, who are steeped in the metric system, do not confine themselves as we usually do to multiples of 1000. They will more naturally write 3 dL (decilitres) than 300 mL or 0.3 L. Material written for the European market should conform to this practice.",
+          "decimalMarker": "Remember, too, that in Europe—and in Quebec—1,500 means 'one and a half', and 1.500 means 'fifteen hundred.'",
+          "billion": "The British 'billion' is the equivalent of the American 'trillion,' while a British 'trillion' is a million million million. In certain circumstances it may be advisable to write 'a thousand million' or 10⁹ or 'giga-' instead of 'billion', and 'a million million' or 10¹² or 'tera-' instead of 'trillion', to avoid the risk of misinterpretation.",
+          "ppb": "For similar reasons, the abbreviation ppb (parts per billion) should not be used. Rewrite 100 ppb as 0.1 ppm."
+        },
+        "currencies": {
+          "title": "Currency Distinctions",
+          "text": "Dollar amounts in different currencies should be distinguished from one another by some easily understood marker. A reference to $20 will be ambiguous to a non-Canadian reader and may be taken to refer to American or some other currency. No single system is universally accepted, but the following is the one used by the Department of Finance and the International Monetary Fund:",
+          "examples": [
+            "C$20 for Canadian dollars",
+            "US$20 for American dollars",
+            "A$20 for Australian dollars",
+            "NZ$20 for New Zealand dollars"
+          ],
+          "note": "If greater clarity is required, the abbreviations CAN and AUS may be used. Note that CAD and AUD are also becoming increasingly current."
+        },
+        "internationalConventions": "Where the reader may be in doubt as to which conventions should be followed for writing numerical expressions, the safest course is to adhere to international conventions (see 5.09, notes 1 and 2)."
+      }
+    }
+  ]
+}
