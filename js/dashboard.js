@@ -46,8 +46,8 @@ const chapters = [
         title: "Numerical Expressions",
         category: "basics",
         description: "Format numbers, dates, and measurements correctly.",
-        sections: 10,
-        available: false
+        sections: 26,
+        available: true
     },
     {
         id: 6,
