@@ -501,6 +501,63 @@ export function buildChapter4Content(content) {
         html += `</div>`;
     }
     
+    // Short Titles (4.29 - special box with red border)
+    if (content.shortTitles && typeof content.shortTitles === 'object') {
+        html += `
+            <div class="short-titles-section" style="border-left: 4px solid #dc3545; padding-left: 1rem; margin: 1.5rem 0; background-color: #fff5f5;">
+                ${content.shortTitles.title ? `<h4>${content.shortTitles.title}</h4>` : ''}
+                ${content.shortTitles.text ? `<p>${content.shortTitles.text}</p>` : ''}
+        `;
+        
+        if (content.shortTitles.examples && Array.isArray(content.shortTitles.examples)) {
+            html += `
+                <ul>
+                    ${content.shortTitles.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // Ancient Manuscripts (4.29 - special box with red border)
+    if (content.ancientManuscripts && typeof content.ancientManuscripts === 'object') {
+        html += `
+            <div class="ancient-manuscripts-section" style="border-left: 4px solid #dc3545; padding-left: 1rem; margin: 1.5rem 0; background-color: #fff5f5;">
+                ${content.ancientManuscripts.title ? `<h4>${content.ancientManuscripts.title}</h4>` : ''}
+                ${content.ancientManuscripts.text ? `<p>${content.ancientManuscripts.text}</p>` : ''}
+        `;
+        
+        if (content.ancientManuscripts.examples && Array.isArray(content.ancientManuscripts.examples)) {
+            html += `
+                <ul>
+                    ${content.ancientManuscripts.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // Hyphenated Compounds (4.29 - special box with red border)
+    if (content.hyphenatedCompounds && typeof content.hyphenatedCompounds === 'object') {
+        html += `
+            <div class="hyphenated-compounds-section" style="border-left: 4px solid #dc3545; padding-left: 1rem; margin: 1.5rem 0; background-color: #fff5f5;">
+                ${content.hyphenatedCompounds.title ? `<h4>${content.hyphenatedCompounds.title}</h4>` : ''}
+                ${content.hyphenatedCompounds.text ? `<p>${content.hyphenatedCompounds.text}</p>` : ''}
+        `;
+        
+        if (content.hyphenatedCompounds.examples && Array.isArray(content.hyphenatedCompounds.examples)) {
+            html += `
+                <ul>
+                    ${content.hyphenatedCompounds.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
     // Reference (general - can appear in multiple sections)
     if (content.reference && typeof content.reference === 'object') {
         html += `
