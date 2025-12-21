@@ -8,6 +8,15 @@ export function buildLists(content) {
     
     // Examples
     if (content.examples && Array.isArray(content.examples)) {
+        // CRITICAL CHECK: Skip if examples contain base→derived structure
+        // These are handled by chapter3-builder
+        const firstExample = content.examples[0];
+        if (firstExample && typeof firstExample === 'object' && 
+            (firstExample.base || firstExample.root)) {
+            // Skip - chapter3-builder handles base→derived examples
+            return html;
+        }
+        
         html += `
             <div class="examples-section">
                 <h4>Examples</h4>
