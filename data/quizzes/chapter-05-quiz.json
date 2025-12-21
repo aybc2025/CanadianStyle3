@@ -1,0 +1,338 @@
+{
+  "chapterId": 5,
+  "chapterTitle": "Numerical Expressions",
+  "totalQuestions": 30,
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "According to the basic rule in 5.01, when should you write out numbers versus using numerals?",
+      "options": [
+        "Write out numbers one to ten, use numerals for 11 and above",
+        "Write out one-digit numbers (one to nine), use numerals for the rest",
+        "Always use numerals in professional writing",
+        "Write out all numbers under 100"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The basic rule states: write out one-digit numbers (one to nine) and use numerals for the rest (10 and above). Ordinals follow the same pattern."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "How should you write numbers in the millions or higher?",
+      "options": [
+        "Always spell them out completely",
+        "Always use numerals only: 2600000",
+        "Use a combination of words and figures: 2.6 million",
+        "Use scientific notation only"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Numbers in the millions or higher should be written as a combination of words and figures, e.g., 23 million, 3.1 million. This is clearer than 2 600 000."
+    },
+    {
+      "id": 3,
+      "type": "true-false",
+      "question": "Numbers are normally rounded to no more than three significant digits. For example, 2 653 000 becomes 2.65 million.",
+      "correctAnswer": true,
+      "explanation": "This is correct. Numbers should be rounded to no more than three significant digits (2.65 million, not 2.653 million)."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which of the following is the correct way to start a sentence?",
+      "options": [
+        "300 persons were expected",
+        "Three hundred persons were expected",
+        "3 hundred persons were expected",
+        "Both A and B are correct"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Spell out a number when it occurs at the beginning of a sentence. You can also recast the sentence to avoid starting with a number."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "When numbers modify the same or similar items in a passage, how should they be treated?",
+      "options": [
+        "Each number follows its own rule independently",
+        "All numbers should be written out",
+        "All numbers should be treated alike - if numerals are used for any, use them for all",
+        "Only the first number determines the format"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Numbers modifying the same or similar items should be treated alike. If numerals are to be used for any, they should be used for all for consistency."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which is the correct format for an adjectival expression with a unit abbreviation?",
+      "options": [
+        "a two m high jump",
+        "a 2 m high jump",
+        "a 2-m high jump",
+        "a two-m high jump"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If the unit is represented by an abbreviation or symbol, use numerals: a 2.36 m high jump, three 5-L containers."
+    },
+    {
+      "id": 7,
+      "type": "true-false",
+      "question": "You should use a hyphen between a numeral and a non-letter symbol, such as: a 90°-angle.",
+      "correctAnswer": false,
+      "explanation": "Do NOT use a hyphen between a numeral and a non-letter symbol. Correct: a 90° angle, four 100°C thermometers."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "When a number immediately precedes a compound modifier containing another number, which rule applies?",
+      "options": [
+        "Use numerals for both numbers",
+        "Spell out both numbers",
+        "Spell out the first or the smaller number",
+        "Spell out the larger number"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Spell out the first or the smaller number: ten 34-cent stamps, 15 one-litre jugs, two 10-room houses."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What is the usual format for expressing ratios?",
+      "options": [
+        "Only as percentages",
+        "1 to 4 or 1:4",
+        "Always as fractions: 1/4",
+        "Only in decimal form: 0.25"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ratios can be expressed as: 1 to 4 or 1:4, 1:3:4 (1 to 3 to 4), 3:19::12:76 (3 is to 19 as 12 is to 76)."
+    },
+    {
+      "id": 10,
+      "type": "true-false",
+      "question": "In non-technical writing, simple fractions should be spelled out, especially when used in isolation.",
+      "correctAnswer": true,
+      "explanation": "Correct. Examples: half of one percent, half an inch or one-half inch, three quarters of an inch."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which is the correct format for a fraction expressed in numerals?",
+      "options": [
+        "1/25th",
+        "3/100ths",
+        "3/8 of an inch",
+        "1/25"
+      ],
+      "correctAnswer": 3,
+      "explanation": "It is incorrect to use th or ths after fractions expressed in numerals. Also, don't use 'of a' or 'of an' after numerical fractions. Correct: 1/25, 3/100, 3/8 inch."
+    },
+    {
+      "id": 12,
+      "type": "true-false",
+      "question": "Mixed numbers (combinations of a whole number and a fraction) should always be given in numerals.",
+      "correctAnswer": true,
+      "explanation": "Correct. Mixed numbers should be given in numerals: 2¾. Exception: time and a half for overtime."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which decimal format is correct?",
+      "options": [
+        "$.64",
+        "$0.64",
+        ".64",
+        "0.64$"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A zero is written before the decimal point of numbers smaller than 1. Correct: $0.64 (not $.64). Exceptions: .39 calibre revolver, .999 fine gold."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "How should triads (groups of three numerals) be separated according to The Canadian Style?",
+      "options": [
+        "Always use commas: 50,005",
+        "Always use spaces: 50 005",
+        "Use a space instead of a comma, except in financial documents",
+        "Never separate them"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The Canadian Style recommends using a space instead of a comma to separate triads, except in financial documents. Example: 50 005, 500 005."
+    },
+    {
+      "id": 15,
+      "type": "true-false",
+      "question": "When using SI/metric units, you must either write both the number and unit in full, or abbreviate both.",
+      "correctAnswer": true,
+      "explanation": "SI usage requires: 'two metres' or '2 m' (not '2 metres' or 'two m')."
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Which money format is INCORRECT?",
+      "options": [
+        "$0.65 or 65 cents or 65¢",
+        "$100 (when standing alone)",
+        "$100.00 (when standing alone)",
+        "five dollars or $5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When standing alone, use $100 (not $100. or $100.00). Use $.65, not .65¢."
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "How should dollar amounts be written with SI symbols?",
+      "options": [
+        "$11.50/square metre",
+        "$11.50/m²",
+        "$11.50 per m²",
+        "11.50$/m²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Correct format: $11.50/m² (not $11.50/square metre), $3.99/kg (not 3.99/kilogram or $3.99/kilo)."
+    },
+    {
+      "id": 18,
+      "type": "true-false",
+      "question": "The abbreviations B for billion, M for million and K for thousand should be avoided in formal writing.",
+      "correctAnswer": true,
+      "explanation": "These abbreviations are often encountered in newspaper headlines but should be avoided in formal writing."
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "In scientific/technical contexts, elapsed time uses which symbols?",
+      "options": [
+        "hrs, mins, secs",
+        "h, m, s",
+        "d (day), h (hour), min (minute), s (second)",
+        "D, H, M, S"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Use internationally recognized symbols: d for day, h for hour, min for minute, s for second. Example: 7 h 20 min flying time."
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "In the 24-hour time system, how is noon represented?",
+      "options": [
+        "00:00:00",
+        "12:00:00",
+        "24:00:00",
+        "12:00 p.m."
+      ],
+      "correctAnswer": 1,
+      "explanation": "In 24-hour format: 12:00:00 is noon, 00:00:00 or 24:00:00 is midnight."
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Which date format follows the international standard (ISO 2014)?",
+      "options": [
+        "03/27/1994",
+        "27/03/1994",
+        "1994-03-27",
+        "March 27, 1994"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The international standard format is: 1994-03-27 or 1994 03 27 (year-month-day). This avoids ambiguity."
+    },
+    {
+      "id": 22,
+      "type": "true-false",
+      "question": "Exact age is usually indicated in numerals, even if less than 10.",
+      "correctAnswer": true,
+      "explanation": "Correct. Example: Jane, aged 9, and her brother Tom, 10, led the hike. However, approximate age is written out: He's eighty if he's a day."
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "How should you write ordinal numbers for dynasties and governing bodies?",
+      "options": [
+        "Always use numerals: 24th Dynasty",
+        "Always spell them out: Twenty-fourth Dynasty",
+        "Use Roman numerals: XXIV Dynasty",
+        "Either numerals or words is acceptable"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Write out numbers of dynasties, governing bodies, and sessions as ordinals: Twenty-fourth Dynasty, Thirty-second Parliament, Ninety-seventh Congress."
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "Street designations up to and including which number are usually spelled out?",
+      "options": [
+        "Fifth",
+        "Tenth",
+        "Twentieth",
+        "All street numbers should be numerals"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Street and avenue designations up to and including Tenth are usually spelled out: 9511 TENTH AVENUE. Modern usage favours cardinals over ordinals: 96 AVE, 101 ST."
+    },
+    {
+      "id": 25,
+      "type": "true-false",
+      "question": "Plurals of numerals are usually formed by adding an 's': the 1960s, five 5s.",
+      "correctAnswer": true,
+      "explanation": "Correct. In cases where this might cause misreading, add an apostrophe and s: Her performance earned her three 5.8's. Important: Do not pluralize SI/metric symbols: 5 kg (not 5 kgs)."
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "For inclusive numbers, how do you write a range where the first number is between 110-199 in multiples of 100?",
+      "options": [
+        "Use all digits: 435-437",
+        "Use two or more digits as needed: 435-37",
+        "Use only the last digit: 435-7",
+        "Spell it out completely"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For numbers 110-199 in multiples of 100, use two or more digits as needed: 435-37, 1986-87, 3740-75."
+    },
+    {
+      "id": 27,
+      "type": "true-false",
+      "question": "You should use ordinal forms (st, nd, th, etc.) with Roman numerals.",
+      "correctAnswer": false,
+      "explanation": "Do NOT use ordinal forms with Roman numerals. Correct: Charles IV (not Charles IVth)."
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "How should Canadian dollar amounts be distinguished from other currencies for international readers?",
+      "options": [
+        "$20 CDN",
+        "C$20 or CAN$20",
+        "20 Canadian dollars",
+        "$20 (Canada)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use C$20 for Canadian dollars, US$20 for American dollars, A$20 for Australian dollars. CAD and AUD are also becoming current."
+    },
+    {
+      "id": 29,
+      "type": "true-false",
+      "question": "In Europe and Quebec, the comma is used as a decimal marker, so 1,500 means 'one and a half'.",
+      "correctAnswer": true,
+      "explanation": "Correct. In Europe and Quebec: 1,500 = one and a half, while 1.500 = fifteen hundred (opposite of North American convention)."
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "What is the correct comparison format?",
+      "options": [
+        "five times greater",
+        "five times as great",
+        "five times bigger",
+        "All of the above are correct"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use 'five times as great' (not 'five times greater'). Use 'one fifth as large' (not 'five times smaller')."
+    }
+  ]
+}
