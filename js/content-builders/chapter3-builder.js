@@ -1,12 +1,190 @@
 // ===================================
-// Chapter 3 Content Builder
-// Handles structures specific to Chapter 3 (Spelling)
+// Chapter 3 Content Builder - COMPLETE
+// Handles ALL structures specific to Chapter 3 (Spelling)
 // ===================================
 
 export function buildChapter3Content(content) {
     let html = '';
     
-    // British vs American differences
+    // === 3.05: Homonyms and Similar-Sounding Words (CRITICAL!) ===
+    if (content.homonyms && Array.isArray(content.homonyms)) {
+        html += `
+            <div class="homonyms-section">
+                <table class="homonyms-table">
+                    <thead>
+                        <tr>
+                            <th>Word 1</th>
+                            <th>Meaning</th>
+                            <th>Word 2</th>
+                            <th>Meaning</th>
+                            <th>Word 3</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        `;
+        
+        content.homonyms.forEach(item => {
+            html += `
+                <tr>
+                    <td><strong>${item.word1 || ''}</strong></td>
+                    <td>${item.meaning1 || ''}</td>
+                    <td><strong>${item.word2 || ''}</strong></td>
+                    <td>${item.meaning2 || ''}</td>
+                    <td>${item.word3 ? `<strong>${item.word3}</strong>` : ''}</td>
+                    <td>${item.meaning3 || ''}</td>
+                </tr>
+            `;
+        });
+        
+        html += `
+                    </tbody>
+                </table>
+            </div>
+        `;
+    }
+    
+    // === 3.07: Supersede (sede ending) ===
+    if (content.supersede && typeof content.supersede === 'object') {
+        html += `
+            <div class="verb-ending-section">
+                <h4>${content.supersede.title || 'Sede Ending'}</h4>
+                <p>${content.supersede.content || ''}</p>
+            </div>
+        `;
+    }
+    
+    // === 3.07: Ceed Verbs ===
+    if (content.ceedVerbs && typeof content.ceedVerbs === 'object') {
+        html += `
+            <div class="verb-ending-section">
+                <h4>${content.ceedVerbs.title || 'Ceed Ending'}</h4>
+                <p>${content.ceedVerbs.content || ''}</p>
+        `;
+        
+        if (content.ceedVerbs.verbs && Array.isArray(content.ceedVerbs.verbs)) {
+            html += `<ul class="styled-list">`;
+            content.ceedVerbs.verbs.forEach(verb => {
+                html += `<li>${verb}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // === 3.07: Cede Verbs ===
+    if (content.cedeVerbs && typeof content.cedeVerbs === 'object') {
+        html += `
+            <div class="verb-ending-section">
+                <h4>${content.cedeVerbs.title || 'Cede Ending'}</h4>
+                <p>${content.cedeVerbs.content || ''}</p>
+        `;
+        
+        if (content.cedeVerbs.verbs && Array.isArray(content.cedeVerbs.verbs)) {
+            html += `<ul class="styled-list">`;
+            content.cedeVerbs.verbs.forEach(verb => {
+                html += `<li>${verb}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // === 3.08, 3.10, 3.13, 3.14: derivedExamples ===
+    if (content.derivedExamples && Array.isArray(content.derivedExamples)) {
+        html += `
+            <div class="derived-examples-section">
+                <h4>Examples</h4>
+                <ul class="styled-list">
+        `;
+        
+        content.derivedExamples.forEach(ex => {
+            if (typeof ex === 'object' && ex.base && ex.derived) {
+                html += `<li><strong>${ex.base}</strong> → ${ex.derived}</li>`;
+            } else {
+                html += `<li>${ex}</li>`;
+            }
+        });
+        
+        html += `
+                </ul>
+            </div>
+        `;
+    }
+    
+    // === 3.16: ise/ize words ===
+    if (content.iseWords && typeof content.iseWords === 'object') {
+        html += `
+            <div class="ise-words-section">
+                <h4>${content.iseWords.title || 'Words Ending in -ise'}</h4>
+        `;
+        
+        if (content.iseWords.words && Array.isArray(content.iseWords.words)) {
+            html += `<ul class="styled-list">`;
+            content.iseWords.words.forEach(word => {
+                html += `<li>${word}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        if (content.iseWords.note) {
+            html += `<p class="note-text"><em>Note: ${content.iseWords.note}</em></p>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    if (content.izeWords && typeof content.izeWords === 'object') {
+        html += `
+            <div class="ize-words-section">
+                <h4>${content.izeWords.title || 'Words Ending in -ize'}</h4>
+        `;
+        
+        if (content.izeWords.words && Array.isArray(content.izeWords.words)) {
+            html += `<ul class="styled-list">`;
+            content.izeWords.words.forEach(word => {
+                html += `<li>${word}</li>`;
+            });
+            html += `</ul>`;
+        }
+        
+        html += `</div>`;
+    }
+    
+    // === 3.17: Plural Forms Table ===
+    if (content.pluralForms && Array.isArray(content.pluralForms)) {
+        html += `
+            <div class="plural-forms-section">
+                <h4>Plural Forms</h4>
+                <table class="plural-table">
+                    <thead>
+                        <tr>
+                            <th>Singular</th>
+                            <th>Plural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        `;
+        
+        content.pluralForms.forEach(form => {
+            html += `
+                <tr>
+                    <td><strong>${form.singular || ''}</strong></td>
+                    <td>${form.plural || ''}</td>
+                </tr>
+            `;
+        });
+        
+        html += `
+                    </tbody>
+                </table>
+            </div>
+        `;
+    }
+    
+    // === British vs American differences ===
     if (content.britishAmericanDifferences && typeof content.britishAmericanDifferences === 'object') {
         html += `
             <div class="british-american-section">
@@ -41,7 +219,7 @@ export function buildChapter3Content(content) {
         html += `</div>`;
     }
     
-    // Recommended spellings
+    // === Recommended spellings ===
     if (content.recommendedSpellings && typeof content.recommendedSpellings === 'object') {
         html += `
             <div class="recommended-spellings-section">
@@ -61,7 +239,7 @@ export function buildChapter3Content(content) {
         `;
     }
     
-    // Drawbacks (for spell-checking)
+    // === Drawbacks (for spell-checking) ===
     if (content.drawbacks && typeof content.drawbacks === 'object') {
         html += `
             <div class="drawbacks-section">
@@ -81,7 +259,7 @@ export function buildChapter3Content(content) {
         `;
     }
     
-    // Search and replace example
+    // === Search and replace example ===
     if (content.searchReplaceExample && typeof content.searchReplaceExample === 'object') {
         html += `
             <div class="search-replace-example">
@@ -92,7 +270,7 @@ export function buildChapter3Content(content) {
         `;
     }
     
-    // Standard spellings (SI/metric)
+    // === Standard spellings (SI/metric) ===
     if (content.standardSpellings && Array.isArray(content.standardSpellings)) {
         html += `
             <div class="standard-spellings-section">
@@ -110,7 +288,7 @@ export function buildChapter3Content(content) {
         `;
     }
     
-    // Prefix rules
+    // === Prefix rules ===
     if (content.prefixRules && typeof content.prefixRules === 'object') {
         html += `
             <div class="prefix-rules-section">
@@ -120,14 +298,11 @@ export function buildChapter3Content(content) {
         `;
     }
     
-    // Handle nested rule structures (specific to Chapter 3)
+    // === Handle nested rule structures (specific to Chapter 3) ===
     const nestedRuleKeys = [
         'rule', 'rule1', 'rule2', 
         'exceptions', 'exceptions2', 'exception',
-        'supersede', 'sedeVerb',
-        'ceedVerbs', 'cedeVerbs',
-        'iseWords', 'izeWords',
-        'distinction', 'vowelYRule'
+        'sedeVerb', 'distinction', 'vowelYRule'
     ];
     
     nestedRuleKeys.forEach(key => {
