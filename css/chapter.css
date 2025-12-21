@@ -715,3 +715,54 @@
     padding-left: 15px;
     margin: 15px 0;
 }
+
+/* 1. Numbered Notes - adds visual distinction for Note 1, Note 2, etc */
+.numbered-note {
+    border-left-color: #2196f3 !important;
+    border-left-width: 5px !important;
+}
+
+/* 2. Part Sections - for subsections (partA, partB, partC, partD) */
+.part-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-left: 5px solid #3498db;
+    border-radius: 4px;
+}
+
+.part-section h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 1rem;
+}
+
+.part-section p {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+}
+
+.part-section ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.part-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* 3. SI Symbols Table - correct/incorrect styling */
+.si-symbols-table td.si-correct {
+    background-color: #d4edda;
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+}
+
+.si-symbols-table td.si-incorrect {
+    background-color: #f8d7da;
+    font-family: 'Courier New', monospace;
+    text-decoration: line-through;
+    color: #721c24;
+}
