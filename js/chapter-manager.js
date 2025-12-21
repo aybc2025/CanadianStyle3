@@ -40,13 +40,14 @@ document.addEventListener('DOMContentLoaded', async function() {
 async function loadBuilders() {
     try {
         // Import all builder modules
-        const [coreBuilder, boxBuilder, listsBuilder, chapter1Builder, chapter3Builder, chapter4Builder] = await Promise.all([
+        const [coreBuilder, boxBuilder, listsBuilder, chapter1Builder, chapter3Builder, chapter4Builder, chapter5Builder] = await Promise.all([
             import('./content-builders/core-builder.js'),
             import('./content-builders/box-builder.js'),
             import('./content-builders/lists-builder.js'),
             import('./content-builders/chapter1-builder.js'),
             import('./content-builders/chapter3-builder.js'),
-            import('./content-builders/chapter4-builder.js')
+            import('./content-builders/chapter4-builder.js'),
+            import('./content-builders/chapter5-builder.js')
         ]);
         
         contentBuilders = {
@@ -55,7 +56,8 @@ async function loadBuilders() {
             lists: listsBuilder,
             chapter1: chapter1Builder,
             chapter3: chapter3Builder,
-            chapter4: chapter4Builder
+            chapter4: chapter4Builder,
+            chapter5: chapter5Builder
         };
         
     } catch (error) {
@@ -189,26 +191,27 @@ function buildSectionHTML(section) {
     // Use box builder for special boxes
     html += contentBuilders.box.buildBoxes(content);
     
-    // This prevents duplicate "Examples" headers in Chapter 3
-const chapterId = chapterData.id;
-
-if (chapterId === 1) {
-    html += contentBuilders.chapter1.buildChapter1Content(content);
-}
-
-if (chapterId === 3) {
-    // Chapter 3 builder MUST run before lists builder
-    // to handle base→derived examples correctly
-    html += contentBuilders.chapter3.buildChapter3Content(content);
-}
-
-if (chapterId === 4) {
-    html += contentBuilders.chapter4.buildChapter4Content(content);
-}
-
-// Use lists builder for lists and examples
-// (This now runs AFTER chapter-specific builders)
-html += contentBuilders.lists.buildLists(content);
+    // Use lists builder for lists and examples
+    html += contentBuilders.lists.buildLists(content);
+    
+    // Use chapter-specific builders based on chapter ID
+    const chapterId = chapterData.id;
+    
+    if (chapterId === 1) {
+        html += contentBuilders.chapter1.buildChapter1Content(content);
+    }
+    
+    if (chapterId === 3) {
+        html += contentBuilders.chapter3.buildChapter3Content(content);
+    }
+    
+    if (chapterId === 4) {
+        html += contentBuilders.chapter4.buildChapter4Content(content);
+    }
+    
+    if (chapterId === 5) {
+        html += contentBuilders.chapter5.buildChapter5Content(content);
+    }
     
     return html;
 }
