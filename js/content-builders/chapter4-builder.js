@@ -483,6 +483,24 @@ export function buildChapter4Content(content) {
         html += `</div>`;
     }
     
+    // Prepositions as Other Parts (4.29 - special box with red border)
+    if (content.prepositionsAsOtherParts && typeof content.prepositionsAsOtherParts === 'object') {
+        html += `
+            <div class="prepositions-section" style="border-left: 4px solid #dc3545; padding-left: 1rem; margin: 1.5rem 0; background-color: #fff5f5;">
+                ${content.prepositionsAsOtherParts.text ? `<p>${content.prepositionsAsOtherParts.text}</p>` : ''}
+        `;
+        
+        if (content.prepositionsAsOtherParts.examples && Array.isArray(content.prepositionsAsOtherParts.examples)) {
+            html += `
+                <ul>
+                    ${content.prepositionsAsOtherParts.examples.map(ex => `<li>${ex}</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        html += `</div>`;
+    }
+    
     // Reference (general - can appear in multiple sections)
     if (content.reference && typeof content.reference === 'object') {
         html += `
