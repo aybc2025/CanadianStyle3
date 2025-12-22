@@ -1,0 +1,342 @@
+{
+  "chapterNumber": 6,
+  "title": "Italics",
+  "description": "Learn when and how to use italic type effectively in Canadian government writing",
+  "sections": [
+    {
+      "id": "6.01",
+      "title": "Introduction",
+      "content": {
+        "mainText": "Because italic (sloping) type contrasts with roman (vertical) type, a writer can require words or passages to be typeset in italics in order to call special attention to them, to give them special meaning, or to distinguish them from the rest of his or her text.",
+        "keyPrinciple": "Use italics sparingly, or they lose their effectiveness.",
+        "punctuationRules": [
+          "When an entire passage is printed in italics, the punctuation (including parentheses) and any numbers (including footnote references) will also be in italics.",
+          "If just a word or phrase is in italics, only the punctuation proper to it is printed in that typeface."
+        ],
+        "note": "When the main body of a text is printed in italics, roman type is used for emphasis and for the other purposes described in this chapter."
+      }
+    },
+    {
+      "id": "6.02",
+      "title": "Emphasis",
+      "content": {
+        "text": "Italics can serve to indicate emphasis in the following cases:",
+        "useCases": [
+          {
+            "situation": "When the writer uses an unexpected word",
+            "example": "What differences might we expect to see in human behaviour if honesty were shown to be the <em>worst</em> policy?"
+          },
+          {
+            "situation": "When two words are contrasted",
+            "example": "I did not say we <em>would</em> go: I said we <em>might</em> go."
+          },
+          {
+            "situation": "When the writer wishes to stress a word that would not normally be stressed in the sentence",
+            "example": "Why was <em>he</em> chosen to chair the committee?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6.03",
+      "title": "French and foreign words and phrases",
+      "content": {
+        "mainRule": "Write these in italics if they are not considered to have been assimilated into English. A non-English pronunciation often indicates that a word or phrase has not been assimilated. Many such terms occur in legal, political and musical contexts:",
+        "italicizedExamples": [
+          "allegro non troppo",
+          "mutatis mutandis",
+          "caveat emptor",
+          "raison d'état",
+          "laissez-passer",
+          "res ipsa loquitur"
+        ],
+        "notItalicizedRule": "When French or foreign words or phrases are considered to have been assimilated into English, italics are not used:",
+        "notItalicizedExamples": [
+          "ad hoc",
+          "per capita",
+          "aide-de-camp",
+          "strudel",
+          "autobahn",
+          "tsunami"
+        ],
+        "dictionaryGuidance": {
+          "text": "Most dictionaries do not indicate which words or phrases are to be italicized. Among those that do are The Concise Oxford Dictionary, The Random House Dictionary and the Collins dictionaries, but they are not always unanimous. Consult the Concise Oxford but also exercise your own judgment, with due regard for the type of text and intended readership.",
+          "rule": "When in doubt, use roman type."
+        },
+        "repeatedTerms": "If an unfamiliar French or foreign term or phrase is used repeatedly in a text, it should be italicized at the first occurrence and accompanied by an explanation. Subsequently, it may be set in roman type."
+      }
+    },
+    {
+      "id": "6.04",
+      "title": "Latin terms and abbreviations",
+      "content": {
+        "mainText": "Although there is a growing tendency to print latin reference terms and phrases in roman type (especially when abbreviated), many are still italicized:",
+        "italicizedTerms": [
+          "idem",
+          "sic",
+          "infra",
+          "supra",
+          "passim",
+          "vide"
+        ],
+        "notItalicizedRule": "Do not italicize the following:",
+        "notItalicizedTerms": [
+          "AD",
+          "et seq.",
+          "e.g.",
+          "loc.cit.",
+          "QED",
+          "ca., c.",
+          "i.e.",
+          "ibid.",
+          "NB",
+          "cf.",
+          "v., vs.",
+          "op.cit.",
+          "PS",
+          "etc.",
+          "viz",
+          "et al."
+        ]
+      }
+    },
+    {
+      "id": "6.05",
+      "title": "Titles of publications and works of art",
+      "content": {
+        "mainRule": "Italicize the titles of books, pamphlets, published reports and studies, plays, operas and long musical compositions, paintings, sculptures, novels, films, long poems, newspapers and periodicals:",
+        "publicationTypes": [
+          {
+            "type": "book",
+            "example": "The Canadian Style"
+          },
+          {
+            "type": "pamphlet",
+            "example": "Keeping the Heat In"
+          },
+          {
+            "type": "report",
+            "example": "Public Accounts of Canada"
+          },
+          {
+            "type": "play",
+            "example": "Murder in the Cathedral"
+          },
+          {
+            "type": "opera",
+            "example": "Rigoletto"
+          },
+          {
+            "type": "symphony",
+            "example": "the Pastoral Symphony"
+          },
+          {
+            "type": "painting",
+            "example": "Voice of Fire"
+          },
+          {
+            "type": "novel",
+            "example": "Cabbagetown"
+          },
+          {
+            "type": "long poem",
+            "example": "The Rime of the Ancient Mariner"
+          },
+          {
+            "type": "sculpture",
+            "example": "David"
+          },
+          {
+            "type": "newspaper",
+            "example": "The Globe and Mail"
+          },
+          {
+            "type": "periodical",
+            "example": "Saturday Night"
+          }
+        ],
+        "exception": {
+          "text": "Titles of scientific periodicals are usually abbreviated and set in roman type (see 9.08(c))."
+        },
+        "unofficialTitles": {
+          "rule": "Do not italicize unofficial titles:",
+          "example": "A record of the debate can be found in Hansard."
+        },
+        "shortWorks": {
+          "rule": "Titles of articles, short poems and short stories, songs, arias and other short musical compositions, and radio and television programs are set in roman type and enclosed in quotation marks:",
+          "examples": [
+            {
+              "type": "article",
+              "title": "\"The Life Beyond\""
+            },
+            {
+              "type": "aria",
+              "title": "\"Pace, pace, Mio Dio\""
+            },
+            {
+              "type": "musical composition",
+              "title": "\"Still the Night\""
+            },
+            {
+              "type": "television program",
+              "title": "\"Street Legal\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "6.06",
+      "title": "Legal references",
+      "content": {
+        "mainRule": "In legal texts italicize the names of statutes and court cases:",
+        "examples": [
+          "the Official Languages Act",
+          "the Divorce Act",
+          "Weiner v. The Queen",
+          "Robson v. Chrysler Corporation"
+        ],
+        "exception": "Do not italicize short forms such as \"the Act\" or \"the Charter.\"",
+        "crossReference": "See also 6.10."
+      }
+    },
+    {
+      "id": "6.07",
+      "title": "Modes of transportation",
+      "content": {
+        "mainRule": "Italicize the names given to individual ships, spacecraft, aircraft and trains but not abbreviations preceding them:",
+        "examples": [
+          "HMCS Brunswick",
+          "the Spirit of St. Louis",
+          "the spacecraft Challenger",
+          "the Rapido"
+        ],
+        "specialNote": {
+          "title": "Department of National Defence documents",
+          "text": "In Department of National Defence documents, names of ships are written entirely in upper case and are not italicized:",
+          "examples": [
+            "HMCS ATHABASKAN",
+            "HMCS SACKVILLE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "6.08",
+      "title": "Letters and words referred to as such",
+      "content": {
+        "mainRule": "These should be italicized:",
+        "examples": [
+          "Delete the second <em>and</em> from line 15.",
+          "There is only one <em>s</em> in <em>disappoint</em>"
+        ],
+        "alternatives": "Quotation marks (see 8.11), boldface type and underlining may perform the same function."
+      }
+    },
+    {
+      "id": "6.09",
+      "title": "Peripheral matter in a text",
+      "content": {
+        "prefacesAndDedications": "Italics may be used to set off peripheral matter such as prefaces and dedications or epigraphs and quotations at the beginning of a book or chapter.",
+        "stageDirections": {
+          "text": "Stage directions for a play are usually set in italics and placed within brackets or parentheses.",
+          "note": "Introductory matter setting the scene is also usually in italics, but not in brackets or parentheses."
+        },
+        "indexTerms": "Italicize the terms <em>See</em>, <em>See under</em>, <em>See also</em> and <em>See also under</em> when used in indexes, and the expressions <em>To be continued</em>, <em>Continued on p.</em>, <em>Continued from p.</em> and <em>Continued on next page</em>.",
+        "editorialClarifications": {
+          "rule": "Italicize editorial clarifications:",
+          "examples": [
+            "Representatives from certain Carribean [sic] countries . . .",
+            "[My emphasis]",
+            "[Translation]"
+          ]
+        },
+        "crossReference": "See 8.10 and 8.14 for further information on this point."
+      }
+    },
+    {
+      "id": "6.10",
+      "title": "Identifying matter",
+      "content": {
+        "text": "Italicize:",
+        "categories": [
+          {
+            "type": "Statute subdivisions",
+            "description": "Letters referring to subdivisions of a statute or other regulatory document",
+            "examples": [
+              "Paragraph 42(2)(e) of the Canada Business Corporations Act",
+              "In accordance with paragraph (t) of CFAO 19-27M..."
+            ]
+          },
+          {
+            "type": "Rhyme schemes",
+            "description": "Letters referring to lines of verse (rhyme schemes)",
+            "example": "The Shakespearean sonnet has an <em>abab, cdcd, efef, gg</em> rhyme scheme."
+          },
+          {
+            "type": "Legend symbols",
+            "description": "Letter symbols or words used in legends to illustrations, drawings, photographs, etc. or within the body of the text to identify parts of the item concerned. Such words as <em>top</em>, <em>bottom</em>, <em>left</em>, <em>right</em>, <em>above</em>, <em>below</em>, <em>left to right</em> and <em>clockwise from left</em> are frequently encountered in this context",
+            "example": "United States envoy Holbrook, <em>left</em>, greets his Russian counterpart, Vitaly Churkin, in the Serbian capital."
+          }
+        ]
+      }
+    },
+    {
+      "id": "6.11",
+      "title": "Mathematical, statistical and scientific material",
+      "content": {
+        "biologicalNames": {
+          "rule": "Italicize the scientific (Latin) names of genera and species in botanical, zoological and paleontological matter:",
+          "example": "The sugar maple (<em>Acer saccharum</em>) is a member of the family Aceraceae.",
+          "exception": "Do not italicize the names of the larger subdivisions (phyla, classes, orders, families and tribes):",
+          "exceptionExample": "The order Primates includes modern man (<em>Homo sapiens</em>)."
+        },
+        "algebraicNotation": {
+          "rule": "Italicize letters designating unknown quantities and constants, lines, etc. in algebraic, geometric and similar matter:",
+          "examples": [
+            "Let <em>n</em> be the number of molecules ...",
+            "5<em>x</em> × <em>a</em>² − 2<em>ab</em>"
+          ],
+          "note": "Note in the second example that no space is left between the numerical coefficients and the variables, and that the italics help to differentiate between the variable <em>x</em> and the multiplication sign. Correct spacing and italic type also help to distinguish between algebraic variables and SI/metric symbols:",
+          "comparisonExamples": [
+            "10<em>x</em> m",
+            "6<em>a</em> cm",
+            "10<em>b</em> L"
+          ]
+        },
+        "quantitySymbols": {
+          "rule": "Italicize quantity symbols such as <em>l</em> for length, <em>m</em> for mass and <em>v</em> for velocity in order to distinguish them from unit symbols such as \"L\" for litre, \"m\" for metre and \"V\" for volt, which are normally printed in roman type:",
+          "example": "60 N = <em>m</em> × 12m/s² <br> <em>m</em> = 5 kg",
+          "notation": "(N = newton, <em>m</em> = mass, and m = metre)"
+        },
+        "chemicalPrefixes": {
+          "rule": "Italicize latin prefixes and Greek and Roman letters used as prefixes to the names of chemical and biochemical compounds:",
+          "examples": [
+            "<em>cis</em>-dimethylethylene",
+            "<em>β</em>-lactose",
+            "<em>N</em>-acylneuraminic acid",
+            "<em>M</em>-xylene"
+          ]
+        },
+        "statisticalSymbols": {
+          "text": "A number of Greek and Roman letters used in statistical formulas and notations are italicized:",
+          "examples": [
+            "<em>p</em> = probability of",
+            "<em>μ</em> = population mean",
+            "<em>σ</em> = population standard deviation",
+            "<em>σ</em>² = population variance"
+          ]
+        }
+      }
+    },
+    {
+      "id": "6.12",
+      "title": "Headings",
+      "content": {
+        "text": "Headings or subheadings of a document may be italicized in order to clarify its arrangement for the reader.",
+        "crossReference": "See Chapter 11.16 for further information.",
+        "example": "An example of an italicized run-in sidehead can be seen in 7.07."
+      }
+    }
+  ]
+}
