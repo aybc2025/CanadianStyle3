@@ -766,3 +766,111 @@
     text-decoration: line-through;
     color: #721c24;
 }
+
+
+/* ========================================
+   Chapter 6 - Italics - Minimal CSS
+   רק מה שבאמת חסר!
+   ======================================== */
+
+/* 6.02 - Use Cases */
+.use-case-item {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl);
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-md);
+}
+
+/* 6.03 & 6.04 - Comparison Grid */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.comparison-column {
+    padding: var(--spacing-xl);
+    background-color: white;
+    border-radius: var(--radius-md);
+}
+
+.comparison-column.italicized {
+    border-top: 4px solid var(--success-green);
+}
+
+.comparison-column.italicized h4 {
+    color: var(--success-green);
+}
+
+.comparison-column.not-italicized {
+    border-top: 4px solid var(--primary-red);
+}
+
+.comparison-column.not-italicized h4 {
+    color: var(--primary-red);
+}
+
+/* 6.05 - Publications */
+.publication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.publication-item {
+    display: flex;
+    padding: var(--spacing-lg);
+    background-color: #F8F9FA;
+    border-left: 4px solid var(--secondary-blue);
+    border-radius: var(--radius-sm);
+}
+
+.pub-type {
+    font-weight: 600;
+    min-width: 100px;
+    margin-right: var(--spacing-sm);
+}
+
+.pub-example {
+    font-style: italic;
+    color: var(--secondary-blue);
+}
+
+/* 6.07 - DND Special */
+.dnd-note {
+    background: linear-gradient(135deg, #667EEA, #764BA2) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.dnd-note h4,
+.dnd-note p,
+.dnd-note li {
+    color: white !important;
+}
+
+/* 6.11 - Math & Science */
+.math-example {
+    font-family: 'Courier New', monospace;
+    font-size: 1.05rem;
+    padding: var(--spacing-lg);
+    background-color: white;
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-sm);
+    direction: ltr;
+}
+
+.math-example em {
+    font-style: italic;
+    color: var(--secondary-blue);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .comparison-grid,
+    .publication-grid {
+        grid-template-columns: 1fr;
+    }
+}
