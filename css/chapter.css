@@ -767,10 +767,9 @@
     color: #721c24;
 }
 
-
 /* ========================================
-   Chapter 6 - Italics - Minimal CSS
-   רק מה שבאמת חסר!
+   Chapter 6 - Italics - CSS (CORRECTED)
+   תיקון: שם ספציפי למניעת קונפליקט
    ======================================== */
 
 /* 6.02 - Use Cases */
@@ -779,9 +778,17 @@
     padding: var(--spacing-xl);
     border: 1px solid var(--border-gray);
     border-radius: var(--radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* 6.03 & 6.04 - Comparison Grid */
+/* 6.03 & 6.04 - Comparison Grid (שם ספציפי!) */
+.comparison-section-italics {
+    margin: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl);
+    background-color: #F8F9FA;
+    border-radius: var(--radius-lg);
+}
+
 .comparison-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -793,6 +800,17 @@
     padding: var(--spacing-xl);
     background-color: white;
     border-radius: var(--radius-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-column h4 {
+    font-family: var(--font-sans);
+    margin-top: 0;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--border-gray);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .comparison-column.italicized {
@@ -803,12 +821,31 @@
     color: var(--success-green);
 }
 
+.comparison-column.italicized li em {
+    font-style: italic;
+    color: #155724;
+    background-color: #D4EDDA;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
 .comparison-column.not-italicized {
     border-top: 4px solid var(--primary-red);
 }
 
 .comparison-column.not-italicized h4 {
     color: var(--primary-red);
+}
+
+.comparison-column.not-italicized li {
+    font-weight: 500;
+    color: #721C24;
+}
+
+/* Latin Terms Specific */
+.comparison-section-italics.latin-terms .comparison-column {
+    min-height: 250px;
 }
 
 /* 6.05 - Publications */
@@ -821,21 +858,41 @@
 
 .publication-item {
     display: flex;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
     background-color: #F8F9FA;
     border-left: 4px solid var(--secondary-blue);
     border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.publication-item:hover {
+    background-color: #E9ECEF;
+    transform: translateX(4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .pub-type {
+    font-family: var(--font-sans);
     font-weight: 600;
-    min-width: 100px;
+    color: var(--dark-gray);
     margin-right: var(--spacing-sm);
+    min-width: 100px;
 }
 
 .pub-example {
     font-style: italic;
     color: var(--secondary-blue);
+    font-weight: 500;
+}
+
+/* Short Works */
+.short-works {
+    margin-top: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    background-color: var(--warning-yellow);
+    border: 1px solid var(--warning-border);
+    border-left: 5px solid var(--warning-text);
+    border-radius: var(--radius-md);
 }
 
 /* 6.07 - DND Special */
@@ -843,28 +900,149 @@
     background: linear-gradient(135deg, #667EEA, #764BA2) !important;
     color: white !important;
     border: none !important;
+    border-left: none !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
-.dnd-note h4,
-.dnd-note p,
-.dnd-note li {
+.dnd-note h4 {
     color: white !important;
 }
 
-/* 6.11 - Math & Science */
-.math-example {
+.dnd-note p,
+.dnd-note li {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dnd-note .styled-list li {
     font-family: 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+/* 6.10 - Categories */
+.category-section {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl);
+    background-color: white;
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-section h4 {
+    font-family: var(--font-sans);
+    color: var(--secondary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--border-gray);
+}
+
+/* 6.11 - Math & Science */
+.biological,
+.algebraic,
+.quantity-symbols,
+.chemical,
+.statistical {
+    margin: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl);
+    background-color: #F8F9FA;
+    border-left: 5px solid var(--secondary-blue);
+    border-radius: var(--radius-md);
+}
+
+.biological h4,
+.algebraic h4,
+.quantity-symbols h4,
+.chemical h4,
+.statistical h4 {
+    font-family: var(--font-sans);
+    color: var(--secondary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.math-example {
+    font-family: 'Courier New', Consolas, Monaco, monospace;
     font-size: 1.05rem;
     padding: var(--spacing-lg);
     background-color: white;
     border: 1px solid var(--border-gray);
     border-radius: var(--radius-sm);
+    margin: var(--spacing-md) 0;
     direction: ltr;
+    text-align: left;
+    line-height: 1.8;
 }
 
 .math-example em {
     font-style: italic;
     color: var(--secondary-blue);
+    font-weight: 600;
+}
+
+.notation {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    font-style: italic;
+    margin-top: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
+}
+
+/* Statistical formulas */
+.statistical .math-example {
+    background: linear-gradient(to right, #F8F9FA 0%, #E9ECEF 100%);
+}
+
+/* Rule Subsections */
+.rule-subsection {
+    margin: var(--spacing-xl) 0;
+}
+
+.rule-subsection h4 {
+    font-family: var(--font-sans);
+    color: var(--dark-gray);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Cross-References */
+.cross-reference {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background-color: #E7F3FF;
+    border-left: 4px solid var(--secondary-blue);
+    font-style: italic;
+    color: #004085;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-sans);
+}
+
+/* Guidance Box */
+.info-box.guidance {
+    background-color: #D1ECF1;
+    border-left-color: var(--secondary-blue);
+}
+
+.info-box.guidance p {
+    color: #0C5460;
+}
+
+/* Exception Box */
+.info-box.exception {
+    background-color: var(--warning-yellow);
+    border-left-color: var(--warning-text);
+}
+
+.info-box.exception h4 {
+    color: var(--warning-text);
 }
 
 /* Responsive */
@@ -872,5 +1050,40 @@
     .comparison-grid,
     .publication-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .publication-item {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .pub-type {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .math-example {
+        font-size: 0.95rem;
+        padding: var(--spacing-md);
+    }
+    
+    .comparison-section-italics {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Print */
+@media print {
+    .math-example,
+    .comparison-grid,
+    .dnd-note {
+        page-break-inside: avoid;
+    }
+    
+    .dnd-note {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
