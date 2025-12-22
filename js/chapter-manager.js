@@ -58,7 +58,7 @@ async function loadBuilders() {
             chapter1: chapter1Builder,
             chapter3: chapter3Builder,
             chapter4: chapter4Builder,
-            chapter5: chapter5Builder
+            chapter5: chapter5Builder,
             chapter6: chapter6Builder
         };
         
