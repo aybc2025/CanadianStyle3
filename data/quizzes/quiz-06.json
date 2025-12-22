@@ -1,0 +1,480 @@
+{
+  "chapterNumber": 6,
+  "title": "Italics Quiz",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "section": "6.01",
+      "question": "What is the main purpose of using italic type in writing?",
+      "options": [
+        "To make text larger and more readable",
+        "To call special attention to words or distinguish them from surrounding text",
+        "To replace bold type in all situations",
+        "To meet government formatting requirements"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italic type contrasts with roman type to call special attention to words, give them special meaning, or distinguish them from the rest of the text."
+    },
+    {
+      "id": 2,
+      "section": "6.01",
+      "question": "What is the golden rule about using italics?",
+      "options": [
+        "Use italics as much as possible for clarity",
+        "Never use italics in formal writing",
+        "Use italics sparingly, or they lose their effectiveness",
+        "Only use italics for titles"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The key principle is to use italics sparingly, or they lose their effectiveness."
+    },
+    {
+      "id": 3,
+      "section": "6.01",
+      "question": "When an entire passage is printed in italics, what happens to the punctuation and numbers?",
+      "options": [
+        "They remain in roman type",
+        "They are also in italics",
+        "They are omitted",
+        "They are replaced with symbols"
+      ],
+      "correctAnswer": 1,
+      "explanation": "When an entire passage is printed in italics, the punctuation (including parentheses) and any numbers (including footnote references) will also be in italics."
+    },
+    {
+      "id": 4,
+      "section": "6.02",
+      "question": "Which of the following is a correct use of italics for emphasis?",
+      "options": [
+        "The meeting was very important",
+        "Why was he chosen to chair the committee?",
+        "The document needs to be reviewed carefully",
+        "Please submit your report by Friday"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italics can emphasize a word that would not normally be stressed in the sentence, as in 'Why was *he* chosen to chair the committee?'"
+    },
+    {
+      "id": 5,
+      "section": "6.02",
+      "question": "When should italics be used for emphasis with contrasting words?",
+      "options": [
+        "When comparing two similar concepts",
+        "When contrasting two words, such as 'I did not say we would go: I said we might go'",
+        "When listing multiple items",
+        "When writing in passive voice"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italics are used when two words are contrasted, as in the example where 'would' and 'might' are contrasted."
+    },
+    {
+      "id": 6,
+      "section": "6.02",
+      "question": "Italics can indicate emphasis when:",
+      "options": [
+        "The writer uses an expected word",
+        "The writer uses an unexpected word",
+        "The sentence is very long",
+        "The paragraph needs formatting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italics serve to indicate emphasis when the writer uses an unexpected word, such as in 'What differences might we expect to see in human behaviour if honesty were shown to be the worst policy?'"
+    },
+    {
+      "id": 7,
+      "section": "6.03",
+      "question": "Which of the following foreign terms should be italicized?",
+      "options": [
+        "ad hoc",
+        "per capita",
+        "caveat emptor",
+        "aide-de-camp"
+      ],
+      "correctAnswer": 2,
+      "explanation": "'Caveat emptor' should be italicized as it has not been assimilated into English. 'Ad hoc', 'per capita', and 'aide-de-camp' are considered assimilated and are not italicized."
+    },
+    {
+      "id": 8,
+      "section": "6.03",
+      "question": "Which foreign word is considered assimilated into English and should NOT be italicized?",
+      "options": [
+        "allegro non troppo",
+        "mutatis mutandis",
+        "tsunami",
+        "raison d'état"
+      ],
+      "correctAnswer": 2,
+      "explanation": "'Tsunami' is considered assimilated into English and is not italicized. The other terms have not been fully assimilated."
+    },
+    {
+      "id": 9,
+      "section": "6.03",
+      "question": "What should you do when in doubt about italicizing a foreign word?",
+      "options": [
+        "Always italicize it",
+        "Never italicize it",
+        "Use roman type",
+        "Ask a supervisor"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When in doubt, use roman type."
+    },
+    {
+      "id": 10,
+      "section": "6.03",
+      "question": "If an unfamiliar foreign term is used repeatedly in a text, how should it be handled?",
+      "options": [
+        "Italicize it every time it appears",
+        "Never italicize it",
+        "Italicize at first occurrence with explanation, then use roman type",
+        "Use quotation marks instead"
+      ],
+      "correctAnswer": 2,
+      "explanation": "If an unfamiliar foreign term is used repeatedly, it should be italicized at the first occurrence and accompanied by an explanation. Subsequently, it may be set in roman type."
+    },
+    {
+      "id": 11,
+      "section": "6.04",
+      "question": "Which Latin term should be italicized?",
+      "options": [
+        "e.g.",
+        "i.e.",
+        "sic",
+        "etc."
+      ],
+      "correctAnswer": 2,
+      "explanation": "'Sic' is still italicized. The abbreviations 'e.g.', 'i.e.', and 'etc.' are not italicized."
+    },
+    {
+      "id": 12,
+      "section": "6.04",
+      "question": "Which of the following Latin abbreviations should NOT be italicized?",
+      "options": [
+        "idem",
+        "infra",
+        "ibid.",
+        "passim"
+      ],
+      "correctAnswer": 2,
+      "explanation": "'Ibid.' should not be italicized. 'Idem', 'infra', and 'passim' are still italicized."
+    },
+    {
+      "id": 13,
+      "section": "6.04",
+      "question": "True or False: The Latin terms 'AD', 'QED', and 'NB' should be italicized.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": 1,
+      "explanation": "False. These terms should not be italicized."
+    },
+    {
+      "id": 14,
+      "section": "6.05",
+      "question": "Which type of publication title should be italicized?",
+      "options": [
+        "An article in a newspaper",
+        "A short story",
+        "A novel",
+        "A television program"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Novels should be italicized. Articles, short stories, and television programs are set in roman type with quotation marks."
+    },
+    {
+      "id": 15,
+      "section": "6.05",
+      "question": "How should the title 'The Globe and Mail' be formatted?",
+      "options": [
+        "In quotation marks",
+        "In italics",
+        "In bold",
+        "In roman type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Newspaper titles like 'The Globe and Mail' should be italicized."
+    },
+    {
+      "id": 16,
+      "section": "6.05",
+      "question": "True or False: Short poems and articles should be italicized.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": 1,
+      "explanation": "False. Short poems, articles, and short stories are set in roman type and enclosed in quotation marks."
+    },
+    {
+      "id": 17,
+      "section": "6.05",
+      "question": "Which of the following should NOT be italicized?",
+      "options": [
+        "The painting 'Voice of Fire'",
+        "The opera 'Rigoletto'",
+        "The article 'The Life Beyond'",
+        "The novel 'Cabbagetown'"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The article 'The Life Beyond' should be in quotation marks, not italics. Paintings, operas, and novels are italicized."
+    },
+    {
+      "id": 18,
+      "section": "6.05",
+      "question": "How should unofficial titles be formatted?",
+      "options": [
+        "In italics",
+        "In quotation marks",
+        "In roman type without italics",
+        "In bold"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Unofficial titles should not be italicized, as in 'A record of the debate can be found in Hansard.'"
+    },
+    {
+      "id": 19,
+      "section": "6.06",
+      "question": "In legal texts, how should the name 'Official Languages Act' be formatted?",
+      "options": [
+        "In roman type",
+        "In quotation marks",
+        "In italics",
+        "In bold"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In legal texts, italicize the names of statutes like 'the Official Languages Act'."
+    },
+    {
+      "id": 20,
+      "section": "6.06",
+      "question": "Should the short form 'the Act' be italicized in legal writing?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only on first use",
+        "Only in formal documents"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Do not italicize short forms such as 'the Act' or 'the Charter'."
+    },
+    {
+      "id": 21,
+      "section": "6.06",
+      "question": "How should court case names like 'Weiner v. The Queen' be formatted?",
+      "options": [
+        "In roman type",
+        "In quotation marks",
+        "In italics",
+        "In uppercase"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In legal texts, court case names should be italicized."
+    },
+    {
+      "id": 22,
+      "section": "6.07",
+      "question": "How should the name 'HMCS Brunswick' be formatted?",
+      "options": [
+        "HMCS in italics, Brunswick in roman",
+        "Entire name in italics",
+        "HMCS in roman, Brunswick in italics",
+        "Entire name in roman"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Italicize the names given to individual ships but not abbreviations preceding them: 'HMCS Brunswick'."
+    },
+    {
+      "id": 23,
+      "section": "6.07",
+      "question": "In Department of National Defence documents, how are ship names written?",
+      "options": [
+        "In lowercase italics",
+        "In mixed case italics",
+        "In upper case without italics",
+        "In upper case with italics"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In DND documents, ship names are written entirely in upper case and are not italicized: 'HMCS ATHABASKAN'."
+    },
+    {
+      "id": 24,
+      "section": "6.07",
+      "question": "True or False: The name 'the spacecraft Challenger' should be entirely in italics.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": 1,
+      "explanation": "False. Only 'Challenger' is italicized; 'the spacecraft' remains in roman type."
+    },
+    {
+      "id": 25,
+      "section": "6.08",
+      "question": "When referring to a letter or word as itself, how should it be formatted?",
+      "options": [
+        "In quotation marks only",
+        "In italics",
+        "In bold",
+        "In uppercase"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Letters and words referred to as such should be italicized, as in 'There is only one s in disappoint'."
+    },
+    {
+      "id": 26,
+      "section": "6.08",
+      "question": "What alternatives can perform the same function as italics for letters and words?",
+      "options": [
+        "Parentheses and brackets",
+        "Quotation marks, boldface type, and underlining",
+        "Uppercase and lowercase",
+        "Indentation and spacing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Quotation marks, boldface type, and underlining may perform the same function as italics."
+    },
+    {
+      "id": 27,
+      "section": "6.09",
+      "question": "How should stage directions for a play typically be formatted?",
+      "options": [
+        "In roman type without brackets",
+        "In italics within brackets or parentheses",
+        "In bold within brackets",
+        "In uppercase"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stage directions for a play are usually set in italics and placed within brackets or parentheses."
+    },
+    {
+      "id": 28,
+      "section": "6.09",
+      "question": "Which index terms should be italicized?",
+      "options": [
+        "All index entries",
+        "Only the page numbers",
+        "Terms like 'See', 'See also', 'See under'",
+        "None of them"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Italicize the terms 'See', 'See under', 'See also' and 'See also under' when used in indexes."
+    },
+    {
+      "id": 29,
+      "section": "6.09",
+      "question": "How should editorial clarifications like '[sic]' be formatted?",
+      "options": [
+        "In roman type",
+        "In italics",
+        "In bold",
+        "In uppercase"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italicize editorial clarifications such as '[sic]', '[My emphasis]', and '[Translation]'."
+    },
+    {
+      "id": 30,
+      "section": "6.10",
+      "question": "When should letters referring to subdivisions of a statute be italicized?",
+      "options": [
+        "Never",
+        "Always",
+        "Only in formal legal documents",
+        "Only when followed by numbers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italicize letters referring to subdivisions of a statute, as in 'Paragraph 42(2)(e) of the Canada Business Corporations Act'."
+    },
+    {
+      "id": 31,
+      "section": "6.10",
+      "question": "How should rhyme scheme letters be formatted in the example 'The Shakespearean sonnet has an abab, cdcd, efef, gg rhyme scheme'?",
+      "options": [
+        "In roman type",
+        "In italics",
+        "In quotation marks",
+        "In bold"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Letters referring to rhyme schemes should be italicized."
+    },
+    {
+      "id": 32,
+      "section": "6.11",
+      "question": "How should the scientific name 'Acer saccharum' be formatted?",
+      "options": [
+        "In roman type",
+        "In italics",
+        "In quotation marks",
+        "In uppercase"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italicize the scientific (Latin) names of genera and species: 'Acer saccharum'."
+    },
+    {
+      "id": 33,
+      "section": "6.11",
+      "question": "Should the names of larger biological subdivisions like orders and families be italicized?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only when used with species names",
+        "Only in scientific journals"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Do not italicize the names of larger subdivisions (phyla, classes, orders, families and tribes)."
+    },
+    {
+      "id": 34,
+      "section": "6.11",
+      "question": "In algebraic expressions, should the variable 'x' be italicized?",
+      "options": [
+        "No, it should be in roman type",
+        "Yes, it should be italicized",
+        "Only when used with numbers",
+        "Only in complex equations"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Italicize letters designating unknown quantities and constants in algebraic matter."
+    },
+    {
+      "id": 35,
+      "section": "6.11",
+      "question": "How should quantity symbols differ from unit symbols in formatting?",
+      "options": [
+        "They should both be in roman type",
+        "They should both be in italics",
+        "Quantity symbols in italics, unit symbols in roman",
+        "Quantity symbols in roman, unit symbols in italics"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Quantity symbols (like 'm' for mass) are italicized, while unit symbols (like 'm' for metre) are in roman type."
+    },
+    {
+      "id": 36,
+      "section": "6.12",
+      "question": "Why might headings or subheadings be italicized in a document?",
+      "options": [
+        "To make them more decorative",
+        "To clarify the document's arrangement for the reader",
+        "To meet government requirements",
+        "To save space"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Headings or subheadings may be italicized in order to clarify the document's arrangement for the reader."
+    },
+    {
+      "id": 37,
+      "section": "6.12",
+      "question": "True or False: Italicized headings should always be used in all documents.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": 1,
+      "explanation": "False. Headings MAY be italicized to clarify arrangement, but it's not mandatory. See Chapter 11.16 for further information."
+    }
+  ]
+}
