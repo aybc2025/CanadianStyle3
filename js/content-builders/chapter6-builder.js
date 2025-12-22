@@ -72,7 +72,7 @@ export function buildChapter6Content(content) {
         html += `<p>${content.mainRule}</p>`;
         
         html += `
-            <div class="comparison-section">
+            <div class="comparison-section-italics">
                 <div class="comparison-grid">
                     <div class="comparison-column italicized">
                         <h4>Italicized</h4>
@@ -126,7 +126,7 @@ export function buildChapter6Content(content) {
         html += `<p>${content.mainText}</p>`;
         
         html += `
-            <div class="comparison-section latin-terms">
+            <div class="comparison-section-italics latin-terms">
                 <div class="comparison-grid">
                     <div class="comparison-column italicized">
                         <h4>Italicized Latin Terms</h4>
