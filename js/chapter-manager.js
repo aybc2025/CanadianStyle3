@@ -197,7 +197,7 @@ function buildSectionHTML(section) {
     html += contentBuilders.lists.buildLists(content);
     
     // Use chapter-specific builders based on chapter ID
-    const chapterId = chapterData.id;
+    cconst chapterId = parseInt(chapterData.chapterNumber || chapterData.id);
     
     if (chapterId === 1) {
         html += contentBuilders.chapter1.buildChapter1Content(content);
