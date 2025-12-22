@@ -5,12 +5,11 @@
 
 /**
  * Build content for Chapter 6 sections
- * @param {Object} section - Section data from chapter-06.json
+ * @param {Object} content - Section content from chapter-06.json
  * @returns {string} HTML string
  */
-export function buildChapter6Content(section) {
+export function buildChapter6Content(content) {
     let html = '';
-    const content = section.content;
 
     // === 6.01: Introduction ===
     if (content.mainText) {
