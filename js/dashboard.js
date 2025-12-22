@@ -55,8 +55,8 @@ const chapters = [
         title: "Italics",
         category: "typography",
         description: "When and how to use italics effectively.",
-        sections: 8,
-        available: false
+        sections: 12,
+        available: true
     },
     {
         id: 7,
