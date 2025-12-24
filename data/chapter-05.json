@@ -1,6 +1,8 @@
 {
   "id": 5,
+  "number": "5",
   "title": "Numerical Expressions",
+  "category": "basics",
   "description": "Format numbers, dates, and measurements correctly in Canadian government writing",
   "sections": [
     {
