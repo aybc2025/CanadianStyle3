@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 async function loadBuilders() {
     try {
         // Import all builder modules
-        const [coreBuilder, boxBuilder, listsBuilder, chapter1Builder, chapter3Builder, chapter4Builder, chapter5Builder, chapter6Builder] = await Promise.all([
+        const [coreBuilder, boxBuilder, listsBuilder, chapter1Builder, chapter3Builder, chapter4Builder, chapter5Builder, chapter6Builder, chapter7Builder] = await Promise.all([
             import('./content-builders/core-builder.js'),
             import('./content-builders/box-builder.js'),
             import('./content-builders/lists-builder.js'),
@@ -48,7 +48,8 @@ async function loadBuilders() {
             import('./content-builders/chapter3-builder.js'),
             import('./content-builders/chapter4-builder.js'),
             import('./content-builders/chapter5-builder.js'),
-            import('./content-builders/chapter6-builder.js')
+            import('./content-builders/chapter6-builder.js'),
+            import('./content-builders/chapter7-builder.js')
         ]);
         
         contentBuilders = {
@@ -59,7 +60,8 @@ async function loadBuilders() {
             chapter3: chapter3Builder,
             chapter4: chapter4Builder,
             chapter5: chapter5Builder,
-            chapter6: chapter6Builder
+            chapter6: chapter6Builder,
+            chapter7: chapter7Builder
         };
         
     } catch (error) {
@@ -222,6 +224,10 @@ function buildSectionHTML(section) {
     
     if (chapterId === 5) {
         html += contentBuilders.chapter5.buildChapter5Content(content);
+    }
+    
+    if (chapterId === 7) {
+        html += contentBuilders.chapter7.buildChapter7Content(content);
     }
     
     return html;
