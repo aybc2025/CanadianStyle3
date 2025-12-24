@@ -181,13 +181,24 @@ function buildSectionHTML(section) {
         return '<p>Error: Content builders not loaded</p>';
     }
     
+    // Get chapter ID
+    const chapterId = parseInt(chapterData.chapterNumber || chapterData.id);
+    
+    // === CHAPTER 6: Use ONLY chapter6-builder (no core/box/lists!) ===
+    if (chapterId === 6) {
+        html += contentBuilders.chapter6.buildChapter6Content(content);
+        return html;  // Return immediately, skip all other builders
+    }
+    
+    // === FOR ALL OTHER CHAPTERS: Use standard builders ===
+    
     // Use core builder for basic content
     html += contentBuilders.core.buildBasicContent(content);
     
-    // Use core builder for rules (CRITICAL!)
+    // Use core builder for rules
     html += contentBuilders.core.buildRules(content);
     
-    // Use core builder for misc content (NEW!)
+    // Use core builder for misc content
     html += contentBuilders.core.buildMiscContent(content);
     
     // Use box builder for special boxes
@@ -197,8 +208,6 @@ function buildSectionHTML(section) {
     html += contentBuilders.lists.buildLists(content);
     
     // Use chapter-specific builders based on chapter ID
-    const chapterId = parseInt(chapterData.chapterNumber || chapterData.id);
-    
     if (chapterId === 1) {
         html += contentBuilders.chapter1.buildChapter1Content(content);
     }
@@ -213,10 +222,6 @@ function buildSectionHTML(section) {
     
     if (chapterId === 5) {
         html += contentBuilders.chapter5.buildChapter5Content(content);
-    }
-    
-    if (chapterId === 6) {
-        html += contentBuilders.chapter6.buildChapter6Content(content);
     }
     
     return html;
