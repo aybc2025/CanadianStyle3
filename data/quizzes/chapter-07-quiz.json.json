@@ -1,0 +1,306 @@
+{
+  "chapterId": 7,
+  "chapterTitle": "Punctuation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary role of punctuation?",
+      "options": [
+        "To make writing look professional",
+        "To help show grammatical relationships between words and indicate intonation",
+        "To separate paragraphs",
+        "To emphasize important words"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Punctuation serves primarily to help show the grammatical relationships between words, but it is also used to indicate intonation. Its role is to clarify."
+    },
+    {
+      "id": 2,
+      "question": "How many spaces should follow an ellipsis point?",
+      "options": [
+        "No space",
+        "One space before, between and after ellipsis points",
+        "Two spaces after",
+        "One space before only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "According to section 7.02, there should be a space before, between and after ellipsis points."
+    },
+    {
+      "id": 3,
+      "question": "Which punctuation mark is described as a 'full stop'?",
+      "options": [
+        "Semicolon",
+        "Colon",
+        "Period",
+        "Em dash"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The period is a 'full stop.' It stops the reader more fully than the colon, semicolon, comma or dash."
+    },
+    {
+      "id": 4,
+      "question": "What punctuation should follow a mild imperative?",
+      "options": [
+        "Exclamation mark",
+        "Question mark",
+        "Period",
+        "Comma"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Use a period after a mild imperative or exclamation."
+    },
+    {
+      "id": 5,
+      "question": "How many ellipsis points should be used to indicate hesitation or interruption in speech?",
+      "options": [
+        "Two points (. .)",
+        "Three points (. . .)",
+        "Four points (. . . .)",
+        "As many as needed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use three ellipsis points (. . .) to indicate a silence in dialogue, hesitation or interruption in speech, a pause in narrative, or the passage of time."
+    },
+    {
+      "id": 6,
+      "question": "What should follow an indirect question?",
+      "options": [
+        "Question mark",
+        "Exclamation mark",
+        "Period",
+        "Semicolon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Indirect questions are affirmative sentences and take a period, not a question mark."
+    },
+    {
+      "id": 7,
+      "question": "Which is correct for showing possession with a singular noun ending in 's'?",
+      "options": [
+        "the boss' office",
+        "the boss's office",
+        "the bosses office",
+        "the boss office"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The possessive case of most singular nouns is formed by adding an apostrophe and an s, even if the noun ends in s."
+    },
+    {
+      "id": 8,
+      "question": "Where should commas be placed in a date written as month-day-year?",
+      "options": [
+        "After the month only",
+        "After the day and after the year",
+        "No commas needed",
+        "Before and after the year"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If the order given is month-day-year, the day and year are separated by a comma, and the year should normally be followed by a comma within the body of a sentence."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of a semicolon between independent clauses?",
+      "options": [
+        "To separate clauses that are too distant to be in the same sentence",
+        "To join clauses that are too closely related to be separated by a period",
+        "To introduce a list",
+        "To indicate a question"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The semicolon is used between independent clauses not joined by a co-ordinating conjunction but too closely related to be separated by a period."
+    },
+    {
+      "id": 10,
+      "question": "When should you NOT use a colon?",
+      "options": [
+        "After 'such as' or 'for example'",
+        "To introduce a formal quotation",
+        "Between independent clauses where the second explains the first",
+        "To separate titles from subtitles"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The colon introduces a list, but should not be used after 'such as,' 'for instance' or 'for example.'"
+    },
+    {
+      "id": 11,
+      "question": "What follows the salutation in a business letter?",
+      "options": [
+        "Comma",
+        "Period",
+        "Colon",
+        "Semicolon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In business letters and printed speeches, a colon follows the salutation."
+    },
+    {
+      "id": 12,
+      "question": "Which is an INCORRECT use of a colon?",
+      "options": [
+        "Canada: A Story of Challenge",
+        "Dear Mr. Fox:",
+        "There are three problems: (:—) budget, time, and resources",
+        "Man proposes: God disposes"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Do not use a colon followed by a dash (:—)."
+    },
+    {
+      "id": 13,
+      "question": "When does a parenthesis take an initial capital and final period?",
+      "options": [
+        "Always",
+        "Never",
+        "Only when it stands alone between complete sentences",
+        "Only at the beginning of a paragraph"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A parenthesis consisting of a complete sentence does not take an initial capital and final period unless it stands alone between complete sentences."
+    },
+    {
+      "id": 14,
+      "question": "What are square brackets used for?",
+      "options": [
+        "To replace parentheses",
+        "For editorial comments on material written by someone else",
+        "To list items",
+        "For emphasis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Square brackets are used to enclose editorial comments or additional information on material written by someone else."
+    },
+    {
+      "id": 15,
+      "question": "What should NOT be combined with an em dash?",
+      "options": [
+        "Quotation marks",
+        "Question mark",
+        "Colon",
+        "Exclamation mark"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Do not combine the dash with any mark of punctuation other than quotation marks, the question mark, the exclamation mark and occasionally the period."
+    },
+    {
+      "id": 16,
+      "question": "What is an en dash used for?",
+      "options": [
+        "To introduce quotations",
+        "To join inclusive numbers",
+        "To separate clauses",
+        "For emphasis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use the en dash ('short dash') to join inclusive numbers, such as 'pages 9-12' or 'Robertson Davies (1913-95).'"
+    },
+    {
+      "id": 17,
+      "question": "Which is correct?",
+      "options": [
+        "it's nest (possessive)",
+        "its nest (possessive)",
+        "it's nest (contraction)",
+        "its' nest (possessive)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Its without an apostrophe is the possessive form of the pronoun it, while it's with an apostrophe is a contraction meaning 'it is' or 'it has.'"
+    },
+    {
+      "id": 18,
+      "question": "How do you form the possessive of a plural noun ending in 's'?",
+      "options": [
+        "Add 's",
+        "Add only an apostrophe",
+        "Add s'",
+        "No change needed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If the plural form of a noun ends in s, the possessive is formed by adding only an apostrophe."
+    },
+    {
+      "id": 19,
+      "question": "Which is the correct possessive form for joint possession?",
+      "options": [
+        "Marx's and Lenin's ideas (separate possession)",
+        "the Prime Minister's and the Premier's debate (joint possession)",
+        "the Prime Minister and the Premier's recent debate (joint possession)",
+        "Fortier's and Desjardins legal firm (joint possession)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "If possession is joint, add the apostrophe or an apostrophe and s to the second name only."
+    },
+    {
+      "id": 20,
+      "question": "What punctuation is generally used to introduce vertical lists?",
+      "options": [
+        "Semicolon",
+        "Period",
+        "Colon",
+        "Comma"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The colon is generally used to introduce vertical lists."
+    },
+    {
+      "id": 21,
+      "question": "When should you use a semicolon in a vertical list?",
+      "options": [
+        "After every item",
+        "Never",
+        "After each item if one or more items contain internal punctuation",
+        "Only at the end of the list"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Use a semicolon after each item (and a period at the end of the list) if one or more items contain internal punctuation."
+    },
+    {
+      "id": 22,
+      "question": "Which sentence uses commas correctly with a non-restrictive element?",
+      "options": [
+        "Journalists who do not read major papers cannot cover events",
+        "Journalists, who do not read major papers, cannot cover events",
+        "Both are correct depending on meaning",
+        "Neither is correct"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Without commas, the clause is restrictive (limiting to only those journalists who don't read papers). With commas, it's non-restrictive (describing all journalists)."
+    },
+    {
+      "id": 23,
+      "question": "Should you insert a comma before 'etc.'?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only if there are three or more items",
+        "Only in formal writing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A comma is required before etc."
+    },
+    {
+      "id": 24,
+      "question": "Where should you NOT use periods?",
+      "options": [
+        "After abbreviations",
+        "After Roman numerals",
+        "At the end of sentences",
+        "After initials"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Do not use a period after a Roman numeral."
+    },
+    {
+      "id": 25,
+      "question": "What does the oblique (/) represent in abbreviations like 'km/h'?",
+      "options": [
+        "Division",
+        "Per",
+        "Or",
+        "And"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The oblique can be used as a symbol for per, as in km/h or N/m²."
+    }
+  ]
+}
