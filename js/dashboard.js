@@ -64,8 +64,8 @@ const chapters = [
         title: "Punctuation",
         category: "typography",
         description: "Master punctuation marks and their proper usage.",
-        sections: 18,
-        available: false
+        sections: 70,
+        available: true
     },
     {
         id: 8,
