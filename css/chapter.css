@@ -1087,3 +1087,29 @@
         print-color-adjust: exact;
     }
 }
+/* Key Principle box - make text WHITE on blue background */
+.info-box.key-principle {
+    background: #0066cc;  /* Keep the blue background */
+    color: #ffffff !important;  /* WHITE text */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.info-box.key-principle h4 {
+    color: #ffffff !important;  /* WHITE heading */
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.info-box.key-principle p {
+    color: #ffffff !important;  /* WHITE paragraph */
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Also fix the lightbulb emoji if needed */
+.info-box.key-principle h4::before {
+    content: "💡 ";
+    margin-right: 8px;
+}
