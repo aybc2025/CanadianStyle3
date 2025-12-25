@@ -6,6 +6,16 @@
 export function buildBasicContent(content) {
     let html = '';
     
+    // General Rule (used in 7.02 and possibly others)
+    if (content.generalRule) {
+        html += `<p><strong>${content.generalRule}</strong></p>`;
+    }
+    
+    // Intro (used in many sections)
+    if (content.intro) {
+        html += `<p>${content.intro}</p>`;
+    }
+    
     // Main text
     if (content.text) {
         html += `<p>${content.text}</p>`;
@@ -21,6 +31,11 @@ export function buildBasicContent(content) {
         html += `<p>${content.explanation}</p>`;
     }
     
+    // Additional Explanation
+    if (content.additionalExplanation) {
+        html += `<p>${content.additionalExplanation}</p>`;
+    }
+    
     // Format
     if (content.format) {
         html += `<p class="format-note"><strong>Format:</strong> ${content.format}</p>`;
@@ -28,7 +43,11 @@ export function buildBasicContent(content) {
     
     // Note
     if (content.note) {
-        html += `<p class="note"><em>Note: ${content.note}</em></p>`;
+        html += `
+            <div class="info-box note" style="margin-top: 10px; padding: 15px; background-color: #e8f4f8; border-left: 4px solid #0066cc; border-radius: 4px;">
+                <p style="margin: 0;"><strong>📝 Note:</strong> ${content.note}</p>
+            </div>
+        `;
     }
     
     // Additional notes (array)
@@ -43,6 +62,20 @@ export function buildBasicContent(content) {
     // Additional note (single)
     if (content.additionalNote) {
         html += `<p class="note"><em>${content.additionalNote}</em></p>`;
+    }
+    
+    // Warning
+    if (content.warning) {
+        html += `
+            <div class="info-box warning" style="margin-top: 10px; padding: 15px; background-color: #fff3cd; border-left: 4px solid #ffc107; border-radius: 4px;">
+                <p style="margin: 0;"><strong>⚠️ Warning:</strong> ${content.warning}</p>
+            </div>
+        `;
+    }
+    
+    // Cross Reference
+    if (content.crossReference) {
+        html += `<p class="cross-reference" style="font-style: italic; color: #666;"><em>${content.crossReference}</em></p>`;
     }
     
     // Reference
@@ -265,6 +298,68 @@ export function buildMiscContent(content) {
             </div>
         `;
     }
+    
+    return html;
+}
+
+/**
+ * Build dynamic fields (handles any field ending with Intro, Note, Text, Use, Example, Examples)
+ * This is a catch-all for fields that don't fit other patterns
+ * @param {Object} content - Section content
+ * @returns {string} HTML string
+ */
+export function buildDynamicFields(content) {
+    let html = '';
+    
+    // Skip fields that are handled by other builders
+    const skipFields = [
+        'text', 'mainText', 'explanation', 'additionalExplanation', 'format', 'note', 
+        'additionalNotes', 'additionalNote', 'warning', 'reference', 'referenceNote',
+        'rules', 'examples', 'additionalExamples', 'intro', 'generalRule',
+        'spacingRules', 'categories', 'quotedExamples', 
+        'items', 'boxes', 'keyPrinciple', 'criticalPoints', 'importantPoints', 
+        'warningBox', 'noteBox', 'summaryBox', 'listItems', 'bulletPoints',
+        'comparisonTable', 'tableData', 'orderOfPrecedence', 'specialRule',
+        'typographyRules', 'formatRules', 'titles', 'ranks', 'degrees', 'provinces',
+        'monthAbbreviations', 'timeZones', 'commonUnits', 'commonAbbreviations',
+        'capitalizationRules', 'exceptions', 'criticalRules', 'incorrectAbbreviations'
+    ];
+    
+    Object.keys(content).forEach(key => {
+        if (skipFields.includes(key)) return;
+        
+        const value = content[key];
+        
+        // Handle fields ending with "Intro", "Note", "Text", "Description", "Use"
+        if (key.endsWith('Intro') || key.endsWith('Note') || key.endsWith('Text') || 
+            key.endsWith('Description') || key.endsWith('Use')) {
+            if (typeof value === 'string' && value.trim()) {
+                html += `<p style="margin: 10px 0;">${value}</p>`;
+            }
+        }
+        
+        // Handle fields ending with "Example" (singular) - not an array
+        else if (key.endsWith('Example') && typeof value === 'string' && !Array.isArray(value)) {
+            html += `
+                <div class="example-box" style="margin: 10px 0; padding: 10px; background-color: #f5f5f5; border-radius: 4px;">
+                    <p style="margin: 0; font-style: italic;">${value}</p>
+                </div>
+            `;
+        }
+        
+        // Handle fields ending with "Examples" (plural) - array
+        else if (key.endsWith('Examples') && Array.isArray(value) && value.length > 0) {
+            html += `
+                <div class="example-box" style="margin: 10px 0; padding: 10px; background-color: #f5f5f5; border-radius: 4px;">
+            `;
+            value.forEach(example => {
+                if (typeof example === 'string') {
+                    html += `<p style="margin: 3px 0; font-style: italic;">${example}</p>`;
+                }
+            });
+            html += `</div>`;
+        }
+    });
     
     return html;
 }
