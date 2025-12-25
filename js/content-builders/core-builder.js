@@ -303,8 +303,8 @@ export function buildMiscContent(content) {
 }
 
 /**
- * Build dynamic fields (handles any field ending with Intro, Note, Text, Use, Example, Examples)
- * This is a catch-all for fields that don't fit other patterns
+ * Build dynamic fields (handles ANY field not handled by other builders)
+ * This is a catch-all for Chapter 7's unique field names
  * @param {Object} content - Section content
  * @returns {string} HTML string
  */
@@ -316,13 +316,14 @@ export function buildDynamicFields(content) {
         'text', 'mainText', 'explanation', 'additionalExplanation', 'format', 'note', 
         'additionalNotes', 'additionalNote', 'warning', 'reference', 'referenceNote',
         'rules', 'examples', 'additionalExamples', 'intro', 'generalRule',
-        'spacingRules', 'categories', 'quotedExamples', 
+        'spacingRules', 'categories', 'quotedExamples', // Chapter 7 special - handled by chapter7-builder
         'items', 'boxes', 'keyPrinciple', 'criticalPoints', 'importantPoints', 
         'warningBox', 'noteBox', 'summaryBox', 'listItems', 'bulletPoints',
         'comparisonTable', 'tableData', 'orderOfPrecedence', 'specialRule',
         'typographyRules', 'formatRules', 'titles', 'ranks', 'degrees', 'provinces',
         'monthAbbreviations', 'timeZones', 'commonUnits', 'commonAbbreviations',
-        'capitalizationRules', 'exceptions', 'criticalRules', 'incorrectAbbreviations'
+        'capitalizationRules', 'exceptions', 'criticalRules', 'incorrectAbbreviations',
+        'abbreviations', 'specialCases', 'streetAbbreviations', 'compassPoints', 'words'
     ];
     
     Object.keys(content).forEach(key => {
@@ -330,31 +331,34 @@ export function buildDynamicFields(content) {
         
         const value = content[key];
         
-        // Handle fields ending with "Intro", "Note", "Text", "Description", "Use"
-        if (key.endsWith('Intro') || key.endsWith('Note') || key.endsWith('Text') || 
-            key.endsWith('Description') || key.endsWith('Use')) {
-            if (typeof value === 'string' && value.trim()) {
+        // === STRING VALUES ===
+        if (typeof value === 'string' && value.trim()) {
+            
+            // Check if it's pre-formatted text (contains \n)
+            if (value.includes('\n')) {
+                // Display as pre-formatted text
+                html += `
+                    <div class="example-box" style="margin: 10px 0; padding: 10px; background-color: #f5f5f5; border-radius: 4px;">
+                        <pre style="margin: 0; font-family: 'Courier New', monospace; white-space: pre-wrap;">${value}</pre>
+                    </div>
+                `;
+            }
+            // Otherwise treat as regular paragraph
+            else {
                 html += `<p style="margin: 10px 0;">${value}</p>`;
             }
         }
         
-        // Handle fields ending with "Example" (singular) - not an array
-        else if (key.endsWith('Example') && typeof value === 'string' && !Array.isArray(value)) {
-            html += `
-                <div class="example-box" style="margin: 10px 0; padding: 10px; background-color: #f5f5f5; border-radius: 4px;">
-                    <p style="margin: 0; font-style: italic;">${value}</p>
-                </div>
-            `;
-        }
-        
-        // Handle fields ending with "Examples" (plural) - array
-        else if (key.endsWith('Examples') && Array.isArray(value) && value.length > 0) {
+        // === ARRAY VALUES ===
+        else if (Array.isArray(value) && value.length > 0) {
             html += `
                 <div class="example-box" style="margin: 10px 0; padding: 10px; background-color: #f5f5f5; border-radius: 4px;">
             `;
-            value.forEach(example => {
-                if (typeof example === 'string') {
-                    html += `<p style="margin: 3px 0; font-style: italic;">${example}</p>`;
+            value.forEach(item => {
+                if (typeof item === 'string') {
+                    html += `<p style="margin: 3px 0; font-style: italic;">${item}</p>`;
+                } else if (typeof item === 'object' && item.text) {
+                    html += `<p style="margin: 3px 0; font-style: italic;">${item.text}</p>`;
                 }
             });
             html += `</div>`;
