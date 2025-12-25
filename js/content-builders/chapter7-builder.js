@@ -28,6 +28,11 @@ export function buildChapter7Content(content) {
     if (content.quotedExamples && Array.isArray(content.quotedExamples)) {
         html += buildQuotedExamples(content.quotedExamples);
     }
+    
+    // Single quotedComparison (section 7.40)
+    if (content.quotedComparison && typeof content.quotedComparison === 'object') {
+        html += buildQuotedExamples([content.quotedComparison]);
+    }
 
     return html;
 }
@@ -87,9 +92,12 @@ function buildSpacingRules(spacingRules) {
 }
 
 /**
- * Build letter categories (a, b, c...) - Used in 7.14, 7.15
- * Structure: array of {letter, title, text, examples, note, etc.}
- * @param {Array} categories - Array of categories with letters
+ * Build letter categories - FULLY DYNAMIC
+ * Handles 3 different category structures:
+ * - 7.14: {letter, title, text, examples, ...}
+ * - 7.15: {letter, title, text, examples, MANY special fields}
+ * - 7.64: {type, description, examples, ...} (NO letter!)
+ * @param {Array} categories - Array of categories
  * @returns {string} HTML string
  */
 function buildLetterCategories(categories) {
@@ -98,84 +106,112 @@ function buildLetterCategories(categories) {
     categories.forEach((category, index) => {
         html += `
             <div class="category-item" style="margin-bottom: 25px; padding: 20px; background-color: #f8f9fa; border-left: 4px solid #c41e3a; border-radius: 4px;">
-                <h5 style="color: #c41e3a; margin-bottom: 12px; font-size: 1.05em;">
-                    (${category.letter}) ${category.title || ''}
-                </h5>
         `;
-
-        if (category.text) {
-            html += `<p style="margin-bottom: 10px;">${category.text}</p>`;
-        }
-
-        if (category.examples && Array.isArray(category.examples)) {
+        
+        // === HEADER: letter+title OR type ===
+        if (category.letter && category.title) {
             html += `
-                <div class="example-box" style="margin-top: 10px;">
-                    <h6 style="margin-bottom: 8px; font-size: 0.95em;">Examples:</h6>
+                <h5 style="color: #c41e3a; margin-bottom: 12px; font-size: 1.05em;">
+                    (${category.letter}) ${category.title}
+                </h5>
             `;
-            category.examples.forEach(example => {
-                html += `<p style="margin: 3px 0;">${example}</p>`;
-            });
-            html += `</div>`;
-        }
-
-        // Handle sub-notes
-        if (category.note) {
+        } else if (category.type) {
             html += `
-                <div class="info-box note" style="margin-top: 12px;">
-                    <p style="font-size: 0.9em;"><strong>📝 Note:</strong> ${category.note}</p>
-                </div>
+                <h5 style="color: #c41e3a; margin-bottom: 12px; font-size: 1.05em;">
+                    ${category.type}
+                </h5>
             `;
         }
 
-        if (category.shortPhraseNote) {
-            html += `<p style="margin-top: 10px; font-size: 0.9em;"><strong>Note:</strong> ${category.shortPhraseNote}</p>`;
-        }
+        // === DYNAMIC FIELD PROCESSING ===
+        // Skip fields that are handled above or need special treatment
+        const skipFields = ['letter', 'title', 'type', 'quotedExamples', 'quotedExample', 'heavierExample', 'exclamationExample'];
+        
+        Object.keys(category).forEach(key => {
+            if (skipFields.includes(key)) return;
+            
+            const value = category[key];
+            
+            // === STRING VALUES ===
+            if (typeof value === 'string' && value.trim()) {
+                // Main text or description
+                if (key === 'text' || key === 'description') {
+                    html += `<p style="margin-bottom: 10px;">${value}</p>`;
+                }
+                // Notes
+                else if (key.endsWith('Note') || key.includes('Note')) {
+                    html += `
+                        <div class="info-box note" style="margin-top: 10px; padding: 10px; background-color: #e8f4f8; border-left: 3px solid #0066cc;">
+                            <p style="margin: 0; font-size: 0.9em;"><strong>📝</strong> ${value}</p>
+                        </div>
+                    `;
+                }
+                // Intros
+                else if (key.endsWith('Intro')) {
+                    html += `<p style="margin-top: 12px; font-weight: 500;">${value}</p>`;
+                }
+                // Single examples
+                else if (key.endsWith('Example') || key === 'example') {
+                    html += `
+                        <div class="example-box" style="margin-top: 8px; padding: 8px; background-color: #f5f5f5; border-radius: 3px;">
+                            <p style="margin: 0; font-style: italic;">${value}</p>
+                        </div>
+                    `;
+                }
+                // Solutions, alternatives, explanations
+                else if (key.includes('Solution') || key === 'explanation' || key.includes('Alternative')) {
+                    html += `<p style="margin-top: 10px; font-style: italic; font-size: 0.95em;">${value}</p>`;
+                }
+                // Any other string
+                else {
+                    html += `<p style="margin-top: 8px;">${value}</p>`;
+                }
+            }
+            
+            // === ARRAY VALUES ===
+            else if (Array.isArray(value) && value.length > 0) {
+                html += `
+                    <div class="example-box" style="margin-top: 8px; padding: 8px; background-color: #f5f5f5; border-radius: 3px;">
+                `;
+                value.forEach(item => {
+                    if (typeof item === 'string') {
+                        html += `<p style="margin: 2px 0; font-style: italic;">${item}</p>`;
+                    } else if (typeof item === 'object' && item.text) {
+                        html += `<p style="margin: 2px 0; font-style: italic;">${item.text}</p>`;
+                    }
+                });
+                html += `</div>`;
+            }
+            
+            // === OBJECT VALUES (quoted examples) ===
+            else if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+                if (value.text) {
+                    html += `
+                        <div class="quote-box" style="margin: 12px 0; padding: 12px; background-color: #f0f8ff; border-left: 4px solid #0066cc; border-radius: 4px;">
+                            <p style="font-style: italic; margin-bottom: ${value.author ? '5px' : '0'};">"${value.text}"</p>
+                    `;
+                    if (value.author) {
+                        html += `<p style="text-align: right; color: #666; font-size: 0.9em; margin: 0;">— ${value.author}</p>`;
+                    }
+                    html += `</div>`;
+                }
+            }
+        });
 
-        if (category.shortExamples && Array.isArray(category.shortExamples)) {
-            html += `
-                <div class="example-box" style="margin-top: 10px;">
-            `;
-            category.shortExamples.forEach(example => {
-                html += `<p style="margin: 3px 0;">${example}</p>`;
-            });
-            html += `</div>`;
-        }
-
-        // Handle contrast examples
-        if (category.contrastExamples && Array.isArray(category.contrastExamples)) {
-            html += `<div class="contrast-examples" style="margin-top: 12px;">`;
-            category.contrastExamples.forEach(example => {
-                html += `<p style="margin: 3px 0 3px 20px;">${example}</p>`;
-            });
-            html += `</div>`;
-        }
-
-        if (category.explanation) {
-            html += `<p style="margin-top: 10px; font-style: italic; font-size: 0.95em;">${category.explanation}</p>`;
-        }
-
-        // Additional examples
-        if (category.additionalExamples && Array.isArray(category.additionalExamples)) {
-            html += `<div class="example-box" style="margin-top: 10px;">`;
-            category.additionalExamples.forEach(example => {
-                html += `<p style="margin: 3px 0;">${example}</p>`;
-            });
-            html += `</div>`;
-        }
-
-        // Quoted examples within categories
+        // === SPECIAL HANDLING for quotedExamples array ===
         if (category.quotedExamples && Array.isArray(category.quotedExamples)) {
             html += buildQuotedExamples(category.quotedExamples);
         }
 
-        // Handle exclamation example
+        // === SPECIAL HANDLING for single quoted objects ===
+        if (category.quotedExample) {
+            html += buildSingleQuote(category.quotedExample);
+        }
+        if (category.heavierExample) {
+            html += buildSingleQuote(category.heavierExample);
+        }
         if (category.exclamationExample) {
-            html += `
-                <div class="example-box" style="margin-top: 10px;">
-                    <p style="font-style: italic;">"${category.exclamationExample.text}"</p>
-                    <p style="text-align: right; margin-top: 5px; font-size: 0.9em; color: #666;">— ${category.exclamationExample.author}</p>
-                </div>
-            `;
+            html += buildSingleQuote(category.exclamationExample);
         }
 
         html += `</div>`;
@@ -183,6 +219,20 @@ function buildLetterCategories(categories) {
 
     html += `</div>`;
     return html;
+}
+
+/**
+ * Build a single quoted example
+ * @param {Object} quote - {text, author}
+ * @returns {string} HTML string
+ */
+function buildSingleQuote(quote) {
+    return `
+        <div class="quote-box" style="margin: 12px 0; padding: 12px; background-color: #f0f8ff; border-left: 4px solid #0066cc; border-radius: 4px;">
+            <p style="font-style: italic; margin-bottom: ${quote.author ? '5px' : '0'};">"${quote.text}"</p>
+            ${quote.author ? `<p style="text-align: right; color: #666; font-size: 0.9em; margin: 0;">— ${quote.author}</p>` : ''}
+        </div>
+    `;
 }
 
 /**
