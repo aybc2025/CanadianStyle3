@@ -11,20 +11,132 @@
 export function buildChapter7Content(content) {
     let html = '';
 
+    // === Handle all regular text fields FIRST ===
+    
+    // generalRule (7.02)
+    if (content.generalRule) {
+        html += `<p><strong>${content.generalRule}</strong></p>`;
+    }
+    
+    // intro (7.14, 7.15, etc.)
+    if (content.intro) {
+        html += `<p>${content.intro}</p>`;
+    }
+    
+    // mainText
+    if (content.mainText) {
+        html += `<p>${content.mainText}</p>`;
+    }
+    
+    // explanation
+    if (content.explanation) {
+        html += `<p>${content.explanation}</p>`;
+    }
+    
+    // additionalExplanation
+    if (content.additionalExplanation) {
+        html += `<p>${content.additionalExplanation}</p>`;
+    }
+    
+    // === Simple examples array ===
+    if (content.examples && Array.isArray(content.examples)) {
+        html += `<div class="example-box">`;
+        content.examples.forEach(example => {
+            html += `<p><em>${example}</em></p>`;
+        });
+        html += `</div>`;
+    }
+    
+    // === Additional examples ===
+    if (content.additionalExamples && Array.isArray(content.additionalExamples)) {
+        html += `<div class="example-box">`;
+        content.additionalExamples.forEach(example => {
+            html += `<p><em>${example}</em></p>`;
+        });
+        html += `</div>`;
+    }
+    
+    // === Simple Rules (array of strings) ===
+    if (content.rules && Array.isArray(content.rules)) {
+        html += `<ul class="rules-list">`;
+        content.rules.forEach(rule => {
+            html += `<li>${rule}</li>`;
+        });
+        html += `</ul>`;
+    }
+    
+    // === Note ===
+    if (content.note) {
+        html += `
+            <div class="info-box note" style="margin-top: 10px;">
+                <p><strong>📝 Note:</strong> ${content.note}</p>
+            </div>
+        `;
+    }
+    
+    // === Warning ===
+    if (content.warning) {
+        html += `
+            <div class="info-box warning" style="margin-top: 10px; background-color: #fff3cd; border-left-color: #ffc107;">
+                <p><strong>⚠️ Warning:</strong> ${content.warning}</p>
+            </div>
+        `;
+    }
+    
+    // === crossReference ===
+    if (content.crossReference) {
+        html += `<p class="cross-reference"><em>${content.crossReference}</em></p>`;
+    }
+
     // === 7.02: Spacing Rules (Special Structure) ===
     if (content.spacingRules && Array.isArray(content.spacingRules)) {
         html += buildSpacingRules(content.spacingRules);
     }
 
-    // === 7.14: Categories with letters (a, b, c...) ===
-    if (content.categories && Array.isArray(content.categories)) {
-        html += buildLetterCategories(content.categories);
-    }
-
-    // === Quoted Examples (with authors) ===
+    // === 7.03 and similar: Quoted Examples (with authors) ===
     if (content.quotedExamples && Array.isArray(content.quotedExamples)) {
         html += buildQuotedExamples(content.quotedExamples);
     }
+
+    // === 7.14, 7.15: Categories with letters (a, b, c...) ===
+    if (content.categories && Array.isArray(content.categories)) {
+        html += buildLetterCategories(content.categories);
+    }
+    
+    // === Handle ALL other fields dynamically ===
+    // This handles fields like "singularIntro", "pluralSIntro", etc.
+    Object.keys(content).forEach(key => {
+        // Skip fields we already handled
+        const handledFields = ['generalRule', 'intro', 'mainText', 'explanation', 'additionalExplanation', 
+                              'examples', 'additionalExamples', 'rules', 'note', 'warning', 'crossReference',
+                              'spacingRules', 'quotedExamples', 'categories'];
+        
+        if (handledFields.includes(key)) return;
+        
+        const value = content[key];
+        
+        // Handle fields ending with "Intro", "Note", "Text", "Description"
+        if (key.endsWith('Intro') || key.endsWith('Note') || key.endsWith('Text') || key.endsWith('Description') || 
+            key.endsWith('Use') || key.endsWith('Questions') || key === 'basicPrinciple') {
+            if (typeof value === 'string') {
+                html += `<p>${value}</p>`;
+            }
+        }
+        
+        // Handle fields ending with "Example" (singular)
+        else if (key.endsWith('Example') && typeof value === 'string' && !Array.isArray(value)) {
+            html += `<div class="example-box"><p><em>${value}</em></p></div>`;
+        }
+        
+        // Handle fields ending with "Examples" (plural array)
+        else if (key.endsWith('Examples') && Array.isArray(value)) {
+            html += `<div class="example-box">`;
+            value.forEach(example => {
+                html += `<p><em>${example}</em></p>`;
+            });
+            html += `</div>`;
+        }
+    });
 
     return html;
 }
