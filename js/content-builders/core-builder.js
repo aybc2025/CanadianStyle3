@@ -258,7 +258,7 @@ export function buildMiscContent(content) {
     const simpleArrayFields = [
         'titles', 'ranks', 'degrees', 'provinces', 'monthAbbreviations', 'timeZones',
         'commonUnits', 'commonAbbreviations', 'capitalizationRules', 
-        'exceptions', 'criticalRules', 'incorrectAbbreviations', 'spacingRules'
+        'exceptions', 'criticalRules', 'incorrectAbbreviations'
     ];
     
     simpleArrayFields.forEach(field => {
