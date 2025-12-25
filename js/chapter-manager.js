@@ -203,6 +203,9 @@ function buildSectionHTML(section) {
     // Use core builder for misc content
     html += contentBuilders.core.buildMiscContent(content);
     
+    // Use core builder for dynamic fields (Chapter 7 special fields)
+    html += contentBuilders.core.buildDynamicFields(content);
+    
     // Use box builder for special boxes
     html += contentBuilders.box.buildBoxes(content);
     
