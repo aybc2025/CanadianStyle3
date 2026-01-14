@@ -1,0 +1,56 @@
+{
+  "puzzles": [
+    {
+      "id": "puzzle-sample-001",
+      "title": "חידת דוגמה",
+      "publishDate": "2024-01-15",
+      "status": "active",
+      "createdAt": "2024-01-14T10:00:00Z",
+      "updatedAt": "2024-01-14T10:00:00Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-001",
+      "puzzleId": "puzzle-sample-001",
+      "name": "צבעים",
+      "difficulty": "easy"
+    },
+    {
+      "id": "group-002",
+      "puzzleId": "puzzle-sample-001",
+      "name": "חיות בר",
+      "difficulty": "medium"
+    },
+    {
+      "id": "group-003",
+      "puzzleId": "puzzle-sample-001",
+      "name": "כלי נגינה",
+      "difficulty": "hard"
+    },
+    {
+      "id": "group-004",
+      "puzzleId": "puzzle-sample-001",
+      "name": "מילים שמתחילות ב״א״",
+      "difficulty": "expert"
+    }
+  ],
+  "words": [
+    { "id": "w001", "groupId": "group-001", "text": "אדום" },
+    { "id": "w002", "groupId": "group-001", "text": "כחול" },
+    { "id": "w003", "groupId": "group-001", "text": "ירוק" },
+    { "id": "w004", "groupId": "group-001", "text": "צהוב" },
+    { "id": "w005", "groupId": "group-002", "text": "אריה" },
+    { "id": "w006", "groupId": "group-002", "text": "זברה" },
+    { "id": "w007", "groupId": "group-002", "text": "פיל" },
+    { "id": "w008", "groupId": "group-002", "text": "ג׳ירפה" },
+    { "id": "w009", "groupId": "group-003", "text": "פסנתר" },
+    { "id": "w010", "groupId": "group-003", "text": "כינור" },
+    { "id": "w011", "groupId": "group-003", "text": "חליל" },
+    { "id": "w012", "groupId": "group-003", "text": "תוף" },
+    { "id": "w013", "groupId": "group-004", "text": "אבטיח" },
+    { "id": "w014", "groupId": "group-004", "text": "אוניברסיטה" },
+    { "id": "w015", "groupId": "group-004", "text": "אופניים" },
+    { "id": "w016", "groupId": "group-004", "text": "אמא" }
+  ]
+}
