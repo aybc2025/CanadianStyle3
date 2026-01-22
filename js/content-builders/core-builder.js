@@ -3,37 +3,59 @@
 // Handles basic content types used across all chapters
 // ===================================
 
+// Helper function to build examples box
+function buildExamplesBox(examples) {
+    let html = `<div class="examples-box" style="margin: 15px 0; padding: 15px; background-color: #f0f7ff; border-left: 4px solid #0066cc; border-radius: 4px;">`;
+    html += `<h4 style="color: #0066cc; margin-top: 0; margin-bottom: 10px;">Examples</h4>`;
+    html += `<ul style="margin: 0; padding-left: 20px;">`;
+    examples.forEach(example => {
+        html += `<li style="margin-bottom: 8px;">${example}</li>`;
+    });
+    html += `</ul></div>`;
+    return html;
+}
+
 export function buildBasicContent(content) {
     let html = '';
-    
+
     // General Rule (used in 7.02 and possibly others)
     if (content.generalRule) {
         html += `<p><strong>${content.generalRule}</strong></p>`;
     }
-    
+
     // Intro (used in many sections)
     if (content.intro) {
         html += `<p>${content.intro}</p>`;
     }
-    
+
     // Main text
     if (content.text) {
         html += `<p>${content.text}</p>`;
     }
-    
+
     // Main text (Chapter 4 style)
     if (content.mainText) {
         html += `<p>${content.mainText}</p>`;
     }
-    
-    // Explanation
+
+    // IMPORTANT: Examples come BEFORE explanation (Chapter 7 pattern)
+    if (content.examples && Array.isArray(content.examples)) {
+        html += buildExamplesBox(content.examples);
+    }
+
+    // Explanation (comes AFTER examples in Chapter 7)
     if (content.explanation) {
         html += `<p>${content.explanation}</p>`;
     }
-    
+
     // Additional Explanation
     if (content.additionalExplanation) {
         html += `<p>${content.additionalExplanation}</p>`;
+    }
+
+    // Additional Examples (comes AFTER additionalExplanation)
+    if (content.additionalExamples && Array.isArray(content.additionalExamples)) {
+        html += buildExamplesBox(content.additionalExamples);
     }
     
     // Format

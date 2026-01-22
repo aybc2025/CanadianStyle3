@@ -161,17 +161,32 @@ function loadSection(sectionIndex) {
 // Render section content using builders
 function renderSectionContent(section) {
     const contentArea = document.getElementById('contentArea');
-    
+
     // Build HTML from section content using builders
     const html = buildSectionHTML(section);
-    
-    contentArea.innerHTML = `
-        <div class="section-header">
-            <div class="section-number">Section ${section.id}</div>
-            <h2 class="section-title">${section.title}</h2>
-        </div>
-        ${html}
-    `;
+
+    // Build header - handle subsectionOf
+    let headerHTML = '';
+    if (section.subsectionOf) {
+        // This is a subsection - show parent as main title, section title as subtitle
+        headerHTML = `
+            <div class="section-header">
+                <div class="section-number">Section ${section.id}</div>
+                <h2 class="section-title">${section.subsectionOf}</h2>
+                <h3 class="subsection-title" style="color: #555; font-weight: 500; margin-top: 10px;">${section.id} ${section.title}</h3>
+            </div>
+        `;
+    } else {
+        // Regular section
+        headerHTML = `
+            <div class="section-header">
+                <div class="section-number">Section ${section.id}</div>
+                <h2 class="section-title">${section.title}</h2>
+            </div>
+        `;
+    }
+
+    contentArea.innerHTML = headerHTML + html;
 }
 
 // Build HTML from section content using modular builders
