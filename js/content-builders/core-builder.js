@@ -306,18 +306,19 @@ export function buildMiscContent(content) {
  * Build dynamic fields (handles ANY field not handled by other builders)
  * This is a catch-all for Chapter 7's unique field names
  * @param {Object} content - Section content
+ * @param {number} chapterId - Current chapter ID
  * @returns {string} HTML string
  */
-export function buildDynamicFields(content) {
+export function buildDynamicFields(content, chapterId = null) {
     let html = '';
-    
+
     // Skip fields that are handled by other builders
     const skipFields = [
-        'text', 'mainText', 'explanation', 'additionalExplanation', 'format', 'note', 
+        'text', 'mainText', 'explanation', 'additionalExplanation', 'format', 'note',
         'additionalNotes', 'additionalNote', 'warning', 'reference', 'referenceNote',
         'rules', 'examples', 'additionalExamples', 'intro', 'generalRule',
-        'spacingRules', 'categories', 'quotedExamples', // Chapter 7 special - handled by chapter7-builder
-        'items', 'boxes', 'keyPrinciple', 'criticalPoints', 'importantPoints', 
+        'spacingRules', 'categories', 'quotedExamples', 'quotedComparison', // Chapter 7 special - handled by chapter7-builder
+        'items', 'boxes', 'keyPrinciple', 'criticalPoints', 'importantPoints',
         'warningBox', 'noteBox', 'summaryBox', 'listItems', 'bulletPoints',
         'comparisonTable', 'tableData', 'orderOfPrecedence', 'specialRule',
         'typographyRules', 'formatRules', 'titles', 'ranks', 'degrees', 'provinces',
@@ -325,7 +326,26 @@ export function buildDynamicFields(content) {
         'capitalizationRules', 'exceptions', 'criticalRules', 'incorrectAbbreviations',
         'abbreviations', 'specialCases', 'streetAbbreviations', 'compassPoints', 'words'
     ];
-    
+
+    // Chapter 7: Skip ALL fields with specific patterns
+    const chapter7Patterns = ['Intro', 'Use', 'Note', 'Examples', 'Example'];
+    const chapter7SpecificFields = [
+        'basicPrinciple', 'courtesyNote', 'indirectQuestions', 'interrogativeAsImperative',
+        'substitutionUse', 'formUse', 'listUse', 'sideheadUse', 'tableExample',
+        'listExample', 'sideheadExample', 'figureNote', 'dmyExample', 'mdyOrder',
+        'author', 'source'
+    ];
+
+    if (chapterId === 7) {
+        // Dynamically skip fields ending with patterns
+        Object.keys(content).forEach(key => {
+            const endsWithPattern = chapter7Patterns.some(pattern => key.endsWith(pattern));
+            if (endsWithPattern || chapter7SpecificFields.includes(key)) {
+                skipFields.push(key);
+            }
+        });
+    }
+
     Object.keys(content).forEach(key => {
         if (skipFields.includes(key)) return;
         
