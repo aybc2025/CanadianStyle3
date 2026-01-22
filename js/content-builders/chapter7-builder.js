@@ -24,10 +24,8 @@ export function buildChapter7Content(content) {
         html += buildLetterCategories(content.categories);
     }
 
-    // Quoted Examples with authors (special format)
-    if (content.quotedExamples && Array.isArray(content.quotedExamples)) {
-        html += buildQuotedExamples(content.quotedExamples);
-    }
+    // NOTE: quotedExamples are now handled by core-builder in correct position
+    // (after explanation, before additionalExplanation)
 
     // Single quotedComparison (section 7.40)
     if (content.quotedComparison && typeof content.quotedComparison === 'object') {
