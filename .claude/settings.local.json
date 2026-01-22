@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(ls:*)",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd complete and corrected Chapter 7 JSON structure\n\n- Fixed all OCR errors \\(Y.T. not N.T., difficult not diffiadt, etc.\\)\n- Added all missing quoted examples with proper attribution\n- Added footnote on absolute constructions vs dangling participles\n- Added subsectionOf fields for all sections\n- Included Celtic language tree structure for braces example\n- Added all cross-references from PDF\n- Preserved all examples, warnings, and explanatory notes\n- Complete coverage of all 70 sections from PDF\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git remote set-url:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

@@ -1,0 +1,1115 @@
+/* ===================================
+   Chapter Page Styles
+   FIXED: Chapter badge number visibility
+   =================================== */
+
+.chapter-page {
+    background-color: var(--light-gray);
+}
+
+/* === CHAPTER HEADER === */
+.chapter-header {
+    background: linear-gradient(135deg, var(--primary-red) 0%, #B82419 100%);
+    color: white;
+    padding: var(--spacing-xl) 0;
+}
+
+.chapter-header .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.btn-back {
+    align-self: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-color: white;
+}
+
+.btn-back:hover {
+    background-color: white;
+    color: var(--primary-red);
+}
+
+.chapter-info {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+}
+
+/* FIXED: Ensure chapter badge number is always visible with explicit colors and shadow */
+.chapter-badge {
+    background-color: #FFFFFF !important;
+    color: #D52B1E !important;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Additional specificity to ensure the number is visible */
+#chapterBadge {
+    background-color: #FFFFFF !important;
+    color: #D52B1E !important;
+}
+
+.chapter-title-area h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: white;
+}
+
+.chapter-title-area p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* === PROGRESS BAR === */
+.chapter-progress-bar {
+    background-color: white;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-gray);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-gray);
+}
+
+/* === SECTION NAVIGATION === */
+.section-nav {
+    background-color: white;
+    border-bottom: 2px solid var(--border-gray);
+    position: sticky;
+    top: 72px;
+    z-index: 99;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    overflow-x: auto;
+    padding: var(--spacing-sm) 0;
+    scrollbar-width: thin;
+}
+
+.nav-tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+.nav-tabs::-webkit-scrollbar-thumb {
+    background-color: var(--border-gray);
+    border-radius: 2px;
+}
+
+.nav-tab {
+    font-family: var(--font-sans);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-tab:hover {
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+}
+
+.nav-tab.active {
+    color: var(--primary-red);
+    border-bottom-color: var(--primary-red);
+    font-weight: 600;
+}
+
+.nav-tab.completed::after {
+    content: ' ✓';
+    color: var(--success-green);
+}
+
+/* === CONTENT AREA === */
+.chapter-content {
+    padding: var(--spacing-xxl) 0;
+}
+
+.chapter-content .container {
+    max-width: 800px;
+}
+
+#contentArea {
+    background-color: white;
+    padding: var(--spacing-xxl);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* === SECTION CONTENT === */
+.section-header {
+    border-bottom: 3px solid var(--primary-red);
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-number {
+    font-family: var(--font-sans);
+    color: var(--primary-red);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--dark-gray);
+    margin-top: var(--spacing-sm);
+}
+
+/* === KEY PRINCIPLE BOX === */
+.key-principle {
+    background: linear-gradient(135deg, var(--secondary-blue), #0052A3);
+    color: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+    border-left: 5px solid #003D7A;
+}
+
+.key-principle h4 {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.key-principle h4::before {
+    content: '💡';
+    font-size: 1.5rem;
+}
+
+.key-principle p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.key-principle ul {
+    margin: var(--spacing-md) 0 0 var(--spacing-lg);
+}
+
+.key-principle li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === WARNING BOX === */
+.warning-box {
+    background-color: var(--warning-yellow);
+    border: 1px solid var(--warning-border);
+    border-left: 5px solid var(--warning-text);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.warning-box h4 {
+    font-family: var(--font-sans);
+    color: var(--warning-text);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.warning-box h4::before {
+    content: '⚠️';
+    font-size: 1.5rem;
+}
+
+.warning-box ul {
+    margin: var(--spacing-md) 0 0 var(--spacing-lg);
+    color: var(--dark-gray);
+}
+
+.warning-box li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === INFO BOX === */
+.info-box {
+    background-color: #E3F2FD;
+    border-left: 5px solid var(--secondary-blue);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.info-box h4 {
+    font-family: var(--font-sans);
+    color: var(--secondary-blue);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+}
+
+.info-box p {
+    margin: var(--spacing-md) 0;
+    line-height: 1.7;
+    color: var(--dark-gray);
+}
+
+.info-box ul {
+    margin: var(--spacing-md) 0 0 var(--spacing-lg);
+    color: var(--dark-gray);
+}
+
+.info-box li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === EXAMPLE BOX === */
+.example-box {
+    background-color: #F8F9FA;
+    border-left: 4px solid var(--medium-gray);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.example-correct {
+    border-left-color: var(--success-green);
+}
+
+.example-incorrect {
+    border-left-color: var(--error-red);
+}
+
+.example-label {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+    color: var(--medium-gray);
+}
+
+.example-correct .example-label {
+    color: var(--success-green);
+}
+
+.example-incorrect .example-label {
+    color: var(--error-red);
+}
+
+/* === LISTS === */
+#contentArea ul,
+#contentArea ol {
+    margin: var(--spacing-lg) 0;
+    padding-left: var(--spacing-xl);
+}
+
+#contentArea li {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+#contentArea ul li::marker {
+    color: var(--primary-red);
+}
+
+#contentArea li.example-list-item {
+    list-style: none;
+    margin-left: calc(-1 * var(--spacing-xl));
+}
+
+/* === TABLES === */
+#contentArea table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-xl) 0;
+}
+
+#contentArea th,
+#contentArea td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+#contentArea th {
+    background-color: var(--light-gray);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+#contentArea tr:hover {
+    background-color: var(--light-gray);
+}
+
+/* === CONTENT NAVIGATION === */
+.content-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl) 0;
+}
+
+.content-navigation .btn {
+    flex: 1;
+    max-width: 250px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .chapter-title-area h1 {
+        font-size: 1.75rem;
+    }
+    
+    .chapter-badge {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    #contentArea {
+        padding: var(--spacing-xl);
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .content-navigation {
+        flex-direction: column;
+    }
+    
+    .content-navigation .btn {
+        max-width: 100%;
+    }
+    
+    .section-nav {
+        top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contentArea {
+        padding: var(--spacing-lg);
+    }
+    
+    .key-principle,
+    .warning-box {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Comparison Table (British vs American) */
+.comparison-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table thead {
+    background-color: var(--primary-red);
+    color: white;
+}
+
+.comparison-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.comparison-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-gray);
+    vertical-align: top;
+}
+
+.comparison-table tr:hover {
+    background-color: var(--light-gray);
+}
+
+.pattern-note {
+    background-color: #FFF8E1;
+    font-style: italic;
+    color: var(--dark-gray);
+}
+
+/* Recommended Spellings Box */
+.recommended-box {
+    background-color: #E8F5E9;
+    border-left: 5px solid #4CAF50;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.recommended-box h4 {
+    color: #2E7D32;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+}
+
+.recommended-box ul {
+    margin: var(--spacing-md) 0 0 var(--spacing-lg);
+}
+
+.recommended-box li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-gray);
+}
+
+/* Words Grid (Misspelled Words) */
+.words-list {
+    margin: var(--spacing-xl) 0;
+}
+
+.words-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.word-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--light-gray);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.word-item:hover {
+    background-color: #E3F2FD;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Homonyms Table */
+.homonyms-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.homonyms-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.homonyms-table thead {
+    background-color: var(--secondary-blue);
+    color: white;
+}
+
+.homonyms-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.homonyms-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.homonyms-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.homonyms-table tr:hover {
+    background-color: #E3F2FD;
+}
+
+/* Plural Forms Table */
+.plural-forms-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.plural-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.plural-table thead {
+    background-color: #5C6BC0;
+    color: white;
+}
+
+.plural-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+}
+
+.plural-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.plural-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.plural-table tr:hover {
+    background-color: #E8EAF6;
+}
+
+/* Units Table */
+.units-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.units-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.units-table thead {
+    background-color: var(--secondary-blue);
+    color: white;
+}
+
+.units-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+}
+
+.units-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.units-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.units-table tr:hover {
+    background-color: #E8EAF6;
+}
+
+/* Symbols Table */
+.symbols-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.symbols-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.symbols-table thead {
+    background-color: var(--secondary-blue);
+    color: white;
+}
+
+.symbols-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+}
+
+.symbols-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.symbols-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.symbols-table tr:hover {
+    background-color: #E8EAF6;
+}
+
+/* Special Cases Section */
+.special-cases-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.special-cases-section h4 {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+}
+
+.generic-use-section,
+.generic-parts-section,
+.proper-nouns-section,
+.chemical-elements-section,
+.chemical-symbols-section,
+.medical-conditions-section,
+.infectious-organisms-section,
+.drug-names-section,
+.special-case-section,
+.trade-names-section,
+.high-tech-products-section,
+.generic-usage-section,
+.prefixes-section,
+.prepositions-section,
+.short-titles-section,
+.ancient-manuscripts-section,
+.hyphenated-compounds-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    border-radius: 4px;
+}
+
+.capitalized-examples,
+.lowercase-examples {
+    margin: 15px 0;
+}
+
+.reference-note {
+    font-style: italic;
+    color: #6c757d;
+    border-left: 3px solid #ffc107;
+    padding-left: 15px;
+    margin: 15px 0;
+}
+
+/* 1. Numbered Notes - adds visual distinction for Note 1, Note 2, etc */
+.numbered-note {
+    border-left-color: #2196f3 !important;
+    border-left-width: 5px !important;
+}
+
+/* 2. Part Sections - for subsections (partA, partB, partC, partD) */
+.part-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-left: 5px solid #3498db;
+    border-radius: 4px;
+}
+
+.part-section h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 1rem;
+}
+
+.part-section p {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+}
+
+.part-section ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.part-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* 3. SI Symbols Table - correct/incorrect styling */
+.si-symbols-table td.si-correct {
+    background-color: #d4edda;
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+}
+
+.si-symbols-table td.si-incorrect {
+    background-color: #f8d7da;
+    font-family: 'Courier New', monospace;
+    text-decoration: line-through;
+    color: #721c24;
+}
+
+/* ========================================
+   Chapter 6 - Italics - CSS (CORRECTED)
+   תיקון: שם ספציפי למניעת קונפליקט
+   ======================================== */
+
+/* 6.02 - Use Cases */
+.use-case-item {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl);
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 6.03 & 6.04 - Comparison Grid (שם ספציפי!) */
+.comparison-section-italics {
+    margin: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl);
+    background-color: #F8F9FA;
+    border-radius: var(--radius-lg);
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.comparison-column {
+    padding: var(--spacing-xl);
+    background-color: white;
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-column h4 {
+    font-family: var(--font-sans);
+    margin-top: 0;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--border-gray);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.comparison-column.italicized {
+    border-top: 4px solid var(--success-green);
+}
+
+.comparison-column.italicized h4 {
+    color: var(--success-green);
+}
+
+.comparison-column.italicized li em {
+    font-style: italic;
+    color: #155724;
+    background-color: #D4EDDA;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.comparison-column.not-italicized {
+    border-top: 4px solid var(--primary-red);
+}
+
+.comparison-column.not-italicized h4 {
+    color: var(--primary-red);
+}
+
+.comparison-column.not-italicized li {
+    font-weight: 500;
+    color: #721C24;
+}
+
+/* Latin Terms Specific */
+.comparison-section-italics.latin-terms .comparison-column {
+    min-height: 250px;
+}
+
+/* 6.05 - Publications */
+.publication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.publication-item {
+    display: flex;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background-color: #F8F9FA;
+    border-left: 4px solid var(--secondary-blue);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.publication-item:hover {
+    background-color: #E9ECEF;
+    transform: translateX(4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.pub-type {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-right: var(--spacing-sm);
+    min-width: 100px;
+}
+
+.pub-example {
+    font-style: italic;
+    color: var(--secondary-blue);
+    font-weight: 500;
+}
+
+/* Short Works */
+.short-works {
+    margin-top: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    background-color: var(--warning-yellow);
+    border: 1px solid var(--warning-border);
+    border-left: 5px solid var(--warning-text);
+    border-radius: var(--radius-md);
+}
+
+/* 6.07 - DND Special */
+.dnd-note {
+    background: linear-gradient(135deg, #667EEA, #764BA2) !important;
+    color: white !important;
+    border: none !important;
+    border-left: none !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.dnd-note h4 {
+    color: white !important;
+}
+
+.dnd-note p,
+.dnd-note li {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dnd-note .styled-list li {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+/* 6.10 - Categories */
+.category-section {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl);
+    background-color: white;
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-section h4 {
+    font-family: var(--font-sans);
+    color: var(--secondary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--border-gray);
+}
+
+/* 6.11 - Math & Science */
+.biological,
+.algebraic,
+.quantity-symbols,
+.chemical,
+.statistical {
+    margin: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl);
+    background-color: #F8F9FA;
+    border-left: 5px solid var(--secondary-blue);
+    border-radius: var(--radius-md);
+}
+
+.biological h4,
+.algebraic h4,
+.quantity-symbols h4,
+.chemical h4,
+.statistical h4 {
+    font-family: var(--font-sans);
+    color: var(--secondary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.math-example {
+    font-family: 'Courier New', Consolas, Monaco, monospace;
+    font-size: 1.05rem;
+    padding: var(--spacing-lg);
+    background-color: white;
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-md) 0;
+    direction: ltr;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.math-example em {
+    font-style: italic;
+    color: var(--secondary-blue);
+    font-weight: 600;
+}
+
+.notation {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    font-style: italic;
+    margin-top: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
+}
+
+/* Statistical formulas */
+.statistical .math-example {
+    background: linear-gradient(to right, #F8F9FA 0%, #E9ECEF 100%);
+}
+
+/* Rule Subsections */
+.rule-subsection {
+    margin: var(--spacing-xl) 0;
+}
+
+.rule-subsection h4 {
+    font-family: var(--font-sans);
+    color: var(--dark-gray);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Cross-References */
+.cross-reference {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background-color: #E7F3FF;
+    border-left: 4px solid var(--secondary-blue);
+    font-style: italic;
+    color: #004085;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-sans);
+}
+
+/* Guidance Box */
+.info-box.guidance {
+    background-color: #D1ECF1;
+    border-left-color: var(--secondary-blue);
+}
+
+.info-box.guidance p {
+    color: #0C5460;
+}
+
+/* Exception Box */
+.info-box.exception {
+    background-color: var(--warning-yellow);
+    border-left-color: var(--warning-text);
+}
+
+.info-box.exception h4 {
+    color: var(--warning-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .comparison-grid,
+    .publication-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .publication-item {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .pub-type {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .math-example {
+        font-size: 0.95rem;
+        padding: var(--spacing-md);
+    }
+    
+    .comparison-section-italics {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Print */
+@media print {
+    .math-example,
+    .comparison-grid,
+    .dnd-note {
+        page-break-inside: avoid;
+    }
+    
+    .dnd-note {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+/* Key Principle box - make text WHITE on blue background */
+.info-box.key-principle {
+    background: #0066cc;  /* Keep the blue background */
+    color: #ffffff !important;  /* WHITE text */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.info-box.key-principle h4 {
+    color: #ffffff !important;  /* WHITE heading */
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.info-box.key-principle p {
+    color: #ffffff !important;  /* WHITE paragraph */
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Also fix the lightbulb emoji if needed */
+.info-box.key-principle h4::before {
+    content: "💡 ";
+    margin-right: 8px;
+}
