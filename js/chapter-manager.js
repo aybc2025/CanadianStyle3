@@ -119,7 +119,9 @@ function renderSectionTabs() {
     chapterData.sections.forEach((section, index) => {
         const tab = document.createElement('button');
         tab.className = 'nav-tab';
-        tab.textContent = `${section.id} ${section.title}`;
+        // Use subsectionOf as the display title if it exists
+        const displayTitle = section.subsectionOf || section.title;
+        tab.textContent = `${section.id} ${displayTitle}`;
         tab.onclick = () => loadSection(index);
         
         // Mark completed sections
