@@ -44,7 +44,7 @@
               },
               {
                 "rule": "No space before the periods following the capital letters in the official abbreviations of provinces and territories and no space after such periods except the last one",
-                "examples": ["P.E.I.", "N.T."]
+                "examples": ["P.E.I.", "Y.T."]
               }
             ]
           },
@@ -107,7 +107,12 @@
             "rules": [
               {
                 "rule": "No space before or after these marks when they are inserted between words, a word and a numeral, or two numerals",
-                "examples": ["I will support you in any way I can—even to the point of silence. —Eugene Forsey", "a few 90-cent stamps", "pp. 134-200"]
+                "examples": [
+                  "I will support you in any way I can—even to the point of silence.",
+                  "—Eugene Forsey",
+                  "a few 90-cent stamps",
+                  "pp. 134-200"
+                ]
               }
             ]
           },
@@ -148,6 +153,7 @@
     {
       "id": "7.03",
       "title": "Main purpose",
+      "subsectionOf": "The Period",
       "content": {
         "mainText": "The period marks the end of an affirmative sentence or sentence fragment:",
         "examples": [
@@ -173,6 +179,7 @@
     {
       "id": "7.04",
       "title": "Imperatives, exclamations and indirect questions",
+      "subsectionOf": "The Period",
       "content": {
         "mainText": "Use a period after a mild imperative or exclamation:",
         "quotedExamples": [
@@ -194,10 +201,11 @@
     {
       "id": "7.05",
       "title": "Ellipsis points",
+      "subsectionOf": "The Period",
       "content": {
         "mainText": "Use three ellipsis points (. . .) to indicate a silence in dialogue, hesitation or interruption in speech, a pause in narrative, or the passage of time. Used in this way, they are sometimes also referred to as suspension points:",
         "examples": [
-          "\"What is your approach to self-actualization?\" . . . \"Let me rephrase that.\"",
+          "\"What is your approach to self-actualization?\"\n. . .\n\"Let me rephrase that.\"",
           "The Minister's speech dragged on and on. . . until, finally, the TV announcer's voice broke the monotony."
         ],
         "substitutionUse": "Ellipsis points may be substituted for etc. and similar expressions at the end of a list:",
@@ -209,9 +217,10 @@
     {
       "id": "7.06",
       "title": "Leaders",
+      "subsectionOf": "The Period",
       "content": {
         "mainText": "A row of dots (or short dashes), called leaders, is used in indexes and tables, including tables of contents, to help the reader align material separated by a wide space:",
-        "tableExample": "1. Period ..................... 10\n2. Leaders .................... 11",
+        "tableExample": "1. Period .......................................... 10\n2. Leaders ...................................... 11",
         "formUse": "A series of dots is sometimes used in place of underlining to indicate where information (or a signature) is to be entered on a form:",
         "formExamples": [
           "Suggestion No. .......................",
@@ -222,164 +231,238 @@
     {
       "id": "7.07",
       "title": "Other uses",
+      "subsectionOf": "The Period",
       "content": {
         "listUse": "Periods may replace parentheses after numerals or letters used to introduce items in a vertical list (see 7.67):",
         "listExample": "1. Logic\n2. Grammar\n   a. relative clause\n   b. subordinate clause",
         "sideheadUse": "A run-in sidehead should be followed by a period:",
-        "sideheadExample": "Punctuation. Punctuation is the art of . . . .",
-        "figureNote": "Fig. 3. Run-in sidehead"
+        "sideheadExamples": [
+          "Punctuation. Punctuation is the art of . . . .",
+          "Fig. 3. Human resources by sector"
+        ]
       }
     },
     {
       "id": "7.08",
       "title": "Periods properly omitted",
+      "subsectionOf": "The Period",
       "content": {
-        "mainText": "Do not use a period:",
-        "rules": [
-          "After a title or heading standing on a separate line",
-          "After such items as date lines, addresses and signatures in letters",
-          "After items in a list set on separate lines",
-          "After a Roman numeral",
-          "In scientific and technical writing, after symbols for SI/metric units",
-          "With acronyms and initialisms, or certain other abbreviations (see 1.03)"
+        "mainText": "Do not use a period at the end of any form of heading (other than run-in sideheads), legend or the like, or after a date line or signature:",
+        "examples": ["Summary of Expenditures", "June 22, 1996"],
+        "signboardNote": "Short signboard messages do not require a final period:",
+        "signboardExamples": ["No Trespassing", "Employees Only"],
+        "abbreviationsNote": "Do not use periods with acronyms and initialisms and with abbreviations of compass directions (except in street addresses), degrees, memberships and distinctions, SI/metric unit symbols, chemical symbols or mathematical abbreviations:",
+        "abbreviationExamples": [
+          "NATO",
+          "OECD",
+          "NE",
+          "BSc",
+          "MA",
+          "FRSC",
+          "cm",
+          "NaCl",
+          "cos"
         ]
       }
     },
     {
       "id": "7.09",
       "title": "Main purpose",
+      "subsectionOf": "The Question Mark",
       "content": {
-        "mainText": "A question mark is used after a direct question:",
+        "mainText": "A question mark is placed at the end of a direct question, sometimes even if the sentence is declarative or imperative in form:",
         "examples": [
-          "How many provinces are there?",
-          "What more can I do to help you?"
+          "Doctor Livingstone, I presume?",
+          "Surely not?",
+          "Give him more time? Don't make me laugh.",
+          "I don't suppose you'd have another one in the same colour?"
         ],
-        "courtesyNote": "Note, however, that a sentence which is interrogative in form may be imperative in function. Such \"courtesy\" questions are followed by a period (see 7.04)."
+        "multipleQueriesNote": "A question mark may be used for each query within a sentence:",
+        "multipleQueriesExample": "Managers must ask themselves: How will this proposal affect cost? productivity? employee satisfaction?"
       }
     },
     {
       "id": "7.10",
       "title": "Requests, indirect questions and other uses",
+      "subsectionOf": "The Question Mark",
       "content": {
-        "requestsIntro": "Requests in the form of polite questions may end with a question mark or a period:",
+        "requestsIntro": "Opinions differ as to whether a polite request of the type May I . . ., Would you . . . or Will you . . . requires the question mark. However, a question mark will look out of place after longer requests of this kind, especially if the sentence embodies straightforward affirmative elements:",
         "requestExamples": [
-          "Would you send us your latest catalogue.",
-          "Could you forward this letter to the appropriate office?"
+          "May I escort you to your car?",
+          "Will you come this way, please.",
+          "Will you please go—before I have you thrown out."
         ],
-        "indirectQuestionsIntro": "Indirect questions are usually followed by a period; however, the writer may use a question mark if a response in the form of an answer is required, or if the writer wishes to indicate uncertainty about information contained in the sentence:",
-        "indirectExamples": [
-          "The president asked what the objections were (to the new proposal).",
-          "He asked whether I would be willing to serve on the committee?",
-          "How did the situation deteriorate to such an extent?"
+        "indirectQuestionsIntro": "Although the question mark is normally omitted after indirect questions, one may be added if the sentence has the force of a request:",
+        "indirectExample": "I wonder if you could give me two dollars for the bus ride home?",
+        "exclamatoryNote": "Occasionally a question will incorporate an exclamatory element. The writer must then decide whether the interrogative or the exclamatory element is to be given greater prominence:",
+        "exclamatoryExamples": [
+          "What hath God wrought!",
+          "How many times must I tell you?"
         ],
-        "uncertaintyIntro": "A question mark is placed in parentheses to indicate uncertainty:",
-        "uncertaintyExamples": [
-          "The dates of his term of office are 1837(?)–42.",
-          "Jacques Cartier, 1491(?)–1557"
-        ],
-        "multipleQuestionsIntro": "A question mark may be used after each in a series of questions within one sentence:",
-        "multipleQuestionsExample": "How could anyone believe that the tax increase was anything but another burden? another obstacle to economic growth? another example of the government's ineptitude?"
+        "uncertaintyIntro": "A question mark in parentheses (italicized in square brackets in quoted material) is inserted after information about which the writer is uncertain:",
+        "uncertaintyExample": "The explorer William Kennedy, a strong advocate of the annexation of Rupert's Land to Canada, was born at Cumberland House (?), Rupert's Land, on April 26, 1814.",
+        "missingDigitsIntro": "Indicate missing digits with a question mark:",
+        "missingDigitsExample": "Henri Potvin (1615-165?)",
+        "crossReference": "See Chapter 8 for the use of the question mark with quotation marks and other punctuation."
       }
     },
     {
       "id": "7.11",
       "title": "Main purpose",
+      "subsectionOf": "The Exclamation Mark",
       "content": {
-        "mainText": "An exclamation mark is used to express surprise, disbelief, or some other strong emotion. The exclamation may be in the form of a word, a phrase or a sentence:",
+        "mainText": "The exclamation mark is an intensifier. It is used to indicate surprise, urgency, finality and the like. It is most often found after interjections, but also after ellipses, contractions and inversions and after certain onomatopoeic words:",
         "examples": [
-          "Go!",
-          "What a great picture that is!",
-          "How quickly this year has gone by!"
+          "Crash! went the filing cabinet.",
+          "but",
+          "The crash of the filing cabinet was heard far down the hall."
         ],
-        "mildExclamationNote": "If the exclamation is a mild one and the emphasis is not on the exclamatory word itself, a comma or period is more suitable:",
-        "mildExamples": [
-          "Oh, don't worry about that.",
-          "No, we were not even there that night."
-        ],
-        "addressNote": "Do not use an exclamation mark after the salutation of a letter. Use a colon (or a comma in the case of a personal letter)."
+        "specialIntonationNote": "Sometimes the exclamation mark is used to convey a special intonation that the reader would not give the words if they were punctuated normally:",
+        "specialIntonationExample": "And I thought he was joking!",
+        "forcefulRequestsIntro": "The exclamation mark is also used after forceful requests, wishes, invocations and commands:",
+        "forcefulRequestsExamples": [
+          "Would that I could!",
+          {
+            "text": "Follow my white plume!",
+            "author": "Sir Wilfrid Laurier"
+          }
+        ]
       }
     },
     {
       "id": "7.12",
       "title": "Miscellaneous",
+      "subsectionOf": "The Exclamation Mark",
       "content": {
-        "ironicUse": "An exclamation mark is sometimes used to point up an ironic or humorous comment:",
-        "ironicExamples": [
-          "How intelligent (!) his speech was!"
+        "incredulityNote": "An exclamation mark, usually in parentheses (italicized in square brackets in quoted material), is sometimes used to indicate incredulity on the part of the writer. As with the analogous use of the question mark, this is a technique easily overdone:",
+        "incredulityExample": "Mr. Jones asserted that never in his long and distinguished (!) political career had he taken a bribe.",
+        "seriesNote": "When exclamations occur in a series they are usually separated by commas:",
+        "seriesExample": "Several honourable members: Hear, hear!",
+        "combinedNote": "However, two interjections may be combined with no intervening punctuation:",
+        "combinedExample": "Oh no!",
+        "whenNotToUseIntro": "Where the words themselves suffice to convey the emphasis, or where the sentence or clause is more properly a question, do not use an exclamation mark:",
+        "whenNotToUseExamples": [
+          "Another project failure like this, and we are finished.",
+          "Who knows? Who cares?"
         ],
-        "warningNote": "Warning: This is a dangerous practice, and should not be resorted to in serious writing.",
-        "bracketsNote": "In certain cases an exclamation mark may be enclosed in parentheses to query a surprising or dubious statement:",
-        "bracketsExample": "\"He was a man of unquestioned integrity (!), a leader of deep compassion (!).\""
+        "lengthNote": "Exclamations are of necessity short. An exclamation mark should never appear at the end of a long sentence unless it is intended to intensify only the last word or words.",
+        "sparingUseNote": "The exclamation mark should be used as sparingly as possible. Emphatic wording is usually more effective than emphatic punctuation."
       }
     },
     {
       "id": "7.13",
       "title": "General",
+      "subsectionOf": "The Comma",
       "content": {
-        "mainText": "The comma is the most frequently used—and misused—punctuation mark. There are, unfortunately, no infallible rules governing the use or non-use of commas. Careful writers, however, usually know when a sentence becomes unclear because of the absence of a comma, and when the presence of too many commas causes the reader to lose the flow of thought. The important thing is to recognize the main sentence elements and to punctuate accordingly.",
-        "basicPrinciple": "In general, the comma marks a slight break or pause in a sentence. It may separate words, phrases or clauses. Note the following basic uses of the comma:"
+        "mainText": "The comma is the most frequently misused punctuation mark, and many of the rules governing its use are vague and riddled with exceptions. The writer must frequently rely on personal judgment and should be guided by considerations of clarity more than by any particular set of rules.",
+        "generalRuleNote": "Note that, as a general rule, commas interrupt the flow of a sentence and should therefore not be used where they do not contribute to clarity. A sentence requiring a large number of commas for clarity is probably a poorly constructed one in need of rephrasing. Yet the comma is also the mark most often incorrectly omitted."
       }
     },
     {
       "id": "7.14",
       "title": "Restrictive/non-restrictive",
+      "subsectionOf": "The Comma",
       "content": {
-        "intro": "The comma is used to set off non-restrictive elements in a sentence (see the examples below). Restrictive elements identify, limit or define the words they modify and should not be set off by commas. Note that the use of commas often indicates that the punctuation modifies the main sentence; their omission indicates that the element is an integral part of the sentence.",
-        "categories": [
+        "mainText": "Most difficulties with the use of the comma hinge on the distinction between restrictive and non-restrictive sentence elements. A restrictive word, phrase or clause adds to the words it modifies a \"restrictive\" or defining element that is essential to the meaning of the whole; it should therefore not be separated by a comma or other mark of punctuation. A non-restrictive element provides incidental or supplementary information which does not affect the essential meaning; it should be set off by a comma or commas.",
+        "comparisonIntro": "Compare",
+        "comparisonExamples": [
+          {
+            "text": "The senators who had objected most strongly to the shift in policy were quick to acknowledge the error in their thinking.",
+            "type": "restrictive"
+          },
+          {
+            "text": "The senators, who had objected most strongly to the shift in policy, were quick to acknowledge the error in their thinking.",
+            "type": "non-restrictive"
+          }
+        ],
+        "subsections": [
           {
             "letter": "a",
-            "title": "Introductory phrase or clause",
-            "text": "Use a comma to set off a phrase or dependent clause which precedes the main clause:",
+            "title": "Introductory elements",
+            "text": "There are exceptions to the general rule for punctuating restrictive and non-restrictive elements. An introductory phrase or clause, especially if it is a long one, is often followed by a comma whether it is restrictive or not:",
             "examples": [
-              "In all these interests, personal liberty is involved.",
-              "If you are claiming special consideration, identify the section of the act on which your claim is based.",
-              "After they had studied his plan for a month or so, the working group came to appreciate its merits.",
-              "To apply for a posting abroad, you should get in touch with the human resources division."
+              "Of all election issues, the place of minorities in society is the most sensitive.",
+              "When choosing between two approaches, it is important to consult experts in the field.",
+              "but",
+              "In the course of the conference some provincial leaders reversed their position on Native rights."
             ],
-            "shortPhraseNote": "However, short expressions of this type may not require a comma:",
-            "shortExamples": [
-              "In all his efforts were quite laudable.",
-              "On Tuesday the committee will discuss the report."
-            ]
+            "conjunctivalNote": "Each of the above sentences could have been correctly punctuated with or without the comma. But if an introductory subordinate clause is followed by a conjunctival now, then or still, the comma should be retained in order to avoid having these words read as adverbs of time. In the following example",
+            "conjunctivalExample": "When there are enough good Moslems in a society, that society will inevitably become an Islamic society. If that Islamic society establishes itself and endures then, no less inevitably, it will produce an Islamic state.",
+            "conjunctivalExplanation": "the word then appears to be an adverb of time belonging to the if clause, but it in fact introduces the main clause and should be preceded by a comma.",
+            "shortPhrasesNote": "After introductory adverbs and short phrases indicating time, frequency, location or cause, the comma is omitted unless needed to avoid ambiguity or add emphasis:",
+            "shortPhrasesExamples": [
+              "By next week the new budget will have been thoroughly analysed.",
+              "but",
+              "In 1994, 1457 employees started using the new operating system."
+            ],
+            "transitionNote": "Introductory adverbs or phrases used to mark transition or to express a personal comment are usually set off by commas:",
+            "transitionExamples": [
+              "Nevertheless, the program will go ahead as scheduled.",
+              "In short, no hiring is currently taking place."
+            ],
+            "adjectiveNote": "The introductory phrase may also consist of an adjective or participle separated from its noun by the definite or indefinite article:",
+            "adjectiveExamples": [
+              "Unprepared, the team was no match for its opponents.",
+              "Clearly upset by the heckling, the speaker stopped for a moment to regain his composure."
+            ],
+            "omissionNote": "Conversely, it is sometimes possible to omit the commas that ordinarily set off non-restrictive elements, without obscuring the meaning. This is especially true of short adverbial expressions:",
+            "omissionExamples": [
+              "Her words went of course unheeded.",
+              "All the same he had no compunction about slipping the waiter a few dollars to be on the safe side."
+            ],
+            "emphasisNote": "In such sentences the addition of commas not strictly needed for clarity gives emphasis to the elements thus enclosed:",
+            "emphasisExample": "Her words went, of course, unheeded."
           },
           {
             "letter": "b",
-            "title": "Absolute constructions",
-            "text": "Use a comma to set off an absolute construction (a grammatically independent phrase that modifies the main clause):",
+            "title": "Absolute expressions",
+            "text": "One form of non-restrictive expression is the absolute¹ construction: a participial phrase grammatically unconnected with the rest of the sentence. Such phrases are followed by a comma:",
             "examples": [
-              "All things considered, the recommendations were sound.",
-              "The weather being favourable, we shall hold the outdoor concert as scheduled."
-            ]
+              "Weather permitting, the conference will be held as planned.",
+              "The chapter completed, I returned to my former duties."
+            ],
+            "errorNote": "Note the following errors in the punctuation of absolute expressions:",
+            "errorExamples": [
+              "The investigation had been completed, and the results, having been known for some time, the public was anxiously waiting for heads to roll. (remove comma after results)",
+              "We were unable to answer her questions. The truth being that we hadn't given the matter much thought. (replace the period after questions with a comma or dash)"
+            ],
+            "footnote": {
+              "number": 1,
+              "text": "Do not confuse absolute constructions with those involving dangling or unrelated participles:\n\nListening to his speech, it felt as if he would drone on all day.\n\nThis common problem is avoided if the sentence is recast so that the subject of both clauses is the same:\n\nListening to his speech, I had the impression that he would drone on all day."
+            }
           },
           {
             "letter": "c",
             "title": "Parenthetic expressions",
-            "text": "Use commas to set off parenthetic words, phrases and clauses. A parenthetic expression—which may be a word (however, too), a phrase (by the way, on the other hand) or a clause (I believe, you will agree)—is one which is not essential to the structure or meaning of the sentence but is inserted as a comment or to show the relationship of ideas. The presence or absence of commas may profoundly affect meaning. Note carefully the difference between the following sentences:",
-            "contrastExamples": [
-              "Journalists who do not read the major papers cannot adequately cover Canadian current events.",
-              "Journalists, who do not read the major papers, cannot adequately cover Canadian current events."
-            ],
-            "explanation": "The first sentence, without commas, limits the category of journalists to those who do not read the major papers and states that they cannot adequately cover Canadian current events. The second sentence, with commas, describes all journalists and states that none of them reads the major papers. The clause 'who do not read the major papers' is essential (and hence restrictive) in the first sentence but merely descriptive (and hence non-restrictive) in the second.",
-            "additionalExamples": [
-              "My colleague Fred always lets me use his car. (restrictive)",
-              "My colleague, Fred, always lets me use his car. (non-restrictive—I have only one colleague)",
-              "The hon. member for York Centre, Mr. Art Eggleton, is recognized. (non-restrictive appositive)",
-              "The Ontario town Etobicoke is now part of Toronto. (restrictive appositive)"
-            ]
+            "text": "Parenthetic expressions are non-restrictive and therefore require commas.",
+            "example": "We could see that the plan, if not actually rejected out of hand, was far from popular with senior management.",
+            "removalTest": "If a parenthetic expression is removed from the sentence, the remainder of the sentence should read as a coherent, grammatically correct whole. For example, the sentence",
+            "badExample": "The task force wanted to show that it was as good, if not better, than its predecessors.",
+            "badExplanation": "is unacceptable because \"as good . . . than\" is incorrect English. The sentence should be recast as follows:",
+            "goodExample": ". . . it was as good as, if not better than, its predecessors.",
+            "omissionNote": "Occasionally it may be expedient to omit the first of the pair of commas around a parenthetic expression:",
+            "omissionExample": "But without realizing it, he had sparked a whole new controversy.",
+            "omissionExplanation": "The parenthetic phrase here is \"without realizing it.\"",
+            "bothOmissionNote": "Both commas can sometimes safely be omitted; under no circumstances, however, should the second comma be omitted while the first is retained:",
+            "correctOmission": "But without realizing it he had sparked a whole new controversy.",
+            "incorrectOmission": "not\nBut, without realizing it he had sparked a whole new controversy."
           },
           {
             "letter": "d",
             "title": "Appositives",
-            "text": "Non-restrictive appositives are set off by commas:",
-            "examples": [
-              "The Empress of Ireland, the largest passenger ship in service in Canada when it was launched, sank in 1914.",
-              "Lévesque's first novel, The House on the Esplanade, is about Montreal.",
+            "text": "Restrictive and non-restrictive appositives should be carefully distinguished. The latter are set off by commas, whereas the former are not:",
+            "contrastExamples": [
+              "St. John of the Cross",
+              "Graham St. John, of Hoary Cross",
+              "Her painting Reflections drew a poor response from the public.",
               "Her first painting, Contrasts, has been little studied."
             ],
-            "closingNote": "As in the case of parenthetic expressions, the comma following a non-restrictive appositive cannot be omitted. Thus the sentence 'The statement by the Government House Leader, Herb Gray that no changes would be made to salaries paid to Parliamentarians was not unexpected' is incorrect. A comma is required after 'Gray.'",
-            "finalPositionNote": "Non-restrictive appositives in final position are usually preceded by a comma:",
-            "finalExample": "Our supreme governors, the people.",
-            "alternativePunctuation": "Often, however, the comma is replaced by a colon or dash:",
+            "commaAfterNote": "As in the case of parenthetic expressions, the comma following a non-restrictive appositive cannot be omitted. Thus the sentence",
+            "badExample": "The statement by the Government House Leader, Herb Gray that no changes would be made to salaries paid to Parliamentarians was not unexpected.",
+            "badExplanation": "is incorrect. A comma is required after \"Gray.\"",
+            "finalPositionIntro": "Non-restrictive appositives in final position are usually preceded by a comma:",
+            "finalPositionExample": "Our supreme governors, the people.",
+            "alternativesIntro": "Often, however, the comma is replaced by a colon or dash:",
             "alternativeExamples": [
               "Tact: a quality that no skilled diplomat can do without.",
               "Margaret Laurence—perhaps the greatest writer to come out of Manitoba."
@@ -421,16 +504,15 @@
     {
       "id": "7.15",
       "title": "Co-ordinate elements",
+      "subsectionOf": "The Comma",
       "content": {
-        "intro": "Elements of equal rank or relation in a sentence are said to be co-ordinate. The co-ordinate elements may be words or phrases in a series, or they may be entire clauses.",
-        "categories": [
+        "mainText": "Elements of equal rank or relation in a sentence are said to be co-ordinate. The co-ordinate elements may be words or phrases in a series, or they may be entire clauses.",
+        "subsections": [
           {
             "letter": "a",
             "title": "Nouns and noun phrases",
-            "text": "Items in a series may be separated by commas:",
-            "examples": [
-              "Complacency, urbanity, sentimentality, whimsicality"
-            ],
+            "seriesSeparationIntro": "Items in a series may be separated by commas:",
+            "seriesExample": "Complacency, urbanity, sentimentality, whimsicality",
             "conjunctionIntro": "They may also be linked by co-ordinating conjunctions such as and or or:",
             "conjunctionExamples": [
               "economists, sociologists or political scientists",
@@ -445,7 +527,7 @@
             "ambiguityExample": "Tenders were submitted by Domicile Developments Inc., East End Construction, Krista, and Flyan and Scheper.",
             "etcNote": "A comma is also required before etc.:",
             "etcExample": "He brought in the wine, the glasses, etc.",
-            "complexSeriesNote": "A more complex situation occurs when apposition commas are used together with co-ordinating commas, as illustrated below:",
+            "complexSeriesIntro": "A more complex situation occurs when apposition commas are used together with co-ordinating commas, as illustrated below:",
             "complexExample": "Carla Tavares, a recent MBA graduate, three students and a technician set up the experiment.",
             "complexSolution": "The sentence should be rephrased so that no non-restrictive appositive occurs within a co-ordinate element:",
             "rephrasedExample": "A recent MBA graduate named Carla Tavares, three students and a technician set up the experiment.",
@@ -455,7 +537,7 @@
           {
             "letter": "b",
             "title": "Clauses",
-            "text": "A comma is normally used to separate two main clauses in a compound sentence when they are joined by a co-ordinating conjunction (and, but, or, nor, yet or for):",
+            "mainRuleIntro": "A comma is normally used to separate two main clauses in a compound sentence when they are joined by a co-ordinating conjunction (and, but, or, nor, yet or for):",
             "quotedExample": {
               "text": "They are often called individualists, and in economic matters they were, but in social matters, the dominating concept was that of good neighbourliness.",
               "author": "M. M. Fahrni"
@@ -465,38 +547,50 @@
               "He opened the letter and then he read the contents.",
               "Life is short but art is long."
             ],
-            "heavierPunctuationNote": "Co-ordinate clauses not joined by a co-ordinating conjunction are usually separated by a heavier mark of punctuation than the comma:",
+            "heavierPunctuationIntro": "Co-ordinate clauses not joined by a co-ordinating conjunction are usually separated by a heavier mark of punctuation than the comma:",
             "heavierExample": {
               "text": "When the white men came we had the land and they had the Bibles; now they have the land and we have the Bibles.",
               "author": "Chief Dan George"
             },
-            "commaPermittedNote": "A comma will suffice, however, if the clauses are short, or if the writer wishes to emphasize a contrast or lead the reader on to the following clause as quickly as possible:",
-            "shortClauseExamples": [
+            "commaPermittedIntro": "A comma will suffice, however, if the clauses are short, or if the writer wishes to emphasize a contrast or lead the reader on to the following clause as quickly as possible:",
+            "commaExamples": [
               "There are good regulations, there are bad regulations.",
               "It was not the duration of the pilot project that caused concern, it was the size of the project team."
-            ]
+            ],
+            "independentSeriesIntro": "When a number of independent co-ordinate clauses follow one another, a comma should be used after each one except (usually) the last, in accordance with the rule for items in a series (see 7.15(a)):",
+            "independentSeriesExample": "She investigated the matter, wrote a report, presented it to the committee and answered everyone's questions satisfactorily.",
+            "compoundPredicateNote": "It is a common error to confuse a simple sentence having a compound predicate with a compound sentence requiring a comma between clauses. Note the difference between the following examples:",
+            "compoundPredicateExamples": [
+              "She investigated the matter and then wrote a detailed report. (simple sentence)",
+              "She investigated the matter, and then the committee began its work. (compound sentence)"
+            ],
+            "conjunctiveAdverbIntro": "Where the clauses of a compound sentence are joined by a conjunctive adverb (such as however, instead, meanwhile, otherwise, similarly, so, still, then, therefore or yet), a semicolon is usually called for, though a comma will often suffice before so, then and yet:",
+            "conjunctiveAdverbExample": {
+              "text": "Much of English-speaking Canada has been populated . . . by a highly literate people, drawn in part from the educated classes of the Old Country, yet in its two hundred years of existence it has produced few books and not a single great one.",
+              "author": "E. A. McCourt"
+            }
           },
           {
             "letter": "c",
             "title": "Adjectives",
-            "text": "Use a comma between adjectives that independently modify the same noun (co-ordinate adjectives):",
-            "examples": [
-              "a concise, coherent, elegant writing style"
+            "mainRuleIntro": "A series of adjectives modifying a noun may or may not be co-ordinate. The adjectives are co-ordinate if their order does not affect the meaning, in which case they should be separated by a comma. If they are not co-ordinate, that is, if one adjective modifies the phrase formed by the following adjective(s) plus the noun, then they should not be separated by a comma:",
+            "contrastExamples": [
+              "a rich, creamy sauce",
+              "but",
+              "a naive domestic burgundy"
             ],
-            "testNote": "To test whether adjectives are co-ordinate, mentally insert and between them. If and fits, use a comma. If it does not, do not use a comma:",
-            "testExamples": [
-              "a large coffee cup (not: a large and coffee cup; no comma required)",
-              "a hot, humid day (can say: hot and humid; comma required)"
-            ]
+            "mixedTypeNote": "Adjectives of both types may of course occur together:",
+            "mixedExample": "a tender, succulent young chicken",
+            "doubtNote": "The rule stated above, however, is not an infallible guide. When in doubt omit the comma, as in:",
+            "doubtExample": "The plain honest truth is that he is a liar."
           },
           {
             "letter": "d",
-            "title": "Antithesis",
-            "text": "When elements are in antithesis, a comma is used before the conjunction:",
-            "examples": [
-              "We need more conversation, not confrontation.",
-              "The issue was his competence, not his honesty."
-            ]
+            "title": "Antithetic expressions",
+            "antithesisIntro": "Antithetic expressions are usually separated by a comma:",
+            "antithesisExample": "This proposal is not to be tossed lightly aside, but to be hurled with great force.",
+            "shortExpressionNote": "However, short expressions of this type may not require a comma:",
+            "shortExample": "The more wit the less courage."
           }
         ]
       }
@@ -504,6 +598,7 @@
     {
       "id": "7.16",
       "title": "Clarity and emphasis",
+      "subsectionOf": "The Comma",
       "content": {
         "misreadingIntro": "Sometimes the reader will be led astray by a word or phrase which appears at first to be used in one sense but turns out from the context to be used in another. In all the following examples, commas should have been used in order to prevent misreading:",
         "misreadingExamples": [
@@ -523,6 +618,7 @@
     {
       "id": "7.17",
       "title": "Omitted words",
+      "subsectionOf": "The Comma",
       "content": {
         "mainText": "A comma may be used to indicate that words have been omitted:",
         "example": "The African countries sent six representatives; the Asian countries, five.",
@@ -533,6 +629,7 @@
     {
       "id": "7.18",
       "title": "Quotations, etc.",
+      "subsectionOf": "The Comma",
       "content": {
         "mainText": "Place a comma after words introducing short direct quotations, declarations and direct questions (a colon is needed to introduce longer sentences):",
         "examples": [
@@ -555,6 +652,7 @@
     {
       "id": "7.19",
       "title": "Names and titles",
+      "subsectionOf": "The Comma",
       "content": {
         "titlesIntro": "Commas are used around titles and degrees within the body of a sentence:",
         "titlesExamples": [
@@ -576,14 +674,15 @@
     {
       "id": "7.20",
       "title": "Dates, geographical names and addresses",
+      "subsectionOf": "The Comma",
       "content": {
         "datesDayIntro": "Use a comma to separate the day of the week from the date and the place from the date:",
         "datesDayExamples": [
           "Friday, February 13",
-          "Friday the thirteenth (but)",
+          "but Friday the thirteenth",
           "Hull, February 13"
         ],
-        "dmy Order": "If the date is written in the order day-month-year, no commas are required before, after or between the components of the date:",
+        "dmyOrder": "If the date is written in the order day-month-year, no commas are required before, after or between the components of the date:",
         "dmyExample": "The meeting of 10 January 1996 did little to allay tensions.",
         "mdyOrder": "If, however, the order given is month-day-year, the day and year are separated by a comma, and the year should normally be followed by a comma within the body of a sentence or sentence equivalent:",
         "mdyExamples": [
@@ -605,6 +704,7 @@
     {
       "id": "7.21",
       "title": "Commas properly omitted",
+      "subsectionOf": "The Comma",
       "content": {
         "organizationalIntro": "Do not use commas between the name and the number of an organizational unit:",
         "organizationalExamples": [
@@ -623,6 +723,7 @@
     {
       "id": "7.22",
       "title": "Between independent clauses",
+      "subsectionOf": "The Semicolon",
       "content": {
         "mainText": "The semicolon is used between independent clauses not joined by a co-ordinating conjunction but too closely related to be separated by a period:",
         "quotedExamples": [
@@ -659,6 +760,7 @@
     {
       "id": "7.23",
       "title": "Co-ordinate elements",
+      "subsectionOf": "The Semicolon",
       "content": {
         "mainText": "Semicolons may be used in place of commas to separate parallel elements in a series if these elements are complex or contain internal punctuation, or if greater emphasis is desired:",
         "examples": [
@@ -671,6 +773,7 @@
     {
       "id": "7.24",
       "title": "Misuse and overuse",
+      "subsectionOf": "The Semicolon",
       "content": {
         "mainText": "Although most writers tend to underuse rather than overuse the semicolon, a writing style that employs a large number of semicolons is likely to be heavy and dull. Consider using the dash, colon or comma instead."
       }
@@ -678,6 +781,7 @@
     {
       "id": "7.25",
       "title": "Between independent clauses",
+      "subsectionOf": "The Colon",
       "content": {
         "mainText": "The colon may be used between two independent clauses not joined by a conjunction if the second clause explains, illustrates or enlarges upon the first. In such sentences a semicolon would also be correct, but less effective:",
         "quotedExamples": [
@@ -698,6 +802,7 @@
     {
       "id": "7.26",
       "title": "Annunciatory function",
+      "subsectionOf": "The Colon",
       "content": {
         "mainText": "The colon is used primarily to introduce the words that follow it. It introduces a formal quotation or a formal statement:",
         "formalExamples": [
@@ -723,6 +828,7 @@
     {
       "id": "7.27",
       "title": "Miscellaneous",
+      "subsectionOf": "The Colon",
       "content": {
         "businessLettersIntro": "In business letters and printed speeches, a colon follows the salutation:",
         "businessExample": "Dear Mr. Fox:",
@@ -733,17 +839,18 @@
         "referencesIntro": "In references to books, plays, etc., colons separate chapter and verse, volume and page and act and scene, with no space on either side of the colon:",
         "referencesExamples": [
           "Numbers 7:11",
-          "History of Upper Canada, 11:791",
+          "History of Upper Canada, II:791",
           "Fortune and Men's Eyes, I:i"
         ],
         "publisherIntro": "Location and name of publisher are also separated by a colon. The colon is followed by a single space:",
         "publisherExample": "Ottawa: University of Ottawa Press",
-        "crossReferences": "See Chapter 9 for further information on the use of the colon in reference matter. See Chapter 5 for uses of the colon with numerical expressions."
+        "crossReferences": "See Chapter 9 for further information on the use of the colon in reference matter.\n\nSee Chapter 5 for uses of the colon with numerical expressions."
       }
     },
     {
       "id": "7.28",
       "title": "Misuse",
+      "subsectionOf": "The Colon",
       "content": {
         "rules": [
           "Do not use a colon followed by a dash (:—).",
@@ -754,6 +861,7 @@
     {
       "id": "7.29",
       "title": "General",
+      "subsectionOf": "Parentheses",
       "content": {
         "mainText": "Parentheses, or round brackets, are used to enclose additional information serving to explain, amplify or provide comments on adjacent material. Commas and dashes are also used for this purpose (see 7.14(c), 7.42 and 7.44). Parentheses, however, are generally used for words that are less closely related to the rest of the sentence than material which would be set off by dashes or commas. They are also more convenient for parenthetic elements which run to some length or contain internal punctuation, although it is best to avoid lengthy parentheses wherever possible."
       }
@@ -761,6 +869,7 @@
     {
       "id": "7.30",
       "title": "Clarification",
+      "subsectionOf": "Parentheses",
       "content": {
         "mainText": "Parentheses may save the writer from other punctuation problems, such as the confusion created when apposition commas and enumeration commas appear together, as illustrated below:",
         "correctExample": "Carla Tavares (a recent MBA graduate), Lisa Thompson and three students",
@@ -771,6 +880,7 @@
     {
       "id": "7.31",
       "title": "Punctuation with parentheses",
+      "subsectionOf": "Parentheses",
       "content": {
         "completeSentenceRule": "A parenthesis consisting of a complete sentence does not take an initial capital and final period unless it stands alone between complete sentences:",
         "completeSentenceExample": "To achieve the best possible results, adopt a combination of the CPM and PERT methods. (See a model of such a combination in the attached paper.) This will provide you with an effective, low-cost control mechanism.",
@@ -785,13 +895,14 @@
     {
       "id": "7.32",
       "title": "Afterthoughts and asides",
+      "subsectionOf": "Parentheses",
       "content": {
         "mainText": "Parentheses de-emphasize the words they contain, which often take the form of an afterthought or aside:",
         "example": "The premier (no mean orator himself) was enthusiastic in his praise of the minister's speech.",
         "importantAfterthoughtNote": "An important afterthought, however, should be preceded by a dash or other mark of punctuation:",
         "importantExample": "Finally the Computer Operations Branch agreed to follow through on the auditor's recommendations—which is what it should have done six months earlier if it had had the best interests of the organization at heart.",
         "transcriptsIntro": "In transcripts, use parentheses to enclose information on one of the speakers:",
-        "transcriptsExample": "The Hon. John Manley (Minister of Industry): Mr. Speaker, I support this initiative.",
+        "transcriptsExample": "The Hon. John Manley (Minister of Industry):\nMr. Speaker, I support this initiative.",
         "flowNote": "Parentheses should not alter the flow of the sentence in which they are inserted; the rest of the sentence should make sense if the parenthetic element is removed. The following is incorrect:",
         "incorrectExample": "She had to forfeit her acting appointment (not to mention her bilingualism bonus) and she got no sympathy on either count."
       }
@@ -799,6 +910,7 @@
     {
       "id": "7.33",
       "title": "Parentheses within parentheses",
+      "subsectionOf": "Parentheses",
       "content": {
         "mainText": "If you cannot avoid placing parenthetic material within other parenthetic material, use square brackets within the round brackets (see 7.37) or use a combination of parentheses and em dashes:",
         "example": "He worked hard—twelve hours a day (and no bonus for overtime), seven days a week—until the task was completed."
@@ -807,6 +919,7 @@
     {
       "id": "7.34",
       "title": "Legal documents",
+      "subsectionOf": "Parentheses",
       "content": {
         "mainText": "In legal texts, parentheses are used to enclose numerals previously written out:",
         "example": "one thousand nine hundred and ninety-nine (1999)"
@@ -815,12 +928,13 @@
     {
       "id": "7.35",
       "title": "Letters and numerals",
+      "subsectionOf": "Parentheses",
       "content": {
         "lettersIntro": "Individual letters or groups of letters may be enclosed within parentheses:",
         "lettersExample": "Language(s) spoken in the home",
         "numeralsIntro": "Numerals or letters of enumeration may be enclosed in parentheses (or be followed by a period):",
         "numeralsExamples": [
-          "4. Work plan\n  (a) Evaluation\n  (b) Training",
+          "4. Work plan\n   (a) Evaluation\n   (b) Training",
           "Guidelines for writers: (1) Be concise. (2) Write idiomatically. (3) Proofread carefully."
         ],
         "crossReferences": "See 5.22 and 6.10 regarding references to sections of legislation. See Chapter 9 for the use of parentheses in reference matter."
@@ -829,6 +943,7 @@
     {
       "id": "7.36",
       "title": "General",
+      "subsectionOf": "Square Brackets",
       "content": {
         "mainText": "Square brackets, often simply called brackets, are more disconnective than parentheses. They are used to enclose material too extraneous for parentheses. Use brackets for editorial comments or additional information on material written by someone else. To use ordinary parentheses for this purpose would give the impression that the inserted words were those of the person quoted. Square brackets should also enclose translations given immediately after short quotations, terms and titles of books or articles. See 8.14 for detailed information and examples."
       }
@@ -836,45 +951,85 @@
     {
       "id": "7.37",
       "title": "Use within parentheses",
+      "subsectionOf": "Square Brackets",
       "content": {
-        "mainText": "Square brackets are used within round brackets if the latter already enclose material set off from the main sentence:",
+        "mainText": "When one set of parentheses is to be placed within another, replace the inner parentheses with square brackets (though dashes may be used instead—see 7.33). Parentheses within parentheses should be used sparingly, however, except in legal and scholarly texts and specifically for letters and numerals referring to subsections of a document:",
         "examples": [
-          "(For further information on the use of parentheses [and of square brackets], see 7.29–37.)",
-          "The final report (see Chapter 4 [p. 74]) makes several recommendations."
+          "Acadia (from Algonquin algoomaking [\"dwelling here and there\"])",
+          "(See section 14(1)(c))"
+        ],
+        "successionNote": "Square brackets may also be used in place of round brackets where two or more sets of the latter would otherwise occur in succession:",
+        "successionExamples": [
+          "in 3(a) [according to Bixby's enumeration] . . .",
+          "Here, f(x) [c.f. 8.3] reaches a maximum when . . ."
         ]
       }
     },
     {
       "id": "7.38",
       "title": "Use",
+      "subsectionOf": "Braces",
       "content": {
-        "mainText": "Braces { } have in the past been used in preference to square brackets to indicate matter too far removed from the mainstream of a passage to warrant the use of parentheses. However, with the increased use of brackets to enclose such matter, braces are becoming obsolete except for their use in special areas such as mathematics and music, and in certain types of tables and lists. In such use they serve to join groups of either single, separate items or groups of items."
+        "mainText": "Braces are used to link two or more lines of writing:",
+        "celticTreeExample": {
+          "structure": "Celtic",
+          "branches": [
+            {
+              "name": "Brythonic",
+              "items": ["Welsh", "Cornish", "Breton"]
+            },
+            {
+              "name": "Goidelic",
+              "items": ["Irish Gaelic", "Scottish Gaelic", "Manx"]
+            }
+          ]
+        },
+        "additionalUse": "They are also used to group items in formulas and equations. See 7.39."
       }
     },
     {
       "id": "7.39",
       "title": "Multiples",
+      "subsectionOf": "Braces",
       "content": {
-        "mainText": "One or more braces may be used vertically, horizontally or even at an angle, as may be seen from the following diagrams:",
-        "examples": [
-          "Members: Oh, oh!",
-          "Celtic { Irish Gaelic\n         Goidelic { Scottish Gaelic\n                    Manx"
-        ]
+        "mainText": "In mathematical usage, the preferred order for multiple brackets is as follows:",
+        "mathematicalExample": "{[( )]}",
+        "note": "Note that square brackets enclose round brackets, in contrast to the practice in non-mathematical usage."
       }
     },
     {
       "id": "7.40",
       "title": "General",
+      "subsectionOf": "The Em Dash",
       "content": {
-        "mainText": "The em dash—which should not be confused with the en dash (see 7.48–49) or the hyphen (see 7.50–51)—is used to mark an interruption in the structure of a sentence. The em dash often fulfils the same functions as commas, colons and parentheses, but it differs from them in that it marks a much more pronounced break. In certain cases, however, this mark of punctuation is essential to the meaning of the sentence:",
-        "example": "A member of Cabinet informed Gwynne Dyer—off the record—that the government was in fact reversing its position on the issue.",
-        "noteOnExample": "Here the dashes are used to indicate, first, a pause and clarification and, second, an interruption.",
+        "mainText": "In most of its uses the em dash (\"long dash\") is a substitute for the colon, semicolon or comma, but it indicates a more emphatic or abrupt break in the sentence, or a less formal style."
+      }
+    },
+    {
+      "id": "7.41",
+      "title": "Enumerations",
+      "subsectionOf": "The Em Dash",
+      "content": {
+        "mainText": "Use a dash, not a colon, to enclose a list of terms that does not end the sentence:",
+        "correctExample": "A number of processes—gassing, electroplating, soldering, casting, etc.—are used in the copper industry.",
+        "incorrectIntro": "not",
+        "incorrectExample": "A number of processes: gassing, electroplating, soldering, casting, etc., are used in the copper industry."
+      }
+    },
+    {
+      "id": "7.42",
+      "title": "Interruptions, pauses, afterthoughts, clarifications and emphasis",
+      "subsectionOf": "The Em Dash",
+      "content": {
+        "interruptionsIntro": "Like parentheses, a dash may be used at the end of an unfinished or interrupted statement or a pause, as in transcripts:",
+        "interruptionsExample": "I have indicated that the appointment of the judge was terminated—or rather was not terminated but came to—\n\nSome Hon. Members: Oh, oh!",
+        "interruptionsNote": "Here the dashes are used to indicate, first, a pause and clarification and, second, an interruption.",
         "afterthoughtIntro": "The dash may be used to introduce an afterthought, correction or repetition:",
         "afterthoughtExample": "Who will oppose—who are now opposed to the union?",
-        "emphasisIntro": "It may similarly be used to set off an emphatic ending or one that contrasts with the remainder of the sentence:",
-        "emphasisExample": "To write imaginatively a man should have—imagination.",
-        "comparisonIntro": "Dashes give greater emphasis to parenthetic material than do commas or parentheses. If the parenthetic material contains internal punctuation or forms a complete sentence, the commas that might have been used to enclose it should be replaced by dashes or parentheses, depending on the degree of emphasis desired or the closeness of the relationship to the rest of the sentence. Parentheses are generally used to enclose material more remote from the main thrust of the sentence, dashes for material more closely related:",
-        "quotedComparison": {
+        "contrastIntro": "It may similarly be used to set off an emphatic ending or one that contrasts with the remainder of the sentence:",
+        "contrastExample": "To write imaginatively a man should have—imagination.",
+        "parentheticIntro": "Dashes give greater emphasis to parenthetic material than do commas or parentheses. If the parenthetic material contains internal punctuation or forms a complete sentence, the commas that might have been used to enclose it should be replaced by dashes or parentheses, depending on the degree of emphasis desired or the closeness of the relationship to the rest of the sentence. Parentheses are generally used to enclose material more remote from the main thrust of the sentence, dashes for material more closely related:",
+        "quotedParenthetic": {
           "text": "This country is something that must be chosen—it is so easy to leave—and if we do choose it we are still choosing a violent duality.",
           "author": "Margaret Atwood"
         },
@@ -882,23 +1037,9 @@
       }
     },
     {
-      "id": "7.41",
-      "title": "Enumerations",
-      "content": {
-        "mainText": "The em dash can be used to introduce items in a list or enumeration:",
-        "example": "3. Service to the public\n   —enquiries answered\n   —brochures sent out\n   —complaints investigated"
-      }
-    },
-    {
-      "id": "7.42",
-      "title": "Interruptions, pauses, afterthoughts, clarifications and emphasis",
-      "content": {
-        "mainText": "See examples provided in 7.40."
-      }
-    },
-    {
       "id": "7.43",
       "title": "Summarizing",
+      "subsectionOf": "The Em Dash",
       "content": {
         "mainText": "A dash is sometimes inserted before the final portion of a sentence to clarify its relationship to the rest of the sentence, often with the help of a summarizing pronoun such as all or these or with the repetition of key words:",
         "example": "Rich stores of minerals, good agricultural land, forests stretching over millions of acres, and energetic and enterprising people—all these assure Canada a bright future."
@@ -907,6 +1048,7 @@
     {
       "id": "7.44",
       "title": "Material in apposition",
+      "subsectionOf": "The Em Dash",
       "content": {
         "mainText": "Explanatory material in apposition may be set off by dashes to secure greater emphasis than would be achieved with a colon or commas or to avoid confusion with commas within the apposition:",
         "example": "Increased government funding—once hailed as a panacea for all society's ills—is today no longer an option."
@@ -915,6 +1057,7 @@
     {
       "id": "7.45",
       "title": "Headings",
+      "subsectionOf": "The Em Dash",
       "content": {
         "mainText": "A dash may be used to separate the heading of a chapter or the like from the description of its contents or to separate subheadings within a chapter or section, as in a catalogue:",
         "examples": [
@@ -927,6 +1070,7 @@
     {
       "id": "7.46",
       "title": "Lists and tables",
+      "subsectionOf": "The Em Dash",
       "content": {
         "listUseIntro": "It is sometimes used in place of bullets, numerals or letters in vertical lists:",
         "listExample": "3. Service to the public\n   —enquiries answered\n   —brochures sent out\n   —complaints investigated",
@@ -937,6 +1081,7 @@
     {
       "id": "7.47",
       "title": "Punctuation with em dash",
+      "subsectionOf": "The Em Dash",
       "content": {
         "mainText": "Do not combine the dash with any mark of punctuation other than quotation marks, the question mark, the exclamation mark and occasionally the period. In particular, do not use the colon-dash (:—) to introduce a quotation or a list."
       }
@@ -944,6 +1089,7 @@
     {
       "id": "7.48",
       "title": "Numerals",
+      "subsectionOf": "The En Dash",
       "content": {
         "mainText": "Use the en dash (\"short dash\") to join inclusive numbers:",
         "examples": [
@@ -956,6 +1102,7 @@
     {
       "id": "7.49",
       "title": "Compound expressions",
+      "subsectionOf": "The En Dash",
       "content": {
         "mainText": "Use the en dash to join the names of two or more places:",
         "examples": [
@@ -967,6 +1114,7 @@
     {
       "id": "7.50",
       "title": "Compound words",
+      "subsectionOf": "The Hyphen",
       "content": {
         "mainText": "The hyphen is used in certain compound nouns, adjectives and verbs, and to join prefixes to proper nouns. It is also used in word division at the end of a line. See Chapter 2."
       }
@@ -974,6 +1122,7 @@
     {
       "id": "7.51",
       "title": "Spelling and enunciation",
+      "subsectionOf": "The Hyphen",
       "content": {
         "spellingIntro": "Use the hyphen to spell out a word:",
         "spellingExamples": [
@@ -991,6 +1140,7 @@
     {
       "id": "7.52",
       "title": "General",
+      "subsectionOf": "The Oblique",
       "content": {
         "mainText": "The oblique is also known as a solidus, slant (line), bar, virgule, diagonal stroke or slash.",
         "warning": "Do not use the oblique instead of a hyphen at the end of a line of ordinary prose to indicate word division."
@@ -999,6 +1149,7 @@
     {
       "id": "7.53",
       "title": "Abbreviations",
+      "subsectionOf": "The Oblique",
       "content": {
         "abbreviationsIntro": "The oblique is used in certain abbreviations:",
         "abbreviationsExamples": [
@@ -1025,6 +1176,7 @@
     {
       "id": "7.54",
       "title": "Numerals",
+      "subsectionOf": "The Oblique",
       "content": {
         "fractionsIntro": "The oblique is sometimes used in fractions, especially when set into running text, or when they would be ungainly in the form ½:",
         "fractionsExample": "She covered 2 1/3 lengths in 70 seconds.",
@@ -1035,6 +1187,7 @@
     {
       "id": "7.55",
       "title": "Alternatives and headings",
+      "subsectionOf": "The Oblique",
       "content": {
         "alternativesIntro": "An oblique may indicate alternatives:",
         "alternativesExamples": [
@@ -1044,166 +1197,176 @@
         ],
         "andOrWarning": "The expression and/or may be redundant and should be used with caution:",
         "andOrCorrect": "The engines will be manufactured in Canada and/or the United States.",
-        "andOrIncorrect": "but renovations or repairs not renovations and/or repairs",
+        "andOrIncorrect": "but\nrenovations or repairs not renovations and/or repairs",
         "bilingualIntro": "A similar use is seen in bilingual titles such as:",
         "bilingualExample": "L'Actualité terminologique / Terminology Update",
         "formsIntro": "Oblique strokes may separate headings on a form:",
         "formsExamples": [
           "Division/Branch",
           "Series/Cert. No."
+        ],
+        "relationshipsIntro": "The oblique is used increasingly to indicate complex relationships between words, a role traditionally filled by the hyphen:",
+        "relationshipsExamples": [
+          "the student/teacher ratio (the student-teacher ratio)",
+          "labour/management relations (labour-management relations)",
+          "owner/manager (owner-manager)",
+          "the total Boston-Montréal/Montréal-Toronto air mileage"
         ]
       }
     },
     {
       "id": "7.56",
       "title": "Possession",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "singularIntro": "The possessive case of most singular nouns is formed by adding an apostrophe and an s:",
-        "singularExamples": [
-          "the minister's briefcase",
-          "the year's end",
-          "anyone's guess",
-          "a dollar's worth",
+        "mainText": "The primary use of the apostrophe is to indicate possession. A word which does not end in a sibilant (s or z sound) forms the possessive by the addition of 's:",
+        "nonSibilantExamples": [
+          "a dog's breakfast",
+          "Toronto's CN Tower"
+        ],
+        "frenchNote": "To form the possessive of French words ending in a non-sibilant s or x, add an 's:",
+        "frenchExamples": [
+          "Duplessis's cabinet",
+          "Malraux's art"
+        ],
+        "pronunciationNote": "Note that it is the pronunciation, not the spelling, which determines the possessive form. The word conscience ends in a sibilant; Illinois does not.",
+        "pluralNonSibilantIntro": "Plural forms which do not end in a sibilant are no exception to the general rule:",
+        "pluralNonSibilantExamples": [
+          "women's",
+          "children's"
+        ],
+        "pluralSibilantIntro": "Plurals ending in a sibilant take only the apostrophe:",
+        "pluralSibilantExamples": [
+          "the ministers' responsibilities",
+          "developing countries' needs"
+        ],
+        "singularSibilantIntro": "Regarding the appropriate form for singular words that end in a sibilant, pronunciation is again the determining factor. If it would be natural to pronounce an extra s, add 's; if an additional s would be difficult to pronounce, add only an apostrophe:",
+        "singularSibilantExamples": [
+          "Joyce's Ulysses",
+          "Brussels' bureaucrats",
+          "Ulysses' wanderings",
           "the boss's office"
         ],
-        "pluralSIntro": "If the plural form of a noun ends in s, the possessive is formed by adding only an apostrophe:",
-        "pluralSExamples": [
-          "the ministers' briefcases",
-          "the bosses' offices"
-        ],
-        "pluralNotSIntro": "If the plural does not end in s, add an apostrophe and an s:",
-        "pluralNotSExamples": [
-          "the people's choice",
-          "women's careers"
-        ],
-        "properNamesIntro": "The possessive of singular proper names is formed in the same way as that of common nouns, by adding an apostrophe and an s:",
-        "properNamesExamples": [
-          "John's book",
-          "Gladys's promotion",
-          "Burns's poems",
-          "Berlioz's composition",
-          "Dubois's review"
-        ],
-        "ancientNamesNote": "However, if a name ends in s or a sibilant and is an ancient or foreign name, or if the last syllable of the name is pronounced eez, add only an apostrophe:",
-        "ancientNamesExamples": [
-          "Aristophanes' plays",
-          "Moses' leadership",
-          "Jesus' suffering",
-          "Xerxes' fleet",
-          "Delacroix' paintings",
-          "Brahms' Requiem"
+        "awkwardnessNote": "Since awkwardness of pronunciation is the basic criterion, the decision to add or omit a possessive s ultimately depends on the writer's own sensitivities. One option is to rephrase:",
+        "rephrasingExamples": [
+          "the tourist industry of Mauritius",
+          "the ramblings of Joyce's Ulysses",
+          "rather than",
+          "Mauritius' tourist industry",
+          "Joyce's Ulysses' ramblings"
         ]
       }
     },
     {
       "id": "7.57",
       "title": "Inanimate possessors",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "mainText": "If the possessive case seems awkward with inanimate objects, use an 'of' phrase:",
-        "awkwardExample": "the room's ceiling",
-        "betterExample": "the ceiling of the room",
-        "commonExpressionsNote": "Note, however, that the possessive is freely used in certain common expressions:",
-        "commonExpressions": [
-          "a stone's throw",
-          "for pity's sake",
-          "at arm's length",
-          "at death's door",
-          "a week's vacation",
-          "the water's edge"
+        "mainText": "With inanimate \"possessors,\" especially abstract concepts, the apostrophe is generally not used to denote possession. Use an \"of\" construction instead:",
+        "incorrectExamples": [
+          "conjugal violence's incidence",
+          "tourism's priority"
+        ],
+        "correctIntro": "not",
+        "correctExamples": [
+          "the incidence of conjugal violence",
+          "the priority of tourism"
+        ],
+        "exceptionsIntro": "However, certain expressions of time and measurement do take the apostrophe:",
+        "exceptionExamples": [
+          "a month's vacation",
+          "ten dollars' worth"
         ]
       }
     },
     {
       "id": "7.58",
       "title": "Compounds",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "mainText": "Form the possessive of a compound by adding an apostrophe or an apostrophe and an s to the last word:",
-        "examples": [
-          "my mother-in-law's career",
+        "figurativeIntro": "Figurative compounds of the sort bull's-eye or crow's-nest retain 's in the plural:",
+        "figurativeExamples": [
+          "bull's-eyes",
+          "crow's-nests",
+          "shepherd's pies"
+        ],
+        "compoundPossessiveIntro": "When the possessive of a compound noun or a noun phrase is formed, add 's to the last word only, unless there is a possessive relation between the words within the phrase itself:",
+        "compoundExamples": [
           "someone else's problem",
-          "the attorney general's decision",
-          "the attorneys general's decisions"
+          "her brother-in-law's address",
+          "but",
+          "John's father's problem"
         ]
       }
     },
     {
       "id": "7.59",
       "title": "Two nouns (group genitive)",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "jointPossessionIntro": "If possession is joint, add the apostrophe or an apostrophe and s to the second name only:",
-        "jointPossessionExamples": [
-          "the Prime Minister and the Premier's recent debate",
-          "Fortier and Desjardins' legal firm"
+        "sharedPossessionIntro": "If possession is shared by two or more subjects, add 's to the last word only:",
+        "sharedExamples": [
+          "Adam and Eve's progeny",
+          "the Prince and Princess's visit",
+          "Rodgers and Hammerstein's musicals"
         ],
-        "separatePossessionIntro": "If possession is separate, add the apostrophe or an apostrophe and s to each name:",
-        "separatePossessionExamples": [
-          "Marx's and Lenin's ideas",
-          "the Prime Minister's and the Premier's separate visions"
+        "individualPossessionIntro": "To indicate individual possession, 's is added to each element in the series:",
+        "individualExamples": [
+          "Abraham's and Lot's descendants",
+          "Rodgers' and Hammerstein's private lives"
         ]
       }
     },
     {
       "id": "7.60",
       "title": "Geographical names",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "mainText": "In the names of countries, cities, towns, etc., the apostrophe is often dropped:",
-        "examples": [
-          "Actors Equity",
-          "Devils Island",
-          "Pikes Peak",
-          "United Nations (not Nation's)"
-        ],
-        "retainedIntro": "When the name clearly indicates possession, however, the apostrophe is generally retained:",
-        "retainedExamples": [
+        "omissionIntro": "The apostrophe is often omitted in geographical names:",
+        "omissionExamples": [
+          "Gods Lake",
+          "Humphreys Mills",
+          "but",
           "St. John's",
-          "Queen's University"
-        ]
+          "Land's End"
+        ],
+        "additionalNotes": "Note also Saint John (city in New Brunswick) and Hudson Bay—but Hudson's Bay Co. Consult the Gazetteer of Canada when in doubt."
       }
     },
     {
       "id": "7.61",
       "title": "Institutions and organizations",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "mainText": "In the names of institutions, firms, etc., the apostrophe is generally omitted:",
+        "mainText": "The 's is often omitted in names of institutions, especially in the case of plural nouns that are adjectival rather than strictly possessive:",
         "examples": [
-          "Teachers College",
-          "Writers Union of Canada",
-          "Department of Veterans Affairs",
-          "Canadian Manufacturers Association"
+          "teachers college but inmates' committee",
+          "veterans hospital but officers' mess"
         ],
-        "exceptionIntro": "However, follow the organization's usage if it is known:",
-        "exceptionExamples": [
-          "St. Michael's Hospital",
-          "People's Jewellers"
+        "officialFormNote": "The official or customary form should be used, whatever it may be:",
+        "officialFormExamples": [
+          "Eaton's",
+          "Canadian Forces Headquarters"
         ]
       }
     },
     {
       "id": "7.62",
       "title": "Its",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "mainText": "Remember that its without an apostrophe is the possessive form of the pronoun it, while it's with an apostrophe is a contraction meaning \"it is\" or \"it has\":",
-        "examples": [
-          "The bird built its nest in the tree.",
-          "It's a fine day for a picnic.",
-          "It's been a pleasure."
-        ]
+        "mainText": "Note that there is no apostrophe in the possessive forms yours, hers and its. It's is always a contraction of it is. See also 12.03."
       }
     },
     {
       "id": "7.63",
       "title": "Contractions",
+      "subsectionOf": "The Apostrophe",
       "content": {
-        "mainText": "Use an apostrophe to indicate the omission of letters in contractions:",
+        "mainText": "Apostrophes represent omitted letters in contractions or omitted numerals in dates.",
         "examples": [
-          "don't",
-          "isn't",
-          "they're",
-          "I'll",
-          "we've"
-        ],
-        "datesIntro": "Use an apostrophe to show the omission of figures in dates:",
-        "datesExamples": [
+          "It's the best of its kind.",
+          "Treasury Board didn't agree.",
           "the recession of '82",
           "the crash of '29"
         ]
@@ -1212,32 +1375,32 @@
     {
       "id": "7.64",
       "title": "Plurals",
+      "subsectionOf": "The Apostrophe",
       "content": {
         "mainText": "Certain plurals are sometimes written with 's:",
         "categories": [
           {
-            "type": "Abbreviations and symbols",
             "description": "Abbreviations whose appearance would otherwise be ambiguous or confusing (see 1.04) and the plurals of lower-case letters, symbols and numerals",
             "examples": [
               "c.o.d.'s",
-              "POWs",
               "x's",
               "+'s and -'s",
+              "POWs",
               "a's and w's",
               "6's"
             ],
             "alternativeSolution": "Another solution is to italicize the letter, symbol or numeral in question (see 6.11)."
           },
           {
-            "type": "Cited words",
+            "description": "Cited words",
             "example": "an overabundance of is's and which's"
           },
           {
-            "type": "Set expressions",
+            "description": "Set expressions",
             "note": "It is not necessary to use the apostrophe in set expressions such as \"the dos and don'ts,\" \"no ifs and buts,\" \"the whys and wherefores.\""
           },
           {
-            "type": "Words not conveniently pluralized",
+            "description": "Words not conveniently pluralized",
             "examples": [
               "all the Toms, Dicks, Harrys and Louis's",
               "all the Lao's in Laos"
@@ -1249,6 +1412,7 @@
     {
       "id": "7.65",
       "title": "General",
+      "subsectionOf": "Vertical Lists",
       "content": {
         "mainText": "Vertical lists can be punctuated in a number of ways, but the writer should ensure that punctuation is consistent throughout the text."
       }
@@ -1256,6 +1420,7 @@
     {
       "id": "7.66",
       "title": "Use of colon",
+      "subsectionOf": "Vertical Lists",
       "content": {
         "mainText": "The colon is generally used to introduce vertical lists. When the sequence of a list is random or arbitrary, the various elements may be simply indented or set off with bullets or em dashes.",
         "example": "These factors should determine committee size:\n• Number of employees at the work site\n• Variety of functions\n• Number of trade unions\n• Number of shifts"
@@ -1264,6 +1429,7 @@
     {
       "id": "7.67",
       "title": "Numbering",
+      "subsectionOf": "Vertical Lists",
       "content": {
         "mainText": "Numbers and letters, enclosed in parentheses or followed by a closing parenthesis or period, are used to introduce items in lists where precedence or sequence is important.",
         "example": "The tasks assigned to the committee are as follows:\n(a) setting up safety programs\n(b) monitoring the programs\n(c) dealing with employee complaints\n(d) maintaining complete records\n(e) making recommendations",
@@ -1273,6 +1439,7 @@
     {
       "id": "7.68",
       "title": "Use of semicolon",
+      "subsectionOf": "Vertical Lists",
       "content": {
         "mainText": "Use a semicolon after each item (and a period at the end of the list) if one or more items contain internal punctuation, or after each item of a list ending in and or or, even if the items contain no internal punctuation:",
         "example": "The Bureau has set the following priorities for the coming year:\n1. Determining customer needs;\n2. Improving teamwork and internal communication;\n3. Updating equipment to increase turnaround time; and\n4. Initiating quality-assurance procedures."
@@ -1281,6 +1448,7 @@
     {
       "id": "7.69",
       "title": "Complete sentences",
+      "subsectionOf": "Vertical Lists",
       "content": {
         "mainText": "Items made up of sentences should begin with a capital letter and end in a period (or question mark):",
         "example": "The following factors affected grain yield:\n—Rainfall was exceptionally low in June and August.\n—The hailstorm of September 12 damaged crops in southern Alberta.",
@@ -1290,6 +1458,7 @@
     {
       "id": "7.70",
       "title": "Capitalization",
+      "subsectionOf": "Vertical Lists",
       "content": {
         "mainText": "Practice regarding capitalization of items in vertical lists varies. The first word of each item is usually capitalized when the item is a complete sentence or when the annunciatory statement is a complete sentence.",
         "lowerCaseRule": "The first word of each item is usually lower-cased if the items in the list are syntactically linked to the introductory statement, especially if the list is not introduced by a colon:",
