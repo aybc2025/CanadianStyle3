@@ -15,6 +15,31 @@ function buildExamplesBox(examples) {
     return html;
 }
 
+// Helper function to build quoted examples (with optional author attribution)
+function buildQuotedExamples(quotedExamples) {
+    let html = `<div class="examples-box" style="margin: 15px 0; padding: 15px; background-color: #f0f7ff; border-left: 4px solid #0066cc; border-radius: 4px;">`;
+    html += `<h4 style="color: #0066cc; margin-top: 0; margin-bottom: 10px;">Examples</h4>`;
+
+    quotedExamples.forEach((example, index) => {
+        if (typeof example === 'string') {
+            // Simple string example
+            html += `<blockquote style="margin: 10px 0; padding-left: 15px; border-left: 3px solid #0066cc; font-style: italic;">
+                ${example}
+            </blockquote>`;
+        } else if (typeof example === 'object' && example.text) {
+            // Object with text and optional author
+            html += `<blockquote style="margin: 10px 0; padding-left: 15px; border-left: 3px solid #0066cc; font-style: italic;">
+                ${example.text}
+                ${example.author ? `<br><strong style="font-style: normal;">—${example.author}</strong>` : ''}
+                ${example.source ? `<br><em style="font-size: 0.9em;">${example.source}</em>` : ''}
+            </blockquote>`;
+        }
+    });
+
+    html += `</div>`;
+    return html;
+}
+
 export function buildBasicContent(content) {
     let html = '';
 
@@ -46,6 +71,11 @@ export function buildBasicContent(content) {
     // Explanation (comes AFTER examples in Chapter 7)
     if (content.explanation) {
         html += `<p>${content.explanation}</p>`;
+    }
+
+    // Quoted Examples (comes AFTER explanation, used in Chapter 7)
+    if (content.quotedExamples && Array.isArray(content.quotedExamples)) {
+        html += buildQuotedExamples(content.quotedExamples);
     }
 
     // Additional Explanation
@@ -338,8 +368,8 @@ export function buildDynamicFields(content, chapterId = null) {
     const skipFields = [
         'text', 'mainText', 'explanation', 'additionalExplanation', 'format', 'note',
         'additionalNotes', 'additionalNote', 'warning', 'reference', 'referenceNote',
-        'rules', 'examples', 'additionalExamples', 'intro', 'generalRule',
-        'spacingRules', 'categories', 'quotedExamples', 'quotedComparison', // Chapter 7 special - handled by chapter7-builder
+        'rules', 'examples', 'additionalExamples', 'quotedExamples', 'intro', 'generalRule',
+        'spacingRules', 'categories', 'quotedComparison', // Chapter 7 special - handled by chapter7-builder
         'items', 'boxes', 'keyPrinciple', 'criticalPoints', 'importantPoints',
         'warningBox', 'noteBox', 'summaryBox', 'listItems', 'bulletPoints',
         'comparisonTable', 'tableData', 'orderOfPrecedence', 'specialRule',
