@@ -13,7 +13,7 @@ export function buildChapter7Content(content) {
     let html = '';
 
     // === ONLY handle special Chapter 7 structures ===
-    
+
     // 7.02: Spacing Rules (unique nested structure with mark/rules/examples)
     if (content.spacingRules && Array.isArray(content.spacingRules)) {
         html += buildSpacingRules(content.spacingRules);
@@ -28,10 +28,41 @@ export function buildChapter7Content(content) {
     if (content.quotedExamples && Array.isArray(content.quotedExamples)) {
         html += buildQuotedExamples(content.quotedExamples);
     }
-    
+
     // Single quotedComparison (section 7.40)
     if (content.quotedComparison && typeof content.quotedComparison === 'object') {
         html += buildQuotedExamples([content.quotedComparison]);
+    }
+
+    // === NEW: Handle all Chapter 7 special field types ===
+
+    // Handle all *Intro fields (explanatory text before examples)
+    html += buildIntroFields(content);
+
+    // Handle all *Use fields (usage descriptions)
+    html += buildUseFields(content);
+
+    // Handle single *Example fields (not arrays)
+    html += buildSingleExampleFields(content);
+
+    // Handle special note fields (courtesyNote, addressNote, etc.)
+    html += buildSpecialNotes(content);
+
+    // Handle special principles
+    if (content.basicPrinciple) {
+        html += `
+            <div class="key-principle" style="margin: 15px 0; padding: 15px; background-color: #fff3e0; border-left: 4px solid #ff9800; border-radius: 4px;">
+                <p style="margin: 0; font-weight: 500;"><strong>⚡ Key Principle:</strong> ${content.basicPrinciple}</p>
+            </div>
+        `;
+    }
+
+    // Handle special question/explanation fields
+    if (content.indirectQuestions) {
+        html += `<p style="margin: 10px 0;">${content.indirectQuestions}</p>`;
+    }
+    if (content.interrogativeAsImperative) {
+        html += `<p style="margin: 10px 0;">${content.interrogativeAsImperative}</p>`;
     }
 
     return html;
@@ -251,7 +282,7 @@ function buildQuotedExamples(quotedExamples) {
             <div class="quote-box" style="margin: 12px 0; padding: 15px; background-color: #f0f8ff; border-left: 4px solid #0066cc; border-radius: 4px;">
                 <p style="font-style: italic; margin-bottom: ${quote.author || quote.source ? '8px' : '0'};">"${quote.text}"</p>
         `;
-        
+
         if (quote.author) {
             html += `<p style="text-align: right; color: #666; font-size: 0.9em; margin: 0;">— ${quote.author}</p>`;
         }
@@ -264,5 +295,104 @@ function buildQuotedExamples(quotedExamples) {
     });
 
     html += `</div>`;
+    return html;
+}
+
+/**
+ * Build all fields ending with "Intro" - these are explanatory texts before examples
+ * @param {Object} content - Section content
+ * @returns {string} HTML string
+ */
+function buildIntroFields(content) {
+    let html = '';
+
+    Object.keys(content).forEach(key => {
+        if (key.endsWith('Intro') && typeof content[key] === 'string') {
+            html += `
+                <div style="margin: 12px 0;">
+                    <p style="font-weight: 500; color: #333;">${content[key]}</p>
+                </div>
+            `;
+        }
+    });
+
+    return html;
+}
+
+/**
+ * Build all fields ending with "Use" - these are usage descriptions
+ * @param {Object} content - Section content
+ * @returns {string} HTML string
+ */
+function buildUseFields(content) {
+    let html = '';
+
+    Object.keys(content).forEach(key => {
+        if (key.endsWith('Use') && typeof content[key] === 'string') {
+            html += `
+                <div style="margin: 12px 0;">
+                    <p style="color: #444;">${content[key]}</p>
+                </div>
+            `;
+        }
+    });
+
+    return html;
+}
+
+/**
+ * Build single example fields (not arrays) - fields ending with "Example"
+ * @param {Object} content - Section content
+ * @returns {string} HTML string
+ */
+function buildSingleExampleFields(content) {
+    let html = '';
+
+    Object.keys(content).forEach(key => {
+        if (key.endsWith('Example') && typeof content[key] === 'string') {
+            // Check if it contains line breaks (formatted text)
+            if (content[key].includes('\n')) {
+                html += `
+                    <div class="example-box" style="margin: 10px 0; padding: 12px; background-color: #f5f5f5; border-left: 3px solid #888; border-radius: 4px;">
+                        <pre style="margin: 0; font-family: 'Courier New', monospace; white-space: pre-wrap; font-size: 0.9em;">${content[key]}</pre>
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div class="example-box" style="margin: 10px 0; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #888; border-radius: 4px;">
+                        <p style="margin: 0; font-style: italic; font-size: 0.95em;">${content[key]}</p>
+                    </div>
+                `;
+            }
+        }
+    });
+
+    return html;
+}
+
+/**
+ * Build special note fields (courtesyNote, addressNote, mildExclamationNote, etc.)
+ * @param {Object} content - Section content
+ * @returns {string} HTML string
+ */
+function buildSpecialNotes(content) {
+    let html = '';
+
+    const specialNoteFields = [
+        'courtesyNote', 'mildExclamationNote', 'addressNote',
+        'bracketsNote', 'warningNote', 'figureNote'
+    ];
+
+    specialNoteFields.forEach(field => {
+        if (content[field] && typeof content[field] === 'string') {
+            const isWarning = field === 'warningNote';
+            html += `
+                <div class="info-box ${isWarning ? 'warning' : 'note'}" style="margin: 12px 0; padding: 12px; background-color: ${isWarning ? '#fff3cd' : '#e8f4f8'}; border-left: 4px solid ${isWarning ? '#ffc107' : '#0066cc'}; border-radius: 4px;">
+                    <p style="margin: 0; font-size: 0.95em;"><strong>${isWarning ? '⚠️' : '📝'} Note:</strong> ${content[field]}</p>
+                </div>
+            `;
+        }
+    });
+
     return html;
 }
