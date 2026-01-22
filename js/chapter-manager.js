@@ -223,9 +223,11 @@ function buildSectionHTML(section) {
     
     // Use box builder for special boxes
     html += contentBuilders.box.buildBoxes(content);
-    
-    // Use lists builder for lists and examples
-    html += contentBuilders.lists.buildLists(content);
+
+    // Use lists builder for lists and examples (skip for Chapter 7 - handled by core-builder)
+    if (chapterId !== 7) {
+        html += contentBuilders.lists.buildLists(content);
+    }
     
     // Use chapter-specific builders based on chapter ID
     if (chapterId === 1) {
