@@ -119,8 +119,19 @@ function renderSectionTabs() {
     chapterData.sections.forEach((section, index) => {
         const tab = document.createElement('button');
         tab.className = 'nav-tab';
-        // Navigation tabs always show the section's own title (not subsectionOf which may be shared by multiple sections)
-        tab.textContent = `${section.id} ${section.title}`;
+
+        // Build tab content with two lines if subsectionOf exists
+        if (section.subsectionOf) {
+            // Two-line display: title on top (smaller), subsection below
+            tab.innerHTML = `
+                <span class="tab-title">${section.title}</span>
+                <span class="tab-subsection">${section.id} ${section.subsectionOf}</span>
+            `;
+        } else {
+            // Single line for sections without subsectionOf
+            tab.textContent = `${section.id} ${section.title}`;
+        }
+
         tab.onclick = () => loadSection(index);
         
         // Mark completed sections

@@ -152,8 +152,8 @@
     },
     {
       "id": "7.03",
-      "title": "Main purpose",
-      "subsectionOf": "The Period",
+      "title": "The Period",
+      "subsectionOf": "Main purpose",
       "content": {
         "mainText": "The period marks the end of an affirmative sentence or sentence fragment:",
         "examples": [
@@ -178,8 +178,8 @@
     },
     {
       "id": "7.04",
-      "title": "Imperatives, exclamations and indirect questions",
-      "subsectionOf": "The Period",
+      "title": "The Period",
+      "subsectionOf": "Imperatives, exclamations and indirect questions",
       "content": {
         "mainText": "Use a period after a mild imperative or exclamation:",
         "quotedExamples": [
@@ -200,8 +200,8 @@
     },
     {
       "id": "7.05",
-      "title": "Ellipsis points",
-      "subsectionOf": "The Period",
+      "title": "The Period",
+      "subsectionOf": "Ellipsis points",
       "content": {
         "mainText": "Use three ellipsis points (. . .) to indicate a silence in dialogue, hesitation or interruption in speech, a pause in narrative, or the passage of time. Used in this way, they are sometimes also referred to as suspension points:",
         "examples": [
@@ -216,8 +216,8 @@
     },
     {
       "id": "7.06",
-      "title": "Leaders",
-      "subsectionOf": "The Period",
+      "title": "The Period",
+      "subsectionOf": "Leaders",
       "content": {
         "mainText": "A row of dots (or short dashes), called leaders, is used in indexes and tables, including tables of contents, to help the reader align material separated by a wide space:",
         "tableExample": "1. Period .......................................... 10\n2. Leaders ...................................... 11",
@@ -230,8 +230,8 @@
     },
     {
       "id": "7.07",
-      "title": "Other uses",
-      "subsectionOf": "The Period",
+      "title": "The Period",
+      "subsectionOf": "Other uses",
       "content": {
         "listUse": "Periods may replace parentheses after numerals or letters used to introduce items in a vertical list (see 7.67):",
         "listExample": "1. Logic\n2. Grammar\n   a. relative clause\n   b. subordinate clause",
@@ -244,8 +244,8 @@
     },
     {
       "id": "7.08",
-      "title": "Periods properly omitted",
-      "subsectionOf": "The Period",
+      "title": "The Period",
+      "subsectionOf": "Periods properly omitted",
       "content": {
         "mainText": "Do not use a period at the end of any form of heading (other than run-in sideheads), legend or the like, or after a date line or signature:",
         "examples": ["Summary of Expenditures", "June 22, 1996"],
@@ -267,8 +267,8 @@
     },
     {
       "id": "7.09",
-      "title": "Main purpose",
-      "subsectionOf": "The Question Mark",
+      "title": "The Question Mark",
+      "subsectionOf": "Main purpose",
       "content": {
         "mainText": "A question mark is placed at the end of a direct question, sometimes even if the sentence is declarative or imperative in form:",
         "examples": [
@@ -283,8 +283,8 @@
     },
     {
       "id": "7.10",
-      "title": "Requests, indirect questions and other uses",
-      "subsectionOf": "The Question Mark",
+      "title": "The Question Mark",
+      "subsectionOf": "Requests, indirect questions and other uses",
       "content": {
         "requestsIntro": "Opinions differ as to whether a polite request of the type May I . . ., Would you . . . or Will you . . . requires the question mark. However, a question mark will look out of place after longer requests of this kind, especially if the sentence embodies straightforward affirmative elements:",
         "requestExamples": [
@@ -308,8 +308,8 @@
     },
     {
       "id": "7.11",
-      "title": "Main purpose",
-      "subsectionOf": "The Exclamation Mark",
+      "title": "The Exclamation Mark",
+      "subsectionOf": "Main purpose",
       "content": {
         "mainText": "The exclamation mark is an intensifier. It is used to indicate surprise, urgency, finality and the like. It is most often found after interjections, but also after ellipses, contractions and inversions and after certain onomatopoeic words:",
         "examples": [
@@ -331,8 +331,8 @@
     },
     {
       "id": "7.12",
-      "title": "Miscellaneous",
-      "subsectionOf": "The Exclamation Mark",
+      "title": "The Exclamation Mark",
+      "subsectionOf": "Miscellaneous",
       "content": {
         "incredulityNote": "An exclamation mark, usually in parentheses (italicized in square brackets in quoted material), is sometimes used to indicate incredulity on the part of the writer. As with the analogous use of the question mark, this is a technique easily overdone:",
         "incredulityExample": "Mr. Jones asserted that never in his long and distinguished (!) political career had he taken a bribe.",
