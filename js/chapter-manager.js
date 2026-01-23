@@ -169,14 +169,19 @@ function renderSectionContent(section) {
 
     // Build header - handle subsectionOf
     let headerHTML = '';
+    let subsectionTitleHTML = '';
+
     if (section.subsectionOf) {
-        // This is a subsection - show parent as main title, section title as subtitle
+        // This is a subsection - show parent as main title, subsection title AFTER the separator
         headerHTML = `
             <div class="section-header">
                 <div class="section-number">Section ${section.id}</div>
                 <h2 class="section-title">${section.subsectionOf}</h2>
-                <h3 class="subsection-title" style="color: #555; font-weight: 500; margin-top: 10px;">${section.id} ${section.title}</h3>
             </div>
+        `;
+        // Subsection title appears BELOW the red line, without the section ID
+        subsectionTitleHTML = `
+            <h3 style="color: #333; font-weight: 600; margin: 20px 0 15px 0; font-size: 1.3em;">${section.title}</h3>
         `;
     } else {
         // Regular section
@@ -188,7 +193,7 @@ function renderSectionContent(section) {
         `;
     }
 
-    contentArea.innerHTML = headerHTML + html;
+    contentArea.innerHTML = headerHTML + subsectionTitleHTML + html;
 }
 
 // Build HTML from section content using modular builders
