@@ -119,9 +119,8 @@ function renderSectionTabs() {
     chapterData.sections.forEach((section, index) => {
         const tab = document.createElement('button');
         tab.className = 'nav-tab';
-        // Navigation tabs show parent section (subsectionOf) if it exists, otherwise the section's own title
-        const displayTitle = section.subsectionOf || section.title;
-        tab.textContent = `${section.id} ${displayTitle}`;
+        // Navigation tabs always show the section's own title (not subsectionOf which may be shared by multiple sections)
+        tab.textContent = `${section.id} ${section.title}`;
         tab.onclick = () => loadSection(index);
         
         // Mark completed sections
