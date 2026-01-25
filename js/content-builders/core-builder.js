@@ -383,6 +383,7 @@ export function buildDynamicFields(content, chapterId = null) {
     const chapter7Patterns = ['Intro', 'Use', 'Note', 'Examples', 'Example'];
     const chapter7SpecificFields = [
         'basicPrinciple', 'courtesyNote', 'indirectQuestions', 'interrogativeAsImperative',
+        'interrogativeExample', 'indirectExample',
         'substitutionUse', 'formUse', 'listUse', 'sideheadUse', 'tableExample',
         'listExample', 'sideheadExample', 'figureNote', 'dmyExample', 'mdyOrder',
         'author', 'source'
