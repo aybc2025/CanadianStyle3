@@ -55,12 +55,26 @@ export function buildChapter7Content(content) {
         `;
     }
 
-    // Handle special question/explanation fields
-    if (content.indirectQuestions) {
-        html += `<p style="margin: 10px 0;">${content.indirectQuestions}</p>`;
-    }
+    // Handle special question/explanation fields for 7.04
     if (content.interrogativeAsImperative) {
-        html += `<p style="margin: 10px 0;">${content.interrogativeAsImperative}</p>`;
+        html += `<p style="margin: 15px 0 8px 0;">${content.interrogativeAsImperative}</p>`;
+    }
+    if (content.interrogativeExample) {
+        html += `
+            <div class="example-box" style="margin: 8px 0 15px 0; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #888; border-radius: 4px;">
+                <p style="margin: 0; font-style: italic;">${content.interrogativeExample}</p>
+            </div>
+        `;
+    }
+    if (content.indirectQuestions) {
+        html += `<p style="margin: 15px 0 8px 0;">${content.indirectQuestions}</p>`;
+    }
+    if (content.indirectExample) {
+        html += `
+            <div class="example-box" style="margin: 8px 0; padding: 10px; background-color: #f5f5f5; border-left: 3px solid #888; border-radius: 4px;">
+                <p style="margin: 0; font-style: italic;">${content.indirectExample}</p>
+            </div>
+        `;
     }
 
     return html;
