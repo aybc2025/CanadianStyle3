@@ -122,10 +122,10 @@ function renderSectionTabs() {
 
         // Build tab content with two lines if subsectionOf exists
         if (section.subsectionOf) {
-            // Two-line display: title on top (smaller), subsection below
+            // Two-line display: main topic on top, subsection below (smaller)
             tab.innerHTML = `
-                <span class="tab-title">${section.title}</span>
-                <span class="tab-subsection">${section.id} ${section.subsectionOf}</span>
+                <span class="tab-title">${section.id} ${section.title}</span>
+                <span class="tab-subsection">${section.subsectionOf}</span>
             `;
         } else {
             // Single line for sections without subsectionOf
